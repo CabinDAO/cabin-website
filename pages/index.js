@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
+import Wrapper from '../components/Wrapper'
+import heroBackground from '../public/heroBackground.png'
+import { styled } from '../stitches.config.ts';
 
 export default function Home() {
   return (
@@ -10,8 +14,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+
       <main>
-        Hello World
+        <Hero>
+          <Wrapper>
+            <Content>
+              <Image
+                src={heroBackground}
+                alt="Illustration of a solarpunk village"
+              />
+              <h1>
+                <span>
+                  We are a group of online creators building a decentralized city
+                </span>
+              </h1>
+            </Content>
+          </Wrapper>
+        </Hero>
       </main>
 
       <footer>
@@ -19,3 +39,36 @@ export default function Home() {
     </div>
   )
 }
+
+const Hero = styled('section', {
+  backgroundColor: '$sand',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+});
+
+const Content = styled('div', {
+  br: '$pill',
+  boxShadow: '0 0 0 $sizes$px $colors$sprout',
+  overflow: 'hidden',
+  position: 'relative',
+  h1: {
+    fontFamily: '$mono',
+    fontSize: '$xxxl',
+    fontWeight: 600,
+    lineHeight: 1.5,
+    m: '0',
+    position: 'absolute',
+    width: '100%',
+    maxWidth: '48rem',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
+    textAlign: 'center',
+    color: '$sand',
+    span: {
+      bc: '$forest',
+      boxShadow: '$sizes$4 $sizes$2 $colors$forest, -$sizes$4 -$sizes$1 $colors$forest, -$sizes$4 $sizes$2 $colors$forest, $sizes$4 -$sizes$1 $colors$forest',
+    }
+  },
+});

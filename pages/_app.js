@@ -1,17 +1,21 @@
-import { globalCss, theme } from '../stitches.config.ts';
+import { globalCss } from '../stitches.config.ts';
 
 const globalStyles = globalCss({
   'html, body': {
-    'padding': 0,
-    'margin': 0,
-    'font-family': theme.fonts.$sans,
+    padding: 0,
+    margin: 0,
+    fontFamily: '$sans',
+    color: '$forest',
   },
-  'a': {
-    'color': 'inherit',
-    'text-decoration': 'none',
+  a: {
+    color: 'inherit',
+    textDecoration: 'none',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
   '*': {
-    'box-sizing': 'border-box',
+    boxSizing: 'border-box',
   },
 });
 
