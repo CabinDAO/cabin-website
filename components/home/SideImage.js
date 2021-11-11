@@ -52,7 +52,6 @@ const Container = styled('section', {
 const Content = styled('div', {
   position: 'relative',
   zIndex: '$1',
-  minHeight: '500px',
   color: '$sand',
   py: '$20',
   display: 'flex',
@@ -64,6 +63,7 @@ const Content = styled('div', {
   },
   p: {
     lineHeight: 1.6,
+    mb: 0,
   },
   '@md': {
     py: '$32',
@@ -71,6 +71,9 @@ const Content = styled('div', {
     alignItems: 'center',
     '> div': {
       width: '50%',
+    },
+    h2: {
+      fontSize: '$xxxl',
     },
   },
 });

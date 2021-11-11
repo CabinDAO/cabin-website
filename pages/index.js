@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/home/Hero'
 import SideImage from '../components/home/SideImage'
+import Spark from '../components/home/Spark'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <SideImage />
+        <Spark />
       </main>
       <footer>
       </footer>
