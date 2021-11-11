@@ -68,7 +68,6 @@ export default function Header() {
     </DesktopNav>
   );
 
-
   return (
     <Bar>
       <Wrapper>
@@ -83,6 +82,10 @@ const Bar = styled('header', {
   display: 'flex',
   alignItems: 'center',
   backgroundColor: '$sand',
+  borderBottom: '1px solid $sprout',
+  '@md': {
+    border: 'none',
+  },
 });
 
 const MobileNav = styled('nav', {
@@ -101,7 +104,7 @@ const DesktopNav = styled('div', {
 });
 
 const Container = styled('div', {
-  height: '4.5rem',
+  height: '4rem',
   width: '100%',
   display: 'flex',
   alignItems: 'center',
@@ -112,9 +115,12 @@ const Container = styled('div', {
 });
 
 const Wordmark = styled('div', {
-  fontSize: '$xxxl',
+  fontSize: '$xxl',
   fontWeight: 600,
   m: '0',
+  '@md': {
+    fontSize: '$xxxl',
+  },
 });
 
 const Links = styled('div', {
