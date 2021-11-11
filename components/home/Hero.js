@@ -10,6 +10,7 @@ export default function Hero() {
           <Image
             src={heroBackground}
             alt="Illustration of a solarpunk village"
+            quality={100}
           />
           <h1>
             <span>
@@ -34,7 +35,7 @@ const Wrapper = styled('div', {
   maxWidth: '64rem',
   mx: 'auto',
   '@md': {
-    px: '$4',
+    px: '$5',
   },
 });
 
@@ -55,7 +56,8 @@ const Content = styled('div', {
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
     color: '$sand',
-    span: {
+    span: { 
+      lineHeight: 0,
       bc: '$forest',
       boxShadow: '$sizes$4 $sizes$3 $colors$forest, -$sizes$4 -$sizes$2 $colors$forest, -$sizes$4 $sizes$3 $colors$forest, $sizes$4 -$sizes$2 $colors$forest',
     }

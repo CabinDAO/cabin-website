@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/home/Hero'
+import SideImage from '../components/home/SideImage'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <SideImage />
       </main>
       <footer>
       </footer>

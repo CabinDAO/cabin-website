@@ -13,4 +13,7 @@ const Container = styled('div', {
   maxWidth: '64rem',
   mx: 'auto',
   px: '$4',
+  '@md': {
+    px: '$5',
+  },
 });
