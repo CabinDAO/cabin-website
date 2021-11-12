@@ -60,6 +60,9 @@ const Frame = styled('div', {
   lineHeight: '0',
   position: 'relative',
   maxWidth: '30rem',
+  '& > span > img': {
+    filter: 'grayscale(1) contrast(0.75)',
+  },
   '&:after': {
     content: '""',
     position: 'absolute',

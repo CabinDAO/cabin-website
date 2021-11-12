@@ -4,6 +4,7 @@ import Hero from '../components/home/Hero'
 import Reality from '../components/home/Reality'
 import Spark from '../components/home/Spark'
 import Contribute from '../components/home/Contribute'
+import Past from '../components/home/Past'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Reality />
         <Spark />
         <Contribute />
+        <Past />
       </main>
       <footer>
       </footer>
