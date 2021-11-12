@@ -1,31 +1,35 @@
 import Image from 'next/image'
-import bgImage from '../../public/guestsOutdoors.jpg';
-import featureImage from '../../public/guestsGroup.jpg';
 import { styled } from '../../stitches.config.ts';
 import Wrapper from '../Wrapper';
 
-export default function SideImage() {
+export default function SideImage({ 
+    title,
+    content,
+    bgImage,
+    bgImageAlt,
+    featureImage,
+    featureImageAlt, 
+    reversed,
+  }) {
   return (
     <Container>
       <Image
         src={bgImage}
-        alt="People sitting around a campfire"
+        alt={bgImageAlt}
         layout="fill"
         objectFit="cover"
-        quality={1}
+        quality={50}
       />
       <Wrapper>
-        <Content>
-          <Text>
-            <h2>Reality is much higher bandwidth</h2>
-            <p>
-              The metaverse is the best place to meet people and find your tribe. But reality is much higher bandwidth. Once you’ve made connections online, we believe in coming together in person to deepen relationships and experience the liminal space and time that leads to creative breakthroughs and the best conversations.
-            </p>
+        <Content reversed={reversed}>
+          <Text reversed={reversed}>
+            <h2>{title}</h2>
+            <p>{content}</p>
           </Text>
           <Frame>
             <Image
               src={featureImage}
-              alt="People hanging out on a porch"
+              alt={featureImageAlt}
               quality={100}
             />
           </Frame>
@@ -45,7 +49,7 @@ const Container = styled('section', {
     left: 0,
     width: '100%',
     height: '100%',
-    background: 'rgba(0,0,0,0.5)',
+    background: 'rgba(0,0,0,0.6)',
   },
 });
 
@@ -76,6 +80,15 @@ const Content = styled('div', {
       fontSize: '$xxxl',
     },
   },
+  variants: { 
+    reversed: {
+      true : {
+        '@md': {
+          flexDirection: 'row-reverse',
+        },
+      },
+    },
+  },
 });
 
 const Text = styled('div', {
@@ -85,6 +98,16 @@ const Text = styled('div', {
     mt: '0',
     pr: '$20',
     textAlign: 'start',
+  },
+  variants: { 
+    reversed: {
+      true : {
+        '@md': {
+          pr: '0',
+          pl: '$20',
+        },
+      },
+    },
   },
 });
 

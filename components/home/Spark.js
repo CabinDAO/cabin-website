@@ -51,7 +51,7 @@ const Content = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   '@md': {
-    py: '$32',
+    py: '$24',
   },
 });
 
@@ -101,7 +101,7 @@ const Marquee = styled('div', {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     display: 'inline-block',
-    animation: `${marquee} 20s linear infinite`,
+    animation: `${marquee} 30s linear infinite`,
   },
   span: {
     display: 'inline-block',

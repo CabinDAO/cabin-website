@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/home/Hero'
-import SideImage from '../components/home/SideImage'
+import Reality from '../components/home/Reality'
 import Spark from '../components/home/Spark'
+import Contribute from '../components/home/Contribute'
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <SideImage />
+        <Reality />
         <Spark />
+        <Contribute />
       </main>
       <footer>
       </footer>
