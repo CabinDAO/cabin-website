@@ -55,12 +55,12 @@ export default function Header() {
   const desktopNav = (
     <DesktopNav>
       <Container>
+        <Wordmark>
+          <Link href="/">
+            <a>Cabin</a>
+          </Link>
+        </Wordmark>
         <Links>
-          <Wordmark>
-            <Link href="/">
-              <a>Cabin</a>
-            </Link>
-          </Wordmark>
           {nav}
         </Links>
         {joinButton}
@@ -117,6 +117,7 @@ const Container = styled('div', {
 const Wordmark = styled('div', {
   fontSize: '$xxl',
   fontWeight: 600,
+  flex: 1,
   m: '0',
   '@md': {
     fontSize: '$xxxl',
@@ -126,6 +127,7 @@ const Wordmark = styled('div', {
 const Links = styled('div', {
   display: 'flex',
   alignItems: 'center',
+  flex: 2,
 });
 
 const Nav = styled('div', {
