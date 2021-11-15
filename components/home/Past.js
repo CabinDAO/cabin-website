@@ -23,15 +23,15 @@ export default function Past() {
           <Features>
             <Feature>
               <h3>Crowdfunded 12 one-month residencies</h3>
-              <ArrowLink href="/" label="Read more" />
+              <ArrowLink href="/" color="wheat" label="Read more" />
             </Feature>
             <Feature>
               <h3>First living creature as an NFT</h3>
-              <ArrowLink href="/" label="Read more" />
+              <ArrowLink href="/" color="wheat" label="Read more" />
             </Feature>
             <Feature>
               <h3>Buried treasure chest with an ETH wallet</h3>
-              <ArrowLink href="/" label="Read more" />
+              <ArrowLink href="/" color="wheat" label="Read more" />
             </Feature>
           </Features>
         </Content>
@@ -58,7 +58,7 @@ const Container = styled('section', {
     filter: 'grayscale(1) contrast(0.5) brightness(0.5)',
   },
   '@md': {
-    py: '$24',
+    py: '$32',
   },
 });
 
@@ -90,6 +90,7 @@ const Intro = styled('div', {
     fontSize: '$xxl',
     fontFamily: '$mono',
     fontWeight: '$600',
+    lineHeight: '1.4',
   },
   '@md': {
     px: '$10',
@@ -123,6 +124,7 @@ const Feature = styled('div', {
     fontSize: '$xl',
     fontFamily: '$mono',
     fontWeight: '$600',
+    lineHeight: '1.4',
   },
   '&:last-of-type': {
     border: 'none',

@@ -51,7 +51,7 @@ const Content = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   '@md': {
-    py: '$24',
+    py: '$32',
   },
 });
 

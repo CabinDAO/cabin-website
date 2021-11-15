@@ -3,10 +3,10 @@ import { styled } from '../stitches.config.ts';
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 
-export default function ArrowLink({ label, href }) {
+export default function ArrowLink({ label, href, color }) {
   return (
     <Link href={href}>
-      <Container>
+      <Container color={color}>
         <ArrowRightIcon />
         {label}
       </Container>
@@ -16,7 +16,6 @@ export default function ArrowLink({ label, href }) {
 
 const Container = styled('a', {
   height: '$10',
-  color: '$wheat',
   fontWeight: 600,
   fontSize: '$sm',
   display: 'flex',
@@ -25,5 +24,15 @@ const Container = styled('a', {
     height: '$5',
     width: '$5',
     mr: '$2',
+  },
+  variants: { 
+    color: {
+      wheat : {
+        color: '$wheat',
+      },
+      forest : {
+        color: '$forest',
+      },
+    },
   },
 });

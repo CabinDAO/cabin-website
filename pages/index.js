@@ -5,6 +5,7 @@ import Reality from '../components/home/Reality'
 import Spark from '../components/home/Spark'
 import Contribute from '../components/home/Contribute'
 import Past from '../components/home/Past'
+import Join from '../components/home/Join'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Spark />
         <Contribute />
         <Past />
+        <Join />
       </main>
       <footer>
       </footer>
