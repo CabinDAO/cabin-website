@@ -6,6 +6,7 @@ import Spark from '../components/home/Spark'
 import Contribute from '../components/home/Contribute'
 import Past from '../components/home/Past'
 import Join from '../components/home/Join'
+import Collaborate from '../components/home/Collaborate'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contribute />
         <Past />
         <Join />
+        <Collaborate />
       </main>
       <footer>
       </footer>

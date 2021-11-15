@@ -112,6 +112,9 @@ const Action = styled('div', {
     bc: '$sand', 
     pl: '$4',
     pt: '$4',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
   },
   h3: {
     mt: '0',

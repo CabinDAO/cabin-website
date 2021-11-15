@@ -19,6 +19,7 @@ const Container = styled('a', {
   fontWeight: 600,
   fontSize: '$sm',
   display: 'flex',
+  justifyContent: 'center',
   alignItems: 'center', 
   svg: { 
     height: '$5',

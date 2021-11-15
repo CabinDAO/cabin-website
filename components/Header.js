@@ -174,6 +174,7 @@ const MenuToggle = styled('button', {
 const MobileMenu = styled('div', {
   display: 'none',
   flexDirection: 'column',
+  alignItems: 'center',
   mb: '$6',
   variants: { 
     open: {
