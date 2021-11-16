@@ -4,11 +4,11 @@ import ArrowLink from '../ArrowLink';
 
 export default function Past() {
   return (
-    <Container>
+    <Container id="initiatives">
       <Wrapper>
         <Content>
           <Intro>
-            <h2>Past initiatives & research</h2>
+            <h2>Past initiatives</h2>
           </Intro>
           <Features>
             <Feature>

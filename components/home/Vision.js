@@ -4,7 +4,7 @@ import ArrowLink from '../ArrowLink';
 
 export default function Vision() {
   return (
-    <Container>
+    <Container id="about">
       <Wrapper>
         <Content>
           <h2>
@@ -23,8 +23,10 @@ export default function Vision() {
 }
 
 const Container = styled('section', {
+  pt: '$10',
   pb: '$20',
   '@md': {
+    pt: '$20',
     pb: '$24',
   },
 });

@@ -26,10 +26,8 @@ export default function Hero() {
 
 const Container = styled('section', {
   pt: '$12',
-  pb: '$10',
   '@md': {
-    pt: '$20',
-    pb: '$20',
+    pt: '$12',
   },
 });
 
@@ -47,6 +45,7 @@ const Content = styled('div', {
     h1: {
       fontSize: '$xxxl',
       maxWidth: '32rem',
+      mt: '$4',
       mb: '$24',
     },
   },

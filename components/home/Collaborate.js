@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export default function Collaborate() {
   return (
-    <Container>
+    <Container id="passports">
       <Image
         src={bgImage}
         alt="A stary night sky in Texas hill country"

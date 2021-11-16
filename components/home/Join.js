@@ -8,7 +8,7 @@ import shape from '../../public/shape.svg';
 
 export default function Join() {
   return (
-    <Container>
+    <Container id="community">
       <Wrapper>
         <Content>
           <Intro>

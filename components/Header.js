@@ -10,23 +10,23 @@ export default function Header() {
 
   const nav = (
     <Nav>
-      <Link href="/">
+      <Link href="/#about">
         <a>About</a>
       </Link>
-      <Link href="/">
-        <a>Initiatives</a>
-      </Link>
-      <Link href="/">
+      <Link href="/#community">
         <a>Community</a>
       </Link>
-      <Link href="/">
+      <Link href="/#initiatives">
+        <a>Initiatives</a>
+      </Link>
+      <Link href="/#passports">
         <a>Passports</a>
       </Link>
     </Nav>
   );
 
   const joinButton = (
-    <ButtonLink label="Join the community" href="/" />
+    <ButtonLink external label="Join the community" href="https://discord.gg/N6hVmFygjR" target="_blank" />
   );
 
   const toggle = (

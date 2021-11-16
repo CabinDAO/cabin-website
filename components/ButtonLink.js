@@ -1,13 +1,24 @@
 import { styled } from '../stitches.config.ts';
 import Link from 'next/link'
 
-export default function ButtonLink({ label, href }) {
+export default function ButtonLink({ 
+  label, 
+  href, 
+  external, 
+  target = '_self' 
+}) {
   return (
-    <Link href={href}>
+    external ? (
+      <Container target={target} href={href}>
+        {label}
+      </Container>
+    ) : (
+    <Link  target={target} href={href}>
       <Container>
         {label}
       </Container>
     </Link>
+    )
   )
 }
 
