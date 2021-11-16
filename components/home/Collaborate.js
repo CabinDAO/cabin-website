@@ -13,7 +13,7 @@ export default function Collaborate() {
         alt="A stary night sky in Texas hill country"
         layout="fill"
         objectFit="cover"
-        objectPosition="50% 80%"
+        objectPosition="50% 100%"
         quality={50}
       />
       <Wrapper>
@@ -38,9 +38,8 @@ const Container = styled('section', {
   position: 'relative',
   bc: '$forest',
   color: '$sand',
-  py: '$20',
-  backgroundImage: `url('./rings.svg')`,
-  backgroundPosition: 'center',
+  pt: '$20',
+  pb: '$32',
   '&:after': {
     content: '""',
     position: 'absolute',
@@ -55,7 +54,8 @@ const Container = styled('section', {
     filter: 'grayscale(1) contrast(0.5) brightness(0.5)',
   },
   '@md': {
-    py: '$32',
+    pt: '$32',
+    pb: '20rem',
   },
 });
 

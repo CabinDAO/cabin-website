@@ -8,6 +8,7 @@ import Contribute from '../components/home/Contribute'
 import Past from '../components/home/Past'
 import Join from '../components/home/Join'
 import Collaborate from '../components/home/Collaborate'
+import Node from '../components/home/Node'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Join />
         <Past />
         <Collaborate />
+        <Node />
       </main>
       <footer>
       </footer>
