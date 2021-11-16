@@ -9,7 +9,7 @@ export default function Hero() {
       <Wrapper>
         <Content>
           <h1>
-            Cabin is a decentralized city by creators and for creators
+            A decentralized city built by creators, for creators
           </h1>
           <Frame>
             <Image
@@ -39,14 +39,14 @@ const Content = styled('div', {
     fontSize: '$xxl',
     fontWeight: 600,
     lineHeight: 1.6,
-    maxWidth: '28rem',
+    maxWidth: '24rem',
     mt: '0',
     mb: '$12',
   },
   '@md': {
     h1: {
       fontSize: '$xxxl',
-      maxWidth: '40rem',
+      maxWidth: '32rem',
       mb: '$24',
     },
   },

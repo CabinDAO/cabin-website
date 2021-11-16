@@ -9,6 +9,7 @@ import Past from '../components/home/Past'
 import Join from '../components/home/Join'
 import Collaborate from '../components/home/Collaborate'
 import Node from '../components/home/Node'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -31,8 +32,7 @@ export default function Home() {
         <Collaborate />
         <Node />
       </main>
-      <footer>
-      </footer>
+      <Footer />
     </div>
   )
 }
