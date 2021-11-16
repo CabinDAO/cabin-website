@@ -25,6 +25,12 @@ const Container = styled('a', {
     height: '$5',
     width: '$5',
     mr: '$2',
+    position: 'relative',
+    left: '0',
+    transition : 'left 0.2s ease-in-out',
+  },
+  '&:hover svg': {
+    left: '$1',
   },
   variants: { 
     color: {

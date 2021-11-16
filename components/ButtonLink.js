@@ -25,7 +25,6 @@ export default function ButtonLink({
 const Container = styled('a', {
   height: '$10',
   px: '$4',
-  // br: '$1',
   color: '$forest',
   backgroundColor: '$wheat',
   fontWeight: 600,
@@ -33,5 +32,8 @@ const Container = styled('a', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  br: '$1',
+  transition : 'all 0.2s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.05)',
+  },
 });
