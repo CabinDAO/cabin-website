@@ -13,11 +13,11 @@ export default function ButtonLink({
         {label}
       </Container>
     ) : (
-    <Link  target={target} href={href}>
-      <Container>
-        {label}
-      </Container>
-    </Link>
+      <Link target={target} href={href}>
+        <Container>
+          {label}
+        </Container>
+      </Link>
     )
   )
 }
@@ -34,6 +34,6 @@ const Container = styled('a', {
   justifyContent: 'center',
   transition : 'all 0.2s ease-in-out',
   '&:hover': {
-    transform: 'scale(1.05)',
+    transform: 'scale(1.0325)',
   },
 });

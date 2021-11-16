@@ -16,6 +16,9 @@ export default function Footer() {
       <a external target="_blank" href="https://discord.gg/N6hVmFygjR">
         Discord
       </a>
+      <a external target="_blank" href="https://snapshot.org/#/cabindao.eth">
+        Snapshot
+      </a>
       <a external target="_blank" href="https://github.com/CabinDAO">
         Github
       </a>

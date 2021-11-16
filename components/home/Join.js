@@ -24,9 +24,9 @@ export default function Join() {
               <div>
                 <h3>Find</h3>
                 <p>
-                  Explore our wiki to learn about about our community, people, model and processes.
+                  Explore our wiki to learn about about our community, people, model, and processes.
                 </p>
-                <ArrowLink href="/" label="View the wiki" />
+                <ArrowLink external target="_blank" href="https://app.clarity.so/%E2%82%A1ABIN" label="View the wiki" />
               </div>
             </Action>
             <Action>
@@ -40,7 +40,7 @@ export default function Join() {
                 <p>
                   Tune into our community on discord to discover our mindset, culture and language.
                 </p>
-                <ArrowLink href="/" label="Join Discord" />
+                <ArrowLink external target="_blank" href="https://discord.gg/N6hVmFygjR" label="Join Discord" />
               </div>
             </Action>
             <Action>
@@ -54,7 +54,7 @@ export default function Join() {
                 <p> 
                   Bring your own perspective and knowledge to the community by holding Cabin token.
                 </p>
-                <ArrowLink href="/" label="View proposals" />
+                <ArrowLink external target="_blank" href="https://snapshot.org/#/cabindao.eth" label="View proposals" />
               </div>
             </Action>
           </Actions>

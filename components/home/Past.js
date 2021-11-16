@@ -13,15 +13,15 @@ export default function Past() {
           <Features>
             <Feature>
               <h3>Crowdfunded 3 one-month residencies</h3>
-              <ArrowLink href="/" color="wheat" label="Read more" />
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/eS6lYIBycHEZmtGpRGwA9lCb3Y_8G4pddHWSKtmWP_I" label="Read more" />
             </Feature>
             <Feature>
               <h3>First living creature as an NFT</h3>
-              <ArrowLink href="/" color="wheat" label="Read more" />
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/OmwhMeOpeK8MJTBhHV0RpQmqh1mYMMpcJir97pTZyEQ" label="Read more" />
             </Feature>
             <Feature>
               <h3>Buried treasure chest with an ETH wallet</h3>
-              <ArrowLink href="/" color="wheat" label="Read more" />
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/5heGuW5JIkDp67D4j4DtRpAi4ToiJzCeNFunU4cjkBw" label="Read more" />
             </Feature>
           </Features>
         </Content>

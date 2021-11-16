@@ -25,8 +25,8 @@ export default function Collaborate() {
             Access the high-bandwidth nature of IRL collaboration by purchasing a passport for your DAO, guild, team or squad and help us fund our vision of growing cabins into decentralized internet-first cities.
           </p>
           <Actions>
-            <ButtonLink href="/" label="Purchase a passport" />
-            <ArrowLink href="/" color="wheat" label="Learn more" />
+            <ButtonLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" label="Purchase a passport" />
+            <ArrowLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" color="wheat" label="Learn more" />
           </Actions>
         </Content>
       </Wrapper>

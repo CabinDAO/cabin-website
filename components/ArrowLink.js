@@ -3,14 +3,27 @@ import { styled } from '../stitches.config.ts';
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 
-export default function ArrowLink({ label, href, color }) {
+export default function ArrowLink({ 
+  label, 
+  href, 
+  color, 
+  external, 
+  target = '_self'  
+}) {
   return (
-    <Link href={href}>
-      <Container color={color}>
+    external ? (
+      <Container target={target} href={href} color={color}>
         <ArrowRightIcon />
         {label}
       </Container>
-    </Link>
+    ) : (
+      <Link target={target} href={href} color={color}>
+        <Container>
+          <ArrowRightIcon />
+          {label}
+        </Container>
+      </Link>
+    )
   )
 }
 
