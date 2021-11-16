@@ -6,6 +6,7 @@ const globalStyles = globalCss({
     margin: 0,
     fontFamily: '$sans',
     color: '$forest',
+    backgroundColor: '$sand',
   },
   a: {
     color: 'inherit',

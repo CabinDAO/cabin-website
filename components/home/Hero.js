@@ -1,22 +1,23 @@
-import Image from 'next/image'
-import heroBackground from '../../public/heroBackground.png'
 import { styled } from '../../stitches.config.ts';
+import Wrapper from '../Wrapper';
+import Image from 'next/image'
+import heroImage from '../../public/heroImage.jpg';
 
 export default function Hero() {
   return (
     <Container>
       <Wrapper>
         <Content>
-          <Image
-            src={heroBackground}
-            alt="Illustration of a solarpunk village"
-            quality={100}
-          />
           <h1>
-            <span>
-              Building shelter and community for online creators
-            </span>
+            Cabin is a decentralized city by creators and for creators
           </h1>
+          <Frame>
+            <Image
+              src={heroImage}
+              alt="An areal view of a cabin"
+              quality={100}
+            />
+          </Frame>
         </Content>
       </Wrapper>
     </Container>
@@ -24,50 +25,39 @@ export default function Hero() {
 }
 
 const Container = styled('section', {
-  backgroundColor: '$sand',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-});
-
-const Wrapper = styled('div', {
-  width: '100%',
-  maxWidth: '64rem',
-  mx: 'auto',
+  pt: '$12',
+  pb: '$10',
   '@md': {
-    px: '$5',
+    pt: '$20',
+    pb: '$20',
   },
 });
 
 const Content = styled('div', {
-  overflow: 'hidden',
-  position: 'relative',
   h1: {
     fontFamily: '$mono',
     fontSize: '$xxl',
     fontWeight: 600,
     lineHeight: 1.6,
-    m: '0',
-    position: 'absolute',
-    width: '100%',
     maxWidth: '28rem',
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%)',
-    textAlign: 'center',
-    color: '$sand',
-    span: { 
-      lineHeight: 0,
-      bc: '$forest',
-      boxShadow: '$sizes$4 $sizes$3 $colors$forest, -$sizes$4 -$sizes$2 $colors$forest, -$sizes$4 $sizes$3 $colors$forest, $sizes$4 -$sizes$2 $colors$forest',
-    }
+    mt: '0',
+    mb: '$12',
   },
   '@md': {
-    br: '$pill',
-    boxShadow: '0 0 0 $sizes$px $colors$sprout',
     h1: {
       fontSize: '$xxxl',
       maxWidth: '40rem',
+      mb: '$24',
     },
+  },
+});
+
+const Frame = styled('div', {
+  boxShadow: '0 0 0 $sizes$px $colors$sprout',
+  lineHeight: '0',
+  br: '$2',
+  overflow: 'hidden',
+  '@md': {
+    br: '$3',
   },
 });

@@ -52,7 +52,9 @@ export const theme = {
     px: '1px',
   },
   radii: {
-    1: '0.25rem',
+    1: '0.325rem',
+    2: '1.5rem',
+    3: '3rem',
     pill: '9999px',
   },
   zIndices: {

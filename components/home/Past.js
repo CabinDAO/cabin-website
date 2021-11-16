@@ -12,7 +12,7 @@ export default function Past() {
         alt="A stary night sky in Texas hill country"
         layout="fill"
         objectFit="cover"
-        objectPosition="center"
+        objectPosition="50% 80%"
         quality={50}
       />
       <Wrapper>

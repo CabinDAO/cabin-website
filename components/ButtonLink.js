@@ -22,4 +22,5 @@ const Container = styled('a', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  br: '$1',
 });

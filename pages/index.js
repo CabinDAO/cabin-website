@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/home/Hero'
+import Vision from '../components/home/Vision'
 import Reality from '../components/home/Reality'
 import Spark from '../components/home/Spark'
 import Contribute from '../components/home/Contribute'
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Vision />
         <Reality />
         <Spark />
         <Contribute />
