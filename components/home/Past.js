@@ -1,20 +1,10 @@
-import Image from 'next/image'
 import { styled } from '../../stitches.config.ts';
 import Wrapper from '../Wrapper';
-import bgImage from '../../public/stars.jpg';
 import ArrowLink from '../ArrowLink';
 
 export default function Past() {
   return (
     <Container>
-      <Image
-        src={bgImage}
-        alt="A stary night sky in Texas hill country"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="50% 80%"
-        quality={50}
-      />
       <Wrapper>
         <Content>
           <Intro>
@@ -43,20 +33,9 @@ export default function Past() {
 const Container = styled('section', {
   position: 'relative',
   bc: '$forest',
+  backgroundImage: `url('./rings.svg')`,
+  backgroundPosition: 'center',
   py: '$20',
-  '&:after': {
-    content: '""',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    background: '$forest',
-    opacity: '0.50',
-  },
-  img: {
-    filter: 'grayscale(1) contrast(0.5) brightness(0.5)',
-  },
   '@md': {
     py: '$32',
   },
@@ -77,7 +56,7 @@ const Content = styled('div', {
     width: '100%',
     height: '100%',
     background: '$forest',
-    opacity: '0.50',
+    opacity: '0.7',
   },
   '@md': {
     br: '$3',

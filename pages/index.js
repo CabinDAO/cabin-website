@@ -23,10 +23,10 @@ export default function Home() {
         <Hero />
         <Vision />
         <Reality />
-        <Spark />
         <Contribute />
-        <Past />
+        <Spark />
         <Join />
+        <Past />
         <Collaborate />
       </main>
       <footer>

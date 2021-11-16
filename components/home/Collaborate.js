@@ -2,10 +2,20 @@ import { styled } from '../../stitches.config.ts';
 import ButtonLink from '../ButtonLink';
 import ArrowLink from '../ArrowLink';
 import Wrapper from "../Wrapper";
+import bgImage from '../../public/stars.jpg';
+import Image from 'next/image'
 
 export default function Collaborate() {
   return (
     <Container>
+      <Image
+        src={bgImage}
+        alt="A stary night sky in Texas hill country"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="50% 80%"
+        quality={50}
+      />
       <Wrapper>
         <Content>
           <h2>
@@ -31,6 +41,19 @@ const Container = styled('section', {
   py: '$20',
   backgroundImage: `url('./rings.svg')`,
   backgroundPosition: 'center',
+  '&:after': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: '$forest',
+    opacity: '0.50',
+  },
+  img: {
+    filter: 'grayscale(1) contrast(0.5) brightness(0.5)',
+  },
   '@md': {
     py: '$32',
   },
@@ -43,6 +66,8 @@ const Content = styled('div', {
   justifyContent: 'center',
   maxWidth: '40rem',
   margin: '0 auto',
+  position: 'relative',
+  zIndex: '$1',
   h2: {
     m: 0,
     fontSize: '$xxl',
