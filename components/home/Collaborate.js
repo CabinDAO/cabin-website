@@ -51,7 +51,7 @@ const Container = styled('section', {
     opacity: '0.50',
   },
   img: {
-    filter: 'grayscale(1) contrast(0.5) brightness(0.5)',
+    filter: 'grayscale(0.75) contrast(0.75) brightness(0.25)',
   },
   '@md': {
     pt: '$32',

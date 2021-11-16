@@ -42,6 +42,9 @@ export default function SideImage({
 const Container = styled('section', {
   position: 'relative',
   bc: '$forest',
+  '& > span > img': {
+    filter: 'grayscale(0.75) contrast(0.75) brightness(0.25)',
+  },
   '&:after': {
     content: '""',
     position: 'absolute',
@@ -49,7 +52,8 @@ const Container = styled('section', {
     left: 0,
     width: '100%',
     height: '100%',
-    background: 'rgba(0,0,0,0.6)',
+    background: '$forest',
+    opacity: '0.50',
   },
 });
 

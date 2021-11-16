@@ -63,7 +63,7 @@ const Frame = styled('div', {
   overflow: 'hidden',
   br: '$2',
   '& > span > img': {
-    filter: 'grayscale(1) contrast(0.75)',
+    filter: 'grayscale(0.75) contrast(0.75)',
   },
   '&:after': {
     content: '""',
