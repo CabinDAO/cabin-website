@@ -12,7 +12,7 @@ export default function Past() {
           </Intro>
           <Features>
             <Feature>
-              <h3>Crowdfunded 12 one-month residencies</h3>
+              <h3>Crowdfunded 3 one-month residencies</h3>
               <ArrowLink href="/" color="wheat" label="Read more" />
             </Feature>
             <Feature>

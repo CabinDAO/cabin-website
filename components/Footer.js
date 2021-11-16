@@ -7,24 +7,24 @@ export default function Footer() {
 
   const nav = (
     <Nav>
-      <Link href="/">
-        <a>Wiki</a>
-      </Link>
-      <Link href="/">
-        <a>Mirror</a>
-      </Link>
-      <Link href="/">
-        <a>Discord</a>
-      </Link>
-      <Link href="/">
-        <a>Github</a>
-      </Link>
-      <Link href="/">
-        <a>Twitter</a>
-      </Link>
-      <Link href="/">
-        <a>Instagram</a>
-      </Link>
+      <a external target="_blank" href="https://app.clarity.so/%E2%82%A1ABIN">
+        Wiki
+      </a>
+      <a external target="_blank" href="https://creators.mirror.xyz/">
+        Mirror
+      </a>
+      <a external target="_blank" href="https://discord.gg/N6hVmFygjR">
+        Discord
+      </a>
+      <a external target="_blank" href="https://github.com/CabinDAO">
+        Github
+      </a>
+      <a external target="_blank" href="https://twitter.com/creatorcabins">
+        Twitter
+      </a>  
+      <a external target="_blank" href="https://www.instagram.com/creatorcabins/">
+        Instagram
+      </a>  
     </Nav>
   ); 
 
