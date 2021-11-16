@@ -67,6 +67,8 @@ const Content = styled('div', {
   color: '$sand',
   zIndex: '$1',
   border: '1px solid $sprout',
+  br: '$2',
+  overflow: 'hidden',
   '&:before': {
     content: '""',
     position: 'absolute',
@@ -76,6 +78,9 @@ const Content = styled('div', {
     height: '100%',
     background: '$forest',
     opacity: '0.50',
+  },
+  '@md': {
+    br: '$3',
   },
 });
 

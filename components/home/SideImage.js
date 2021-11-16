@@ -112,9 +112,12 @@ const Text = styled('div', {
 });
 
 const Frame = styled('div', {
-  br: '$pill',
+  br: '$2',
   boxShadow: '0 0 0 $sizes$px $colors$sprout',
   overflow: 'hidden',
   lineHeight: '0',
+  '@md': {
+    br: '$3',
+  },
 });
 

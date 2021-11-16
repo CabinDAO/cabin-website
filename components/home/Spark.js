@@ -60,6 +60,8 @@ const Frame = styled('div', {
   lineHeight: '0',
   position: 'relative',
   maxWidth: '30rem',
+  overflow: 'hidden',
+  br: '$2',
   '& > span > img': {
     filter: 'grayscale(1) contrast(0.75)',
   },
@@ -72,6 +74,9 @@ const Frame = styled('div', {
     height: '100%',
     background: '$forest',
     opacity: '0.50',
+  },
+  '@md': {
+    br: '$3',
   },
 });
 

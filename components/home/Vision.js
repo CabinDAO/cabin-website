@@ -32,7 +32,8 @@ const Container = styled('section', {
 const Content = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  p: '$10',
+  px: '$10',
+  py: '$8',
   border: '1px solid $sprout',
   br: '$2',
   h2: {
