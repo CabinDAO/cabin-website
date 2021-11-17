@@ -1,7 +1,6 @@
 import Logo from "./Logo";
 import { styled } from '../stitches.config.ts';
 import Wrapper from '../components/Wrapper';
-import Link from 'next/link'
 
 export default function Footer() {
 

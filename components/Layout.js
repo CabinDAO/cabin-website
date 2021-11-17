@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { styled } from '../stitches.config.ts';
 
 export default function Layout({
   children,
@@ -27,11 +28,26 @@ export default function Layout({
         <meta property="og:description" content={description} key="ogdesc" />
       </Head>
 
-      <Header />
-      <main>
-        {children}
-      </main>
-      <Footer />
+      <Container>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </Container>
     </>
   )
 }
+
+const Container = styled('footer', {
+  fontFamily: '$sans',
+  color: '$forest',
+  backgroundColor: '$sand',
+  a: {
+    color: 'inherit',
+    textDecoration: 'none',
+    '&:hover': {
+      cursor: 'pointer',
+    },
+  },
+});
