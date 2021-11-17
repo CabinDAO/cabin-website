@@ -2,10 +2,12 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { getCssText } from '../stitches.config.ts';
 
 const globalStyles = `
-  * {
-    box-sizing: border-box;
+  html, body {
     margin: 0;
     padding: 0;
+  }
+  * {
+    box-sizing: border-box;
   }
 `
 
