@@ -17,7 +17,7 @@ export default function ArrowLink({
         {label}
       </Container>
     ) : (
-      <Link target={target} href={href} color={color}>
+      <Link target={target} href={href} color={color} passHref>
         <Container>
           <ArrowRightIcon />
           {label}

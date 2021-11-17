@@ -13,7 +13,7 @@ export default function ButtonLink({
         {label}
       </Container>
     ) : (
-      <Link target={target} href={href}>
+      <Link target={target} href={href} passHref>
         <Container>
           {label}
         </Container>
