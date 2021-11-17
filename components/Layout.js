@@ -22,7 +22,7 @@ export default function Layout({
         <meta name="twitter:creator" content="creatorcabins" key="twhandle" />
 
         <meta property="og:url" content="https://www.creatorcabins.com/" key="ogurl" />
-        <meta property="og:image" content="./socialShare" key="ogimage" />
+        <meta property="og:image" content="./socialShare.jpg" key="ogimage" />
         <meta property="og:site_name" content="Cabin" key="ogsitename" />
         <meta property="og:title" content={title} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
@@ -43,11 +43,4 @@ const Container = styled('footer', {
   fontFamily: '$sans',
   color: '$forest',
   backgroundColor: '$sand',
-  a: {
-    color: 'inherit',
-    textDecoration: 'none',
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
 });

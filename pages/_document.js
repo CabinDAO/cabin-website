@@ -9,6 +9,13 @@ const globalStyles = `
   * {
     box-sizing: border-box;
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+  }
 `
 
 class MyDocument extends Document {
