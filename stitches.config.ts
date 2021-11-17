@@ -182,7 +182,7 @@ const media = {
   xxl: '(min-width: 1536px)',
 };
 
-export const { styled, css } = createStitches({
+export const { styled, css, getCssText } = createStitches({
   theme,
   media,
   utils,
