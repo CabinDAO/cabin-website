@@ -25,9 +25,6 @@ export default function Hero() {
 
 const Container = styled('section', {
   pt: '$12',
-  '@md': {
-    pt: '$12',
-  },
 });
 
 const Content = styled('div', {

@@ -18,7 +18,7 @@ export default function Node() {
           <div>
             <h2>Node 1</h2>
             <h3>Creator cabins in Texas Hill Country</h3>
-            {/* <ArrowLink href="/" label="Explore the cabins" /> */}
+            <ArrowLink href="/cabins" label="Explore the cabins" />
           </div>
           <div>
             <p>
