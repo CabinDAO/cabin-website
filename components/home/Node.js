@@ -12,7 +12,6 @@ export default function Node() {
           <Image
             src={node}
             alt="An image of a cabin"
-            quality={100}
           />
         </Frame>
         <Content>
@@ -46,6 +45,7 @@ const Frame = styled('div', {
   mt: '-$24',
   overflow: 'hidden',
   position: 'relative',
+  bc: '$forest',
   '@md': {
     br: '$3',
     mt: '-$48',

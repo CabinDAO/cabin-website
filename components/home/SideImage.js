@@ -30,7 +30,6 @@ export default function SideImage({
             <Image
               src={featureImage}
               alt={featureImageAlt}
-              quality={100}
             />
           </Frame>
         </Content>
@@ -120,6 +119,7 @@ const Frame = styled('div', {
   boxShadow: '0 0 0 $sizes$px $colors$sprout',
   overflow: 'hidden',
   lineHeight: '0',
+  bc: '$forest',
   '@md': {
     br: '$3',
   },
