@@ -13,13 +13,12 @@ export default function SideImage() {
             <Image
               src={fireImage}
               alt="A campfire"
-              quality={100}
+              quality={50}
             />
             <Spark>
               <Image
                 src={sparkImage}
                 alt="An abstract illustration of a spark"
-                quality={100}
               />
             </Spark>
           </Frame>

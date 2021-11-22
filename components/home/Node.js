@@ -12,14 +12,13 @@ export default function Node() {
           <Image
             src={node}
             alt="An image of a cabin"
-            quality={100}
           />
         </Frame>
         <Content>
           <div>
             <h2>Node 1</h2>
             <h3>Creator cabins in Texas Hill Country</h3>
-            {/* <ArrowLink href="/" label="Explore the cabins" /> */}
+            <ArrowLink href="/cabins" label="Explore the cabins" />
           </div>
           <div>
             <p>
@@ -46,6 +45,7 @@ const Frame = styled('div', {
   mt: '-$24',
   overflow: 'hidden',
   position: 'relative',
+  bc: '$forest',
   '@md': {
     br: '$3',
     mt: '-$48',

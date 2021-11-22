@@ -15,7 +15,6 @@ export default function Hero() {
             <Image
               src={heroImage}
               alt="An areal view of a cabin"
-              quality={100}
             />
           </Frame>
         </Content>
@@ -26,9 +25,6 @@ export default function Hero() {
 
 const Container = styled('section', {
   pt: '$12',
-  '@md': {
-    pt: '$12',
-  },
 });
 
 const Content = styled('div', {
@@ -56,6 +52,7 @@ const Frame = styled('div', {
   lineHeight: '0',
   br: '$2',
   overflow: 'hidden',
+  bc: '$forest',
   '@md': {
     br: '$3',
   },
