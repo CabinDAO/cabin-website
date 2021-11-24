@@ -36,6 +36,7 @@ const Container = styled('div', {
     mt: '0',
   },
   '@md': {
+    br: '$3',
     mb: '$32',
     py: '$12',
     h2: {
