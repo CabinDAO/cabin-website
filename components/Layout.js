@@ -18,7 +18,7 @@ export default function Layout({
         <meta name="description" content={description} />
         <link rel="icon" href="./favicon.ico" />  
 
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="creatorcabins" key="twhandle" />
 
         <meta property="og:url" content="https://www.creatorcabins.com/" key="ogurl" />
