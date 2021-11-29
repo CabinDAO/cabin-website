@@ -17,6 +17,7 @@ export default function Amenities({ list }) {
 const Container = styled('section', {
   py: '$12',
   h2: {
+    mt: '0',
     mb: '$8',
     fontFamily: '$mono',
     fontSize: '$xl',
