@@ -1,8 +1,6 @@
 import { styled } from '../../stitches.config.ts';
 import Wrapper from '../Wrapper';
 import Image from 'next/image'
-import Layout from '../Layout'
-import ArrowLink from '../ArrowLink';
 
 export default function CabinIntro({ name, description, image, imgAlt }) {
   return (
@@ -16,7 +14,13 @@ export default function CabinIntro({ name, description, image, imgAlt }) {
         </div>
       </Intro>
       <Frame>
-        <Image src={image} alt={imgAlt}/>
+        <Image 
+          src={image} 
+          alt={imgAlt}
+          layout="responsive"
+          width={984}
+          height={340}
+        />
       </Frame>
     </Wrapper>
   );

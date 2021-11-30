@@ -19,6 +19,9 @@ export default function SideImage() {
               <Image
                 src={sparkImage}
                 alt="An abstract illustration of a spark"
+                layout="responsive"
+                width={480}
+                height={384}
               />
             </Spark>
           </Frame>

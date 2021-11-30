@@ -20,6 +20,9 @@ export default function Join() {
                 src={find}
                 alt="An abstract find icon"
                 quality={100}
+                layout="responsive"
+                width={82}
+                height={82}
               />
               <div>
                 <h3>Find</h3>
@@ -34,6 +37,9 @@ export default function Join() {
                 src={harmonize}
                 alt="An abstract harmonize icon"
                 quality={100}
+                layout="responsive"
+                width={82}
+                height={82}
               />
               <div>
                 <h3>Harmonize</h3>
@@ -48,6 +54,9 @@ export default function Join() {
                 src={shape}
                 alt="An abstract shape icon"
                 quality={100}
+                layout="responsive"
+                width={82}
+                height={82}
               />
               <div>
                 <h3>Shape</h3>

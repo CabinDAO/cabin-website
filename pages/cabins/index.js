@@ -32,6 +32,9 @@ export default function Cabins() {
             <Image
               src={containerImage}
               alt="An areal view of the container cabin"
+              layout="responsive"
+              width={984}
+              height={340}
             />
           </Frame>
           <CabinContent>
@@ -51,6 +54,9 @@ export default function Cabins() {
             <Image
               src={node}
               alt="An image of a cabin"
+              layout="responsive"
+              width={984}
+              height={340}
             />
           </Frame>
           <CabinContent>

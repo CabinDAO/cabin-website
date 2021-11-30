@@ -30,6 +30,9 @@ export default function SideImage({
             <Image
               src={featureImage}
               alt={featureImageAlt}
+              layout="responsive"
+              width={492}
+              height={327}
             />
           </Frame>
         </Content>

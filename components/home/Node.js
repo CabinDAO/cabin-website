@@ -12,6 +12,9 @@ export default function Node() {
           <Image
             src={node}
             alt="An image of a cabin"
+            layout="responsive"
+            width={984}
+            height={340}
           />
         </Frame>
         <Content>
