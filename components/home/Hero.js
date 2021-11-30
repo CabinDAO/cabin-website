@@ -15,6 +15,9 @@ export default function Hero() {
             <Image
               src={heroImage}
               alt="An areal view of a cabin"
+              layout="responsive"
+              width={984}
+              height={464}
             />
           </Frame>
         </Content>
