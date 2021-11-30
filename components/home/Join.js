@@ -20,7 +20,7 @@ export default function Join() {
                 src={find}
                 alt="An abstract find icon"
                 quality={100}
-                layout="responsive"
+                layout="fixed"
                 width={82}
                 height={82}
               />
@@ -37,7 +37,7 @@ export default function Join() {
                 src={harmonize}
                 alt="An abstract harmonize icon"
                 quality={100}
-                layout="responsive"
+                layout="fixed"
                 width={82}
                 height={82}
               />
@@ -54,7 +54,7 @@ export default function Join() {
                 src={shape}
                 alt="An abstract shape icon"
                 quality={100}
-                layout="responsive"
+                layout="fixed"
                 width={82}
                 height={82}
               />
