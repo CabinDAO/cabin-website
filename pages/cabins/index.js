@@ -1,10 +1,9 @@
 import { styled } from '../../stitches.config.ts';
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper';
-import containerImage from '../../public/containerCabin.jpg';
-import node from '../../public/node.jpg';
 import CallToAction from '../../components/CallToAction';
 import CabinPeek from '../../components/cabins/CabinPeek';
+import { theCabin, theContainer } from '../../content/cabins';
 
 export default function Cabins() {
   return (
@@ -26,20 +25,8 @@ export default function Cabins() {
             </p>
           </div>
         </Intro>
-        <CabinPeek 
-          image={containerImage}
-          imgAlt="An areal view of the container cabin"
-          name="The Container"
-          description="This cabin was designed from the ground up for a community of remote workers. It’s a 4-suite shipping container cabin with giant front and back decks, private entrances for each room, and beautiful modern interiors. The suites, office nooks, community spaces, and decks were all custom-built in partnership with Forte Shelter for the needs of remote workers. Rooms are furnished and include high-speed internet, utilities, and cleaning service."
-          slug="thecontainer"
-        />
-        <CabinPeek 
-          image={node}
-          imgAlt="An image of a cabin"
-          name="The Cabin"
-          description="This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service."
-          slug="thecabin"
-        />
+        <CabinPeek {...theContainer} />
+        <CabinPeek {...theCabin} />
       </Wrapper>
       <CallToAction />
     </Layout>    

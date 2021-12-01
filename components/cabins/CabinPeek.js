@@ -2,13 +2,13 @@ import { styled } from '../../stitches.config.ts';
 import Image from 'next/image'
 import ArrowLink from '../ArrowLink';
 
-export default function CabinPeek({ name, slug, description, image, imgAlt }) {
+export default function CabinPeek({ name, slug, summary, image, imageAlt }) {
   return (
     <Cabin>
       <Frame>
         <Image
           src={image}
-          alt={imgAlt}
+          alt={imageAlt}
           layout="responsive"
           width={984}
           height={340}
@@ -19,7 +19,7 @@ export default function CabinPeek({ name, slug, description, image, imgAlt }) {
           <h2>{name}</h2>
         </div>
         <div>
-          <p>{description}</p>
+          <p>{summary}</p>
           <ArrowLink href={`/cabins/${slug}`} color="forest" label="Learn more" />
         </div>
       </CabinContent>
