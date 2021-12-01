@@ -3,11 +3,13 @@ import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper';
 import CallToAction from '../../components/CallToAction';
 import CabinPeek from '../../components/cabins/CabinPeek';
+import BackLink from '../../components/BackLink';
 import { theCabin, theContainer } from '../../content/cabins';
 
 export default function Cabins() {
   return (
     <Layout>
+      <BackLink label="Passports" href="/#passports" />
       <Wrapper>
         <Intro>
           <div>
@@ -40,7 +42,8 @@ export async function getServerSideProps() {
 const Intro = styled('section', {
   display: 'flex',
   flexDirection: 'column',
-  py: '$12',
+  pt: '$8',
+  pb: '$12',
   div: {
     flex: '1',
     pt: '0',

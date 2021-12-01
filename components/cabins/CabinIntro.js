@@ -29,7 +29,8 @@ export default function CabinIntro({ name, summary, image, imageAlt }) {
 const Intro = styled('section', {
   display: 'flex',
   flexDirection: 'column',
-  py: '$12',
+  pt: '$8',
+  pb: '$12',
   'div:first-of-type': {
     flex: '1',
     pt: '0',
