@@ -1,11 +1,10 @@
 import { styled } from '../../stitches.config.ts';
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper';
-import Image from 'next/image'
 import containerImage from '../../public/containerCabin.jpg';
 import node from '../../public/node.jpg';
 import CallToAction from '../../components/CallToAction';
-import ArrowLink from '../../components/ArrowLink';
+import CabinPeek from '../../components/cabins/CabinPeek';
 
 export default function Cabins() {
   return (
@@ -27,50 +26,20 @@ export default function Cabins() {
             </p>
           </div>
         </Intro>
-        <Cabin>
-          <Frame>
-            <Image
-              src={containerImage}
-              alt="An areal view of the container cabin"
-              layout="responsive"
-              width={984}
-              height={340}
-            />
-          </Frame>
-          <CabinContent>
-            <div>
-              <h2>The Container</h2>
-            </div>
-            <div>
-              <p>
-                This cabin was designed from the ground up for a community of remote workers. It’s a 4-suite shipping container cabin with giant front and back decks, private entrances for each room, and beautiful modern interiors. The suites, office nooks, community spaces, and decks were all custom-built in partnership with Forte Shelter for the needs of remote workers. Rooms are furnished and include high-speed internet, utilities, and cleaning service.
-              </p>
-              <ArrowLink href="/cabins/thecontainer" color="forest" label="Learn more" />
-            </div>
-          </CabinContent>
-        </Cabin>
-        <Cabin>
-          <Frame>
-            <Image
-              src={node}
-              alt="An image of a cabin"
-              layout="responsive"
-              width={984}
-              height={340}
-            />
-          </Frame>
-          <CabinContent>
-            <div>
-              <h2>The Cabin</h2>
-            </div>
-            <div>
-              <p>
-                This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service.              
-              </p>
-              <ArrowLink href="/cabins/thecabin" color="forest" label="Learn more" />
-            </div>
-          </CabinContent>
-        </Cabin>
+        <CabinPeek 
+          image={containerImage}
+          imgAlt="An areal view of the container cabin"
+          name="The Container"
+          description="This cabin was designed from the ground up for a community of remote workers. It’s a 4-suite shipping container cabin with giant front and back decks, private entrances for each room, and beautiful modern interiors. The suites, office nooks, community spaces, and decks were all custom-built in partnership with Forte Shelter for the needs of remote workers. Rooms are furnished and include high-speed internet, utilities, and cleaning service."
+          slug="thecontainer"
+        />
+        <CabinPeek 
+          image={node}
+          imgAlt="An image of a cabin"
+          name="The Cabin"
+          description="This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service."
+          slug="thecabin"
+        />
       </Wrapper>
       <CallToAction />
     </Layout>    
@@ -106,56 +75,5 @@ const Intro = styled('section', {
       pr: '$20',
       fontSize: '$xxxl',
     },
-  },
-});
-
-const Cabin = styled('section', {
-  pb: '$12',
-  '@md': {
-    pb: '$20',
-  },
-});
-
-const CabinContent = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  mt: '$6',
-  div: {
-    flex: '1',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-  },
-  h2: {
-    mt: '$1',
-    fontFamily: '$mono',
-    fontSize: '$xl',
-    fontWeight: 600,
-    lineHeight: 1.6,
-  },
-  '& p': {
-    mt: '0',
-  },
-  '@md': {
-    mt: '$12',
-    flexDirection: 'row',
-    h2: {
-      pr: '$20',
-      fontSize: '$xxl',
-    },
-    '& p': {
-      mt: '$4',
-    },
-  },
-});
-
-const Frame = styled('div', {
-  boxShadow: '0 0 0 $sizes$px $colors$sprout',
-  lineHeight: '0',
-  br: '$2',
-  overflow: 'hidden',
-  bc: '$forest',
-  '@md': {
-    br: '$3',
   },
 });
