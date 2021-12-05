@@ -27,7 +27,7 @@ export default function Join() {
               <div>
                 <h3>Find</h3>
                 <p>
-                  Explore our wiki to learn about about our community, people, model, and processes.
+                  Explore our wiki to learn about our community, people, model, and processes.
                 </p>
                 <ArrowLink external target="_blank" href="https://app.clarity.so/%E2%82%A1ABIN" label="View the wiki" />
               </div>
