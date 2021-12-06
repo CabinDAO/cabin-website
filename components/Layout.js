@@ -30,17 +30,24 @@ export default function Layout({
 
       <Container>
         <Header />
-        <main>
+        <Main>
           {children}
-        </main>
+        </Main>
         <Footer />
       </Container>
     </>
   )
 }
 
-const Container = styled('footer', {
+const Container = styled('div', {
   fontFamily: '$sans',
   color: '$forest',
   backgroundColor: '$sand',
+  flexDirection: 'column',
+  display: 'flex',
+  minHeight: '100%',
+});
+
+const Main = styled('main', {
+  flexGrow: 1
 });
