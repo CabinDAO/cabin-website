@@ -2,7 +2,7 @@ import { styled } from '../../stitches.config.ts';
 import Wrapper from '../Wrapper';
 import Image from 'next/image'
 
-export default function CabinIntro({ name, description, image, imgAlt }) {
+export default function CabinIntro({ name, summary, image, imageAlt }) {
   return (
     <Wrapper>
       <Intro>
@@ -10,13 +10,13 @@ export default function CabinIntro({ name, description, image, imgAlt }) {
           <h1>{name}</h1>
         </div>
         <div>
-          <p>{description}</p>
+          <p>{summary}</p>
         </div>
       </Intro>
       <Frame>
         <Image 
           src={image} 
-          alt={imgAlt}
+          alt={imageAlt}
           layout="responsive"
           width={984}
           height={340}
@@ -29,7 +29,8 @@ export default function CabinIntro({ name, description, image, imgAlt }) {
 const Intro = styled('section', {
   display: 'flex',
   flexDirection: 'column',
-  py: '$12',
+  pt: '$8',
+  pb: '$12',
   'div:first-of-type': {
     flex: '1',
     pt: '0',
