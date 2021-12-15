@@ -18,7 +18,7 @@ const Container = styled('section', {
   py: '$12',
   h2: {
     mt: '0',
-    mb: '$8',
+    mb: '$6',
     fontFamily: '$mono',
     fontSize: '$xl',
     fontWeight: 600,
@@ -33,6 +33,7 @@ const Container = styled('section', {
   '@md': {
     py: '$20',
     h2: {
+      mb: '$8',
       fontSize: '$xxl',
     },
     ul: {

@@ -20,6 +20,7 @@ export default function CabinIntro({ name, summary, image, imageAlt }) {
           layout="responsive"
           width={984}
           height={340}
+          priority
         />
       </Frame>
     </Wrapper>

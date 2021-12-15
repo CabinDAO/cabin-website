@@ -5,13 +5,15 @@ import Amenities from '../../../components/cabins/CabinAmenities';
 import NextCabin from '../../../components/cabins/NextCabin';
 import BackLink from '../../../components/BackLink';
 import { theContainer, theCabin } from '../../../content/cabins';
+import Gallery from '../../../components/cabins/Gallery';
 
 export default function TheContainer() {
-  const { amenities, ...others } = theContainer;
+  const { amenities, gallery, ...others } = theContainer;
   return (
     <Layout>
       <BackLink label="Texas Hill Country" href="/cabins" />
       <CabinIntro { ...others } />
+      <Gallery images={ gallery } />
       <Amenities list={amenities} />
       <NextCabin { ...theCabin} />
       <CallToAction />
