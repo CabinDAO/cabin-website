@@ -18,6 +18,7 @@ export default function Hero() {
               layout="responsive"
               width={984}
               height={464}
+              priority
             />
           </Frame>
         </Content>
