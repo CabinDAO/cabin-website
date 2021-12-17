@@ -10,6 +10,14 @@ const Container = styled("section", {
   pt: "$12",
 });
 
+const Header = styled("h1", {
+  fontSize: 32,
+  lineHeight: "44px",
+  color: "$forest",
+  mt: 0,
+  mb: 16,
+});
+
 const HeroContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
@@ -20,10 +28,6 @@ const HeroContainer = styled("div", {
     position: "absolute",
     left: 4,
     top: "calc(50% - 22px)",
-    fontSize: 32,
-    lineHeight: "44px",
-    color: "$forest",
-    mt: 0,
   },
 });
 
@@ -82,13 +86,21 @@ const ProductsHero = () => (
             )}
           </Row>
         )}
-        <h1>Products built by Cabin</h1>
+        <Header>Products built by Cabin</Header>
       </HeroContainer>
     </Wrapper>
   </Container>
 );
 
-const PRODUCTS = [
+type ProductData = {
+  name: string;
+  description: string;
+  path: string;
+};
+
+const PRODUCTS: ProductData[] = [];
+/*
+[
   {
     name: "NFT Passports",
     description:
@@ -96,6 +108,7 @@ const PRODUCTS = [
     path: "passports",
   },
 ];
+*/
 
 const ProductInfoContainer = styled("section", {
   pt: "$20",
@@ -112,13 +125,13 @@ const ProductImageContainer = styled("div", {
   minWidth: "50%",
 });
 
-const ProductInfo = (props: typeof PRODUCTS[number]) => {
+const ProductInfo = (props: ProductData) => {
   return (
     <ProductInfoContainer>
       <Wrapper>
         <ProductInfoInnerContainer>
           <div>
-            <h1>{props.name}</h1>
+            <Header>{props.name}</Header>
             <p>{props.description}</p>
             <Link href={`/products/${props.path}`} passHref>
               <a>
@@ -152,6 +165,11 @@ const ProductCTAInnerContainer = styled("section", {
   borderRadius: "48px",
   padding: "64px",
   marginBottom: "$20",
+  textAlign: "center",
+});
+
+const CTAHeader = styled(Header, {
+  marginBottom: 24,
 });
 
 const ProductCTA = () => {
@@ -159,7 +177,7 @@ const ProductCTA = () => {
     <ProductCTAContainer>
       <Wrapper>
         <ProductCTAInnerContainer>
-          <h1>Interested in helping us build out products?</h1>
+          <CTAHeader>Interested in helping us build out products?</CTAHeader>
           <ButtonLink
             external
             label="Join the community"
