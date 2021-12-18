@@ -13,6 +13,9 @@ export default function Header() {
       <Link href="/#about">
         <a>About</a>
       </Link>
+      <Link href="/products">
+        <a>Products</a>
+      </Link>
       <Link href="/#community">
         <a>Community</a>
       </Link>
