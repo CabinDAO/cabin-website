@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import ButtonLink from "../../components/ButtonLink";
+import HeroPattern from "../../components/HeroPattern";
 
 const Container = styled("section", {
   pt: "$12",
@@ -14,6 +15,7 @@ const Header = styled("h1", {
   fontSize: 32,
   lineHeight: "44px",
   color: "$forest",
+  fontFamily: "$mono",
   mt: 0,
   mb: 16,
 });
@@ -31,61 +33,11 @@ const HeroContainer = styled("div", {
   },
 });
 
-const Row = styled("div", {
-  display: "flex",
-  justifyContent: "space-between",
-});
-
-const HeroElement = styled("div", {
-  marginTop: 2.31,
-  width: 8,
-  height: 4.62,
-  backgroundColor: "$sprout",
-  position: "relative",
-  "&:before": {
-    content: "",
-    borderLeft: "4px solid transparent",
-    borderRight: "4px solid transparent",
-    position: "absolute",
-    top: -2.31,
-    borderBottom: "2.31px solid $sprout",
-  },
-  "&:after": {
-    content: "",
-    borderLeft: "4px solid transparent",
-    borderRight: "4px solid transparent",
-    position: "absolute",
-    bottom: -2.31,
-    borderTop: "2.31px solid $sprout",
-  },
-});
-
-const InnerHeroElement = styled(HeroElement, {
-  transform: "scale(0.7,0.7)",
-  backgroundColor: "$sand",
-  zIndex: 1,
-  marginTop: 0,
-  "&:before": {
-    borderBottomColor: "$sand",
-  },
-  "&:after": {
-    borderTopColor: "$sand",
-  },
-});
-
 const ProductsHero = () => (
   <Container>
     <Wrapper>
       <HeroContainer>
-        {Array(4).fill(
-          <Row>
-            {Array(17).fill(
-              <HeroElement>
-                <InnerHeroElement />
-              </HeroElement>
-            )}
-          </Row>
-        )}
+        <HeroPattern width={17} height={4} />
         <Header>Products built by Cabin</Header>
       </HeroContainer>
     </Wrapper>
