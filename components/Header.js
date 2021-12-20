@@ -120,17 +120,16 @@ const Container = styled('div', {
 const Wordmark = styled('div', {
   fontSize: '$xxl',
   fontWeight: 600,
-  flex: 1,
   m: '0',
   '@md': {
     fontSize: '$xxxl',
+    justifyContent: 'center',
   },
 });
 
 const Links = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  flex: 2,
 });
 
 const Nav = styled('div', {
