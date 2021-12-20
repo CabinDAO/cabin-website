@@ -6,6 +6,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import ButtonLink from "../../components/ButtonLink";
 import HeroPattern from "../../components/HeroPattern";
+import guestsOutdoor from "../../public/guestsOutdoors.jpg";
 
 const Container = styled("section", {
   pt: "$12",
@@ -50,17 +51,13 @@ type ProductData = {
   path: string;
 };
 
-const PRODUCTS: ProductData[] = [];
-/*
-[
+const PRODUCTS: ProductData[] = [
   {
     name: "NFT Passports",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+    description: "Create and mint NFTs for membership—without the tech stuff",
     path: "passports",
   },
 ];
-*/
 
 const ProductInfoContainer = styled("section", {
   pt: "$20",
@@ -93,7 +90,7 @@ const ProductInfo = (props: ProductData) => {
           </div>
           <ProductImageContainer>
             <Image
-              src={`/products/${props.path}.png`}
+              src={guestsOutdoor}
               alt={`Image for ${props.name}`}
               width={"100%"}
               height={"100%"}
