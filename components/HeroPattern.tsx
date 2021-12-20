@@ -44,15 +44,19 @@ const InnerHeroElement = styled(HeroElement, {
 
 const HeroPattern = ({ width, height }: { width: number; height: number }) => (
   <>
-    {Array(height).fill(
-      <Row>
-        {Array(width).fill(
-          <HeroElement>
-            <InnerHeroElement />
-          </HeroElement>
-        )}
-      </Row>
-    )}
+    {Array(height)
+      .fill(null)
+      .map((_, i) => (
+        <Row key={i}>
+          {Array(width)
+            .fill(null)
+            .map((_, j) => (
+              <HeroElement key={j}>
+                <InnerHeroElement />
+              </HeroElement>
+            ))}
+        </Row>
+      ))}
   </>
 );
 
