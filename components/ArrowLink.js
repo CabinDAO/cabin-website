@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function ArrowLink({ 
   label, 
   href, 
-  color, 
+  color = "forest", 
   external, 
   target = '_self'  
 }) {

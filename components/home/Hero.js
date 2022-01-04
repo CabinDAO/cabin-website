@@ -1,63 +1,41 @@
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
-import Image from 'next/image'
-import heroImage from '../../public/heroImage.jpg';
+import { styled } from "../../stitches.config.ts";
+import Wrapper from "../Wrapper";
+import heroImage from "../../public/heroImage.jpg";
+import HeroFrame from "../../components/HeroFrame";
 
 export default function Hero() {
   return (
     <Container>
       <Wrapper>
         <Content>
-          <h1>
-            A decentralized city built by creators, for creators
-          </h1>
-          <Frame>
-            <Image
-              src={heroImage}
-              alt="An areal view of a cabin"
-              layout="responsive"
-              width={984}
-              height={464}
-              priority
-            />
-          </Frame>
+          <h1>A decentralized city built by creators, for creators</h1>
+          <HeroFrame src={heroImage} alt="A real view of a cabin" />
         </Content>
       </Wrapper>
     </Container>
-  )
+  );
 }
 
-const Container = styled('section', {
-  pt: '$12',
+const Container = styled("section", {
+  pt: "$12",
 });
 
-const Content = styled('div', {
+const Content = styled("div", {
   h1: {
-    fontFamily: '$mono',
-    fontSize: '$xxl',
+    fontFamily: "$mono",
+    fontSize: "$xxl",
     fontWeight: 600,
     lineHeight: 1.6,
-    maxWidth: '24rem',
-    mt: '0',
-    mb: '$12',
+    maxWidth: "24rem",
+    mt: "0",
+    mb: "$12",
   },
-  '@md': {
+  "@md": {
     h1: {
-      fontSize: '$xxxl',
-      maxWidth: '32rem',
-      mt: '$4',
-      mb: '$24',
+      fontSize: "$xxxl",
+      maxWidth: "32rem",
+      mt: "$4",
+      mb: "$24",
     },
-  },
-});
-
-const Frame = styled('div', {
-  boxShadow: '0 0 0 $sizes$px $colors$sprout',
-  lineHeight: '0',
-  br: '$2',
-  overflow: 'hidden',
-  bc: '$forest',
-  '@md': {
-    br: '$3',
   },
 });
