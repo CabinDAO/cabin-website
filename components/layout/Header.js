@@ -1,30 +1,18 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import { styled } from '../stitches.config.ts';
+import { styled } from '../../stitches.config.ts';
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons'
-import ButtonLink from './ButtonLink';
-import Wrapper from './Wrapper';
+import ButtonLink from '../ButtonLink';
+import Wrapper from '../Wrapper';
+import Navigation from './navigation'
+import headerLinks from './navigation/headerLinks'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const nav = (
     <Nav>
-      <Link href="/#about">
-        <a>About</a>
-      </Link>
-      <Link href="/products">
-        <a>Products</a>
-      </Link>
-      <Link href="/#community">
-        <a>Community</a>
-      </Link>
-      <Link href="/#initiatives">
-        <a>Initiatives</a>
-      </Link>
-      <Link href="/#passports">
-        <a>Passports</a>
-      </Link>
+      <Navigation links={headerLinks} />
     </Nav>
   );
 

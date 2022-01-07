@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import Hero from "../components/home/Hero";
 import Vision from "../components/Vision";
 import Reality from "../components/home/Reality";

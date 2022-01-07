@@ -1,32 +1,14 @@
 import Logo from "./Logo";
-import { styled } from '../stitches.config.ts';
-import Wrapper from '../components/Wrapper';
+import { styled } from '../../stitches.config.ts';
+import Wrapper from '../../components/Wrapper';
+import Navigation from './navigation';
+import footerLinks from './navigation/footerLinks';
 
 export default function Footer() {
 
   const nav = (
     <Nav>
-      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/%E2%82%A1ABIN">
-        Wiki
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
-        Mirror
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://discord.gg/N6hVmFygjR">
-        Discord
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://snapshot.org/#/cabindao.eth">
-        Snapshot
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://github.com/CabinDAO">
-        Github
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com/creatorcabins">
-        Twitter
-      </a>  
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/creatorcabins/">
-        Instagram
-      </a>  
+      <Navigation links={footerLinks} external/>
     </Nav>
   ); 
 

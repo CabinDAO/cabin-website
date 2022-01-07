@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 import { Wrapper } from "@cabindao/topo";
 import { styled } from "../../stitches.config";
 import Link from "next/link";

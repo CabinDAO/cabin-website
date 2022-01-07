@@ -1,4 +1,4 @@
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/layout";
 import { Button, Wrapper, Modal, Input } from "@cabindao/topo";
 import { ArrowLeftIcon, CheckCircledIcon } from "@radix-ui/react-icons";
 import { styled } from "../../../stitches.config";
