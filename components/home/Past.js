@@ -1,6 +1,6 @@
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
-import ArrowLink from '../ArrowLink';
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
+import ArrowLink from '@components/ArrowLink';
 
 export default function Past() {
   return (

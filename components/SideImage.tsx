@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { styled } from "../stitches.config";
+import { styled } from "@stitches";
 import { Wrapper } from "@cabindao/topo";
 
 type ImageSrc = Parameters<typeof Image>[0]['src'];

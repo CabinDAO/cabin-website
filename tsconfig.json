@@ -20,7 +20,8 @@
       "@api/*": ["pages/api/*"],
       "@stitches": ["stitches.config.ts"],
       "@pages/*": ["pages/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
+      "@content/*": ["content/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

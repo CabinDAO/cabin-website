@@ -1,8 +1,8 @@
-import { styled } from '../../stitches.config.ts';
-import ButtonLink from '../ButtonLink';
-import ArrowLink from '../ArrowLink';
-import Wrapper from "../Wrapper";
-import bgImage from '../../public/stars.jpg';
+import { styled } from '@stitches';
+import ButtonLink from '@components/ButtonLink';
+import ArrowLink from '@components/ArrowLink';
+import Wrapper from "@components/Wrapper";
+import bgImage from '@public/stars.jpg';
 import Image from 'next/image'
 
 export default function Collaborate() {

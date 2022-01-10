@@ -1,8 +1,8 @@
-import Logo from "./Logo";
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../../components/Wrapper';
-import Navigation from './navigation';
-import footerLinks from './navigation/footerLinks';
+import Logo from "@components/layout/Logo";
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
+import Navigation from '@components/layout/navigation';
+import footerLinks from '@components/layout/navigation/footerLinks';
 
 export default function Footer() {
 

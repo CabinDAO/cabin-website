@@ -1,5 +1,4 @@
-
-import { styled } from '../stitches.config.ts';
+import { styled } from '@stitches';
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 

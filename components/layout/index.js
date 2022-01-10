@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from './Header'
-import Footer from './Footer'
-import { styled } from '../../stitches.config.ts';
+import Header from '@components/layout/Header'
+import Footer from '@components/layout/Footer'
+import { styled } from '@stitches';
 
 export default function Layout({
   children,

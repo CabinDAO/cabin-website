@@ -1,12 +1,12 @@
-import Layout from "../../components/layout";
+import Layout from "@components/layout";
 import { Wrapper } from "@cabindao/topo";
-import { styled } from "../../stitches.config";
+import { styled } from "@stitches";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import ButtonLink from "../../components/ButtonLink";
-import HeroPattern from "../../components/HeroPattern";
-import guestsOutdoor from "../../public/guestsOutdoors.jpg";
+import ButtonLink from "@components/ButtonLink";
+import HeroPattern from "@components/HeroPattern";
+import guestsOutdoor from "@public/guestsOutdoors.jpg";
 
 const Container = styled("section", {
   pt: "$12",

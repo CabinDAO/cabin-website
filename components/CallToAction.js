@@ -1,7 +1,7 @@
-import { styled } from '../stitches.config.ts';
-import Wrapper from '../components/Wrapper';
-import ButtonLink from './ButtonLink';
-import ArrowLink from './ArrowLink';
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
+import ButtonLink from '@components/ButtonLink';
+import ArrowLink from '@components/ArrowLink';
 
 export default function CallToAction() {
   return (

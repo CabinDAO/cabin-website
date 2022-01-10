@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import fireImage from '../../public/campfire.jpg';
-import sparkImage from '../../public/spark.svg';
-import { styled, keyframes } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
+import fireImage from '@public/campfire.jpg';
+import sparkImage from '@public/spark.svg';
+import { styled, keyframes } from '@stitches';
+import Wrapper from '@components/Wrapper';
 
 export default function SideImage() {
   return (

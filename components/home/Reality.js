@@ -1,8 +1,6 @@
-import Image from 'next/image'
-import bgImage from '../../public/guestsOutdoors.jpg';
-import featureImage from '../../public/guestsGroup.jpg';
-import SideImage from '../SideImage';
-
+import bgImage from '@public/guestsOutdoors.jpg';
+import featureImage from '@public/guestsGroup.jpg';
+import SideImage from '@components/SideImage';
 
 export default function Reality() {
 

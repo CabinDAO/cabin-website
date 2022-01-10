@@ -1,6 +1,6 @@
-import { styled } from "../stitches.config";
+import { styled } from "@stitches";
 import { Wrapper } from "@cabindao/topo";
-import ArrowLink from "./ArrowLink";
+import ArrowLink from "@components/ArrowLink";
 
 const Vision = ({
   title,

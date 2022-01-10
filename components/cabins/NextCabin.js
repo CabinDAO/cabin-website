@@ -1,6 +1,6 @@
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
-import CabinPeek from './CabinPeek';
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
+import CabinPeek from '@components/cabins/CabinPeek';
 
 export default function NextCabin(props) {
   return (

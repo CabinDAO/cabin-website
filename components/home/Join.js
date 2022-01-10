@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
-import ArrowLink from '../ArrowLink';
-import find from '../../public/find.svg';
-import harmonize from '../../public/harmonize.svg';
-import shape from '../../public/shape.svg';
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
+import ArrowLink from '@components/ArrowLink';
+import find from '@public/find.svg';
+import harmonize from '@public/harmonize.svg';
+import shape from '@public/shape.svg';
 
 export default function Join() {
   return (

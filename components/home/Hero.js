@@ -1,7 +1,7 @@
-import { styled } from "../../stitches.config.ts";
-import Wrapper from "../Wrapper";
-import heroImage from "../../public/heroImage.jpg";
-import HeroFrame from "../../components/HeroFrame";
+import { styled } from "@stitches";
+import Wrapper from "@components/Wrapper";
+import heroImage from "@public/heroImage.jpg";
+import HeroFrame from "@components/HeroFrame";
 
 export default function Hero() {
   return (

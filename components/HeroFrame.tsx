@@ -1,4 +1,4 @@
-import { styled } from "../stitches.config";
+import { styled } from "@stitches";
 import Image from "next/image";
 
 const HeroFrame = ({

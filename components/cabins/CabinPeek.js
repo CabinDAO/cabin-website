@@ -1,6 +1,6 @@
-import { styled } from '../../stitches.config.ts';
+import { styled } from '@stitches';
 import Image from 'next/image'
-import ArrowLink from '../ArrowLink';
+import ArrowLink from '@components/ArrowLink';
 
 export default function CabinPeek({ name, slug, summary, image, imageAlt }) {
   return (

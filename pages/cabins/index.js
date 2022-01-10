@@ -1,10 +1,10 @@
-import { styled } from '../../stitches.config.ts';
-import Layout from '../../components/Layout'
-import Wrapper from '../../components/Wrapper';
-import CallToAction from '../../components/CallToAction';
-import CabinPeek from '../../components/cabins/CabinPeek';
-import BackLink from '../../components/BackLink';
-import { theCabin, theContainer } from '../../content/cabins';
+import { styled } from '@stitches';
+import Layout from '@components/Layout'
+import Wrapper from '@components/Wrapper';
+import CallToAction from '@components/CallToAction';
+import CabinPeek from '@components/cabins/CabinPeek';
+import BackLink from '@components/BackLink';
+import { theCabin, theContainer } from '@content/cabins';
 
 export default function Cabins() {
   return (

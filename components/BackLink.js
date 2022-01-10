@@ -1,8 +1,7 @@
-
-import { styled } from '../stitches.config.ts';
+import { styled } from '@stitches';
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
-import Wrapper from './Wrapper';
+import Wrapper from '@components/Wrapper';
 
 export default function BackLink({ 
   label, 

@@ -1,5 +1,5 @@
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
+import { styled } from '@stitches';
+import Wrapper from '@components/Wrapper';
 
 export default function Amenities({ list }) {
   return (

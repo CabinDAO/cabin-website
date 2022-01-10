@@ -1,14 +1,14 @@
-import Layout from "../../../components/layout";
+import Layout from "@components/layout";
 import { Button, Wrapper, Modal, Input } from "@cabindao/topo";
 import { ArrowLeftIcon, CheckCircledIcon } from "@radix-ui/react-icons";
-import { styled } from "../../../stitches.config";
-import HeroFrame from "../../../components/HeroFrame";
-import HeroPattern from "../../../components/HeroPattern";
+import { styled } from "@stitches";
+import HeroFrame from "@components/HeroFrame";
+import HeroPattern from "@components/HeroPattern";
 import { useCallback, useState } from "react";
 import { useRouter } from "next/dist/client/router";
-import guestsOutdoor from "../../../public/guestsOutdoors.jpg";
-import Vision from "../../../components/Vision";
-import SideImage from "../../../components/SideImage";
+import guestsOutdoor from "@public/guestsOutdoors.jpg";
+import Vision from "@components/Vision";
+import SideImage from "@components/SideImage";
 
 const Container = styled("section", {
   pt: "$12",

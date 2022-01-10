@@ -1,16 +1,16 @@
-import node from '../public/node.jpg';
-import og1 from '../public/galleryImages/og1.jpg';
-import og2 from '../public/galleryImages/og2.jpg';
-import og3 from '../public/galleryImages/og3.jpg';
-import og4 from '../public/galleryImages/og4.jpg';
-import og5 from '../public/galleryImages/og5.jpg';
-import og6 from '../public/galleryImages/og6.jpg';
-import og7 from '../public/galleryImages/og7.jpg';
-import og8 from '../public/galleryImages/og8.jpg';
-import og9 from '../public/galleryImages/og9.jpg';
-import og10 from '../public/galleryImages/og10.jpg';
-import og11 from '../public/galleryImages/og11.jpg';
-import og12 from '../public/galleryImages/og12.jpg';
+import node from '@public/node.jpg';
+import og1 from '@public/galleryImages/og1.jpg';
+import og2 from '@public/galleryImages/og2.jpg';
+import og3 from '@public/galleryImages/og3.jpg';
+import og4 from '@public/galleryImages/og4.jpg';
+import og5 from '@public/galleryImages/og5.jpg';
+import og6 from '@public/galleryImages/og6.jpg';
+import og7 from '@public/galleryImages/og7.jpg';
+import og8 from '@public/galleryImages/og8.jpg';
+import og9 from '@public/galleryImages/og9.jpg';
+import og10 from '@public/galleryImages/og10.jpg';
+import og11 from '@public/galleryImages/og11.jpg';
+import og12 from '@public/galleryImages/og12.jpg';
 
 export const theCabin = {
   name: 'The Cabin',
@@ -90,19 +90,19 @@ export const theCabin = {
   ],
 }
 
-import containerImage from '../public/containerCabin.jpg';
-import cont1 from '../public/galleryImages/cont1.jpg';
-import cont2 from '../public/galleryImages/cont2.jpg';
-import cont3 from '../public/galleryImages/cont3.jpg';
-import cont4 from '../public/galleryImages/cont4.jpg';
-import cont5 from '../public/galleryImages/cont5.jpg';
-import cont6 from '../public/galleryImages/cont6.jpg';
-import cont7 from '../public/galleryImages/cont7.jpg';
-import cont8 from '../public/galleryImages/cont8.jpg';
-import cont9 from '../public/galleryImages/cont9.jpg';
-import cont10 from '../public/galleryImages/cont10.jpg';
-import cont11 from '../public/galleryImages/cont11.jpg';
-import cont12 from '../public/galleryImages/cont12.jpg';
+import containerImage from '@public/containerCabin.jpg';
+import cont1 from '@public/galleryImages/cont1.jpg';
+import cont2 from '@public/galleryImages/cont2.jpg';
+import cont3 from '@public/galleryImages/cont3.jpg';
+import cont4 from '@public/galleryImages/cont4.jpg';
+import cont5 from '@public/galleryImages/cont5.jpg';
+import cont6 from '@public/galleryImages/cont6.jpg';
+import cont7 from '@public/galleryImages/cont7.jpg';
+import cont8 from '@public/galleryImages/cont8.jpg';
+import cont9 from '@public/galleryImages/cont9.jpg';
+import cont10 from '@public/galleryImages/cont10.jpg';
+import cont11 from '@public/galleryImages/cont11.jpg';
+import cont12 from '@public/galleryImages/cont12.jpg';
 
 export const theContainer = {
   name: 'The Container',
