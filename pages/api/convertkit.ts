@@ -12,10 +12,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             api_key: process.env.CONVERTKIT_API_KEY,
             email: req.body.email,
             first_name: req.body.name.split(" ")[0],
-            /*fields: {
+            fields: {
               organization: req.body.organization
-            } 
-            */
+            }
           }
         )
         .then((sub) =>
