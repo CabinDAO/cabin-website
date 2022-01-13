@@ -6,7 +6,7 @@ export default function Footer() {
 
   const nav = (
     <Nav>
-      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/%E2%82%A1ABIN">
+      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/cabin">
         Wiki
       </a>
       <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
