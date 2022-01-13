@@ -1,4 +1,4 @@
-import Layout from '@components/Layout'
+import Layout from '@components/layout'
 import CallToAction from '@components/CallToAction';
 import CabinIntro from '@components/cabins/CabinIntro';
 import Amenities from '@components/cabins/CabinAmenities';

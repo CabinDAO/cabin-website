@@ -1,5 +1,5 @@
 import { styled } from '@stitches';
-import Layout from '@components/Layout'
+import Layout from '@components/layout'
 import Wrapper from '@components/Wrapper';
 import CallToAction from '@components/CallToAction';
 import CabinPeek from '@components/cabins/CabinPeek';
