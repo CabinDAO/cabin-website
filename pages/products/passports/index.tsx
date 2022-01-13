@@ -2,11 +2,12 @@ import Layout from "../../../components/Layout";
 import { Button, Wrapper, Modal, Input } from "@cabindao/topo";
 import { ArrowLeftIcon, CheckCircledIcon } from "@radix-ui/react-icons";
 import { styled } from "../../../stitches.config";
-import HeroFrame from "../../../components/HeroFrame";
 import HeroPattern from "../../../components/HeroPattern";
 import { useCallback, useState } from "react";
 import { useRouter } from "next/dist/client/router";
-import guestsOutdoor from "../../../public/guestsOutdoors.jpg";
+import controlAccessImg from "../../../public/products/passports/g-control-access.png";
+import memWoTokensImg from "../../../public/products/passports/g-mem-wo-tokens.png";
+import mgOnePlaceImg from "../../../public/products/passports/g-mg-one-place.png";
 import Vision from "../../../components/Vision";
 import SideImage from "../../../components/SideImage";
 import axios from "axios";
@@ -37,6 +38,7 @@ const Header = styled("h1", {
   mt: 0,
   mb: 24,
   background: "$sand",
+  textAlign: "center",
 });
 
 const HeroContainer = styled("div", {
@@ -100,7 +102,6 @@ const ProductHero = ({ openModal }: { openModal: () => void }) => {
               </HeaderBackground>
             </ProductHeading>
           </HeroContainer>
-          <HeroFrame src={guestsOutdoor} alt="A real view of a cabin" />
         </>
       </Wrapper>
     </Container>
@@ -108,61 +109,24 @@ const ProductHero = ({ openModal }: { openModal: () => void }) => {
 };
 
 const FeatureContainer = styled("div", {
-  height: "900px",
-  width: "100%",
   display: "flex",
-  flexDirection: "column",
   marginBottom: "72px",
-});
-
-const FeatureContent = styled("div", {
-  display: "flex",
-  height: "77.78%",
-});
-
-const Cell = styled("div", {
-  boxSizing: "border-box",
-  border: "1px solid $sprout",
-  flexGrow: 1,
+  justifyContent: "space-between",
 });
 
 const FeatureCellsContainer = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  width: "27.27%",
+  width: "304px",
 });
 
-const FeatureBorderContainer = styled("div", {
-  display: "flex",
-  variants: {
-    vertical: {
-      true: {
-        flexDirection: "column",
-      },
-    },
-  },
+const FeatureCellContainer = styled("div", {
+  boxSizing: "border-box",
   flexGrow: 1,
-});
-
-const FeatureBorder = ({
-  count,
-  vertical,
-}: {
-  count: number;
-  vertical?: boolean;
-}) => (
-  <FeatureBorderContainer vertical={vertical}>
-    {Array(count)
-      .fill(null)
-      .map((_, i) => (
-        <Cell key={i} />
-      ))}
-  </FeatureBorderContainer>
-);
-
-const FeatureCellContainer = styled(Cell, {
-  padding: 40,
-  height: "50%",
+  background: "rgb(253,198,123,0.1)",
+  borderTop: "4px solid $sprout",
+  padding: "32px",
+  height: "312px",
+  marginBottom: "40px",
+  boxShadow: '0px 4px 0px #00000008;'
 });
 
 const Text = styled("div", {
@@ -177,6 +141,7 @@ const Text = styled("div", {
     fontSize: 20,
     lineHeight: "32px",
     margin: 0,
+    marginBottom: "8px",
   },
 });
 
@@ -193,9 +158,6 @@ const FeatureCell = ({
 }) => {
   return (
     <FeatureCellContainer>
-      <div>
-        <CheckCircledIcon />
-      </div>
       <Text>
         <h2>{title}</h2>
         <FeatureParagraphContent>{content}</FeatureParagraphContent>
@@ -206,44 +168,43 @@ const FeatureCell = ({
 
 const Features = () => {
   return (
-    <FeatureContainer>
-      <FeatureBorder count={11} />
-      <FeatureContent>
-        <FeatureBorder count={7} vertical />
-        <FeatureCellsContainer>
-          <FeatureCell
-            title="Create and mint NFTs"
-            content="Whether you have a single membership tier or a complex access system, NFT Passports helps you seamlessly mint and integrate your community’s NFTs."
-          />
-          <FeatureCell
-            title="Public mint page"
-            content="Have a stable link to share with your community so they can easily mint public NFTs without you needing to build or maintain your own page. "
-          />
-        </FeatureCellsContainer>
-        <FeatureCellsContainer>
-          <FeatureCell
-            title="Set limits"
-            content="You decide if an NFT is available to the public, or only to certain wallet addresses. Perfect for private passes or other segmenting needs."
-          />
-          <FeatureCell
-            title="Manage NFTs"
-            content="See all of your NFT Passports in one place so you can manage existing memberships and create new types."
-          />
-        </FeatureCellsContainer>
-        <FeatureCellsContainer>
-          <FeatureCell
-            title="Sell memberships"
-            content="Using your community to generate revenue? Sell your public NFTs by setting a mint fee, and combine membership payment and access in one transaction."
-          />
-          <FeatureCell
-            title="Unbundle membership and governance"
-            content="Using NFT Passports to represent membership separates membership from governance and incentive functions, allowing you to mitigate the risk of tokens until there is a clear reason to use them."
-          />
-        </FeatureCellsContainer>
-        <FeatureBorder count={7} vertical />
-      </FeatureContent>
-      <FeatureBorder count={11} />
-    </FeatureContainer>
+    <Container>
+      <Wrapper>
+        <Header>Core Features</Header>
+        <FeatureContainer>
+          <FeatureCellsContainer>
+            <FeatureCell
+              title="Create and mint NFTs"
+              content="Whether you have a single membership tier or a complex access system, NFT Passports helps you seamlessly mint and integrate your community’s NFTs."
+            />
+            <FeatureCell
+              title="Public mint page"
+              content="Have a stable link to share with your community so they can easily mint public NFTs without you needing to build or maintain your own page. "
+            />
+          </FeatureCellsContainer>
+          <FeatureCellsContainer>
+            <FeatureCell
+              title="Set limits"
+              content="You decide if an NFT is available to the public, or only to certain wallet addresses. Perfect for private passes or other segmenting needs."
+            />
+            <FeatureCell
+              title="Manage NFTs"
+              content="See all of your NFT Passports in one place so you can manage existing memberships and create new types."
+            />
+          </FeatureCellsContainer>
+          <FeatureCellsContainer>
+            <FeatureCell
+              title="Sell memberships"
+              content="Using your community to generate revenue? Sell your public NFTs by setting a mint fee, and combine membership payment and access in one transaction."
+            />
+            <FeatureCell
+              title="Unbundle membership and governance"
+              content="Using NFT Passports to represent membership separates membership from governance and incentive functions, allowing you to mitigate the risk of tokens until there is a clear reason to use them."
+            />
+          </FeatureCellsContainer>
+        </FeatureContainer>
+      </Wrapper>
+    </Container>
   );
 };
 
@@ -299,18 +260,18 @@ const PassportsLandingPage = () => {
       <SideImage
         title="Represent membership without tokens"
         content="Keep your community on-chain without worrying about securities regulations, airdrops, or inaccessible token prices. NFT Passports avoid these issues entirely by giving members a simple way to represent membership while leaving you the flexibility to use tokens for governance, incentives, or other purposes."
-        featureImage={guestsOutdoor}
+        featureImage={memWoTokensImg}
       />
       <SideImage
         title="Control content and access"
         content="Easily onboard and classify new and existing members. Whether your community is open to anyone, or you want to keep some parts private, NFT Passports give you the flexibility to create NFTs for public, gated, and even paid memberships."
-        featureImage={guestsOutdoor}
+        featureImage={controlAccessImg}
         reversed
       />
       <SideImage
         title="Mint and manage in one place"
         content="Mint and manage your NFT Passports in one location. Your use of NFT Passports includes a user-friendly stable link for public minting, so you won’t need to worry about building a custom front-end for your contracts. And your management is centralized, too, with a private dashboard where you can create new and see all existing NFTs in one place without having to wade through Etherscan."
-        featureImage={guestsOutdoor}
+        featureImage={mgOnePlaceImg}
       />
       <Features />
       <FinalCta openModal={openModal} />
@@ -320,13 +281,12 @@ const PassportsLandingPage = () => {
         setIsOpen={setIsOpen}
         confirmText="Send request"
         onConfirm={() => {
-          axios
-            .post("/api/convertkit", {
-              formId: "2893401",
-              name,
-              organization,
-              email,
-            });
+          axios.post("/api/convertkit", {
+            formId: "2893401",
+            name,
+            organization,
+            email,
+          });
         }}
       >
         <AccessNameRow>
