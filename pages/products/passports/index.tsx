@@ -110,6 +110,7 @@ const ProductHero = ({ openModal }: { openModal: () => void }) => {
 
 const FeatureContainer = styled("div", {
   display: "flex",
+  marginTop: "24px",
   marginBottom: "72px",
   justifyContent: "space-between",
 });
