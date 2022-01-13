@@ -9,8 +9,7 @@ export default function CallToAction() {
       <Container>
         <h2>Meet up and collaborate in Texas Hill Country</h2>
         <Actions>
-          <ButtonLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" label="Purchase a passport" />
-          <ArrowLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" color="forest" label="Learn more" />
+          <ButtonLink external target="_blank" href="https://discord.com/invite/N6hVmFygjR" label="Join the community" />
         </Actions>
       </Container>
     </Wrapper>

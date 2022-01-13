@@ -8,7 +8,8 @@ export default function Past() {
       <Wrapper>
         <Content>
           <Intro>
-            <h2>Past initiatives</h2>
+            <h2>Community articles</h2>
+            <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz" label="Explore all media" />
           </Intro>
           <Features>
             <Feature>
@@ -43,7 +44,6 @@ const Container = styled('section', {
 
 const Content = styled('div', {
   position: 'relative',
-  color: '$sand',
   zIndex: '$1',
   border: '1px solid $sprout',
   br: '$2',
@@ -69,12 +69,16 @@ const Intro = styled('div', {
   borderBottom: '1px solid $sprout',
   position: 'relative',
   zIndex: '$1',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
   h2: {
     m: 0,
     fontSize: '$xxl',
     fontFamily: '$mono',
     fontWeight: '$600',
     lineHeight: '1.4',
+    color: '$sand',
   },
   '@md': {
     px: '$10',
@@ -109,6 +113,7 @@ const Feature = styled('div', {
     fontFamily: '$mono',
     fontWeight: '$600',
     lineHeight: '1.4',
+    color: '$sand',
   },
   '&:last-of-type': {
     border: 'none',
