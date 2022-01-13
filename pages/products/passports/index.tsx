@@ -9,6 +9,7 @@ import { useRouter } from "next/dist/client/router";
 import guestsOutdoor from "../../../public/guestsOutdoors.jpg";
 import Vision from "../../../components/Vision";
 import SideImage from "../../../components/SideImage";
+import axios from "axios";
 
 const Container = styled("section", {
   pt: "$12",
@@ -151,7 +152,11 @@ const FeatureBorder = ({
   vertical?: boolean;
 }) => (
   <FeatureBorderContainer vertical={vertical}>
-    {Array(count).fill(<Cell />)}
+    {Array(count)
+      .fill(null)
+      .map((_, i) => (
+        <Cell key={i} />
+      ))}
   </FeatureBorderContainer>
 );
 
@@ -281,9 +286,9 @@ const AccessInput = styled(Input, {
 const PassportsLandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = useCallback(() => setIsOpen(true), [setIsOpen]);
-  const [name /*setName*/] = useState("");
-  const [organization /*setOrganization*/] = useState("");
-  const [email /*setEmail*/] = useState("");
+  const [name, setName] = useState("");
+  const [organization, setOrganization] = useState("");
+  const [email, setEmail] = useState("");
   return (
     <Layout>
       <ProductHero openModal={openModal} />
@@ -315,35 +320,36 @@ const PassportsLandingPage = () => {
         setIsOpen={setIsOpen}
         confirmText="Send request"
         onConfirm={() => {
-          console.log(
-            "TODO - create api call for convertkit",
-            name,
-            organization,
-            email
-          );
+          axios
+            .post("/api/convertkit", {
+              formId: "2893401",
+              name,
+              organization,
+              email,
+            });
         }}
       >
         <AccessNameRow>
           <AccessInput
             value={name}
             label="Name"
-            onChange={() => {
-              // setName(e.target.value)
+            onChange={(e) => {
+              setName(e.target.value);
             }}
           />
           <AccessInput
             value={organization}
             label="Organization"
-            onChange={() => {
-              // setOrganization(e.target.value)
+            onChange={(e) => {
+              setOrganization(e.target.value);
             }}
           />
         </AccessNameRow>
         <AccessInput
           value={email}
           label="Email"
-          onChange={() => {
-            // setEmail(e.target.value)
+          onChange={(e) => {
+            setEmail(e.target.value);
           }}
         />
       </Modal>
