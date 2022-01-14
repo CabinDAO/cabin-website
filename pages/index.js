@@ -24,9 +24,9 @@ export default function Home() {
       <Contribute />
       <Spark />
       <Join />
-      <Past />
       <Collaborate />
       <Node />
+      <Past />
     </Layout>
   );
 }

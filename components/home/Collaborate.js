@@ -22,11 +22,10 @@ export default function Collaborate() {
             Meet up and collaborate <abbr title="in real life">IRL</abbr>
           </h2> 
           <p>
-            Access the high-bandwidth nature of IRL collaboration by purchasing a passport for your DAO, guild, team or squad and help us fund our vision of growing cabins into decentralized internet-first cities.
+            We believe in the power of bringing people together IRL, especially for decentralized and distributed teams. While the vast majority of a DAO&apos;s work should be accomplished via asynchronous, remote, distributed work, there is tremendous leverage in getting together face-to-face for strategic thinking, team bonding, and deep collaboration. Cabin is the DAO to help other DAOs accelerate their work by getting together IRL.
           </p>
           <Actions>
-            <ButtonLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" label="Purchase a passport" />
-            <ArrowLink external target="_blank" href="https://creators.mirror.xyz/wY-a-RYJ7Av2YnaSZ0vM8s5dsIhXC9PXDOBftBJRA1g" color="wheat" label="Learn more" />
+            <ButtonLink external target="_blank" href="https://discord.com/invite/N6hVmFygjR" label="Join the community" />
           </Actions>
         </Content>
       </Wrapper>
@@ -64,7 +63,7 @@ const Content = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  maxWidth: '40rem',
+  maxWidth: '48rem',
   margin: '0 auto',
   position: 'relative',
   zIndex: '$1',
