@@ -113,20 +113,19 @@ const ProductHero = ({ openModal }: { openModal: () => void }) => {
 const FeatureRows = styled("div", {
   display: "grid",
   gridAutoRows: "1fr",
-  marginBottom: "40px",
+  marginBottom: "64px",
 });
 
 const FeatureRow = styled("div", {
   display: "flex",
   flex: "1 1 0px",
   marginTop: "24px",
-  marginBottom: "40px",
+  marginBottom: "16px",
   justifyContent: "space-between",
-  "& > div": {
-    marginRight: 40,
-  },
-  "& > div:last-child": {
-    marginRight: "unset",
+  flexDirection: "column",
+  gap: "40px",
+  "@md": {
+    flexDirection: "row",
   },
 });
 
@@ -222,9 +221,14 @@ const FinalCtaContent = styled("div", {
   border: "1px solid $sprout",
   borderRadius: "48px",
   py: "64px",
-  px: "204px",
   marginBottom: "$20",
+  width: "100%",
+});
+
+const FinalCtaContentContainer = styled("div", {
   textAlign: "center",
+  maxWidth: "588px",
+  width: "100%",
 });
 
 const FinalCta = ({ openModal }: { openModal: () => void }) => {
@@ -232,10 +236,12 @@ const FinalCta = ({ openModal }: { openModal: () => void }) => {
     <Container>
       <Wrapper>
         <FinalCtaContent>
-          <Header>Unbundle membership from your social token</Header>
-          <Button tone={"wheat"} type="primary" onClick={openModal}>
-            Request Beta Access
-          </Button>
+          <FinalCtaContentContainer>
+            <Header>Unbundle membership from your social token</Header>
+            <Button tone={"wheat"} type="primary" onClick={openModal}>
+              Request Beta Access
+            </Button>
+          </FinalCtaContentContainer>
         </FinalCtaContent>
       </Wrapper>
     </Container>
