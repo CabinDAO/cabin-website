@@ -15,7 +15,7 @@ export default function Cabins() {
           </div>
           <div>
             <p>
-              Cabin’s first city node sits on 28-acres of Texas Hill Country,  about 45 minutes outside of Austin. We like to think of the land, infrastructure, and buildings as our hardware stack. The land is a beautiful piece of nature with a seasonal creek, wildlife, and amazing stargazing.
+              Cabin&apos;s first city node sits on 28-acres of Texas Hill Country,  about 45 minutes outside of Austin. We like to think of the land, infrastructure, and buildings as our hardware stack. The land is a beautiful piece of nature with a seasonal creek, wildlife, and amazing stargazing.
             </p>
             <p>
               Our city node has off-grid infrastructure, including solar energy, water and sewage treatment systems, and a private internet network providing &gt;200 Mbps of bandwidth. On top of this, we&apos;ve built custom modular prefab housing, designed from the ground up for a co-living community of independent creators. 
