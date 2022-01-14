@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Link from 'next/link'
 import { Wrapper, Button, Input } from "@cabindao/topo";
 import { styled } from '../stitches.config.ts';
 import { useState } from "react";
@@ -140,15 +141,15 @@ export default function Footer() {
 
   const cabin = (
     <>
-      <a href="/vision"> 
-        Vision
-      </a>
-      <a href="/contribute">
-        Contribute
-      </a>
-      <a href="/visit">
-        Visit
-      </a>
+      <Link href="/vision"> 
+        <a>Vision</a>
+      </Link>
+      <Link href="/contribute">
+        <a>Contribute</a>
+      </Link>
+      <Link href="/visit">
+        <a>Visit</a>
+      </Link>
       <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
         Media
       </a>
