@@ -22,7 +22,7 @@ export default function Collaborate() {
             Meet up and collaborate <abbr title="in real life">IRL</abbr>
           </h2> 
           <p>
-            We believe in the power of bringing people together IRL, especially for decentralized and distributed teams. While the vast majority of a DAO's work should be accomplished via asynchronous, remote, distributed work, there is tremendous leverage in getting together face-to-face for strategic thinking, team bonding, and deep collaboration. Cabin is the DAO to help other DAOs accelerate their work by getting together IRL.
+            We believe in the power of bringing people together IRL, especially for decentralized and distributed teams. While the vast majority of a DAO&apos;s work should be accomplished via asynchronous, remote, distributed work, there is tremendous leverage in getting together face-to-face for strategic thinking, team bonding, and deep collaboration. Cabin is the DAO to help other DAOs accelerate their work by getting together IRL.
           </p>
           <Actions>
             <ButtonLink external target="_blank" href="https://discord.com/invite/N6hVmFygjR" label="Join the community" />
