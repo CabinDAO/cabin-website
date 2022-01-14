@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import UnderConstruction from "../components/UnderConstruction";
 
-const VisionPage = () => {
+const ContributePage = () => {
   return (
     <Layout>
       <UnderConstruction />
@@ -9,4 +9,4 @@ const VisionPage = () => {
   );
 };
 
-export default VisionPage;
+export default ContributePage;
