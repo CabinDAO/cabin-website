@@ -169,7 +169,7 @@ export default function Footer() {
 
   const resources = (
     <>
-      <a  external target="_blank" href="https://app.clarity.so/cabin"> 
+      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/cabin"> 
         Wiki
       </a>
       <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
