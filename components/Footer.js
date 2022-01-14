@@ -158,12 +158,12 @@ export default function Footer() {
 
   const products = (
     <>
-      <a href="/products/passports">
-        NFT Passports
-      </a> 
-      <a href="/products/daocamp">
-        DAO Camp
-      </a> 
+      <Link href="/products/passports">
+        <a>NFT Passports</a>
+      </Link> 
+      <Link href="/products/daocamp">
+        <a>DAO Camp</a>
+      </Link> 
     </>
   ); 
 
