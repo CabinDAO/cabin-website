@@ -19,7 +19,7 @@ export default function Header() {
       <Link href="/visit">
         <a>Visit</a>
       </Link>
-      <a target="_blank" without rel="noreferrer" href="https://creators.mirror.xyz/">
+      <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
         Media
       </a>
       <Link href="/products">

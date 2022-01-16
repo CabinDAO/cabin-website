@@ -19,10 +19,6 @@ export default function UnderConstruction() {
   );
 }
 
-export async function getServerSideProps() {
-  return { props: {} };
-}
-
 const Container = styled("section", {
   pt: "$8",
   pb: "$12",
