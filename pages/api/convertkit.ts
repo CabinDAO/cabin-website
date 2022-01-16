@@ -11,7 +11,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           {
             api_key: process.env.CONVERTKIT_API_KEY,
             email: req.body.email,
-            first_name: req.body.name.split(" ")[0],
+            first_name: req.body.name ? req.body.name.split(" ")[0] : undefined,
             fields: {
               organization: req.body.organization
             }

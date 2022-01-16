@@ -129,7 +129,7 @@ export default function Footer() {
     setError("");
     try {
       await axios.post("/api/convertkit", {
-        formId: "",
+        formId: "2292308",
         email,
       });
       setConfirmed(true);
