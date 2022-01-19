@@ -8,6 +8,9 @@ import { useRouter } from "next/dist/client/router";
 import controlAccessImg from "../../../public/products/passports/g-control-access.png";
 import memWoTokensImg from "../../../public/products/passports/g-mem-wo-tokens.png";
 import mgOnePlaceImg from "../../../public/products/passports/g-mg-one-place.png";
+import ControlAccessSvg from "../../../public/products/passports/g-control-access.svg";
+import MemWoTokensSvg from "../../../public/products/passports/g-mem-wo-tokens.svg";
+import MgOnePlaceSvg from "../../../public/products/passports/g-mg-one-place.svg";
 import Vision from "../../../components/Vision";
 import SideImage from "../../../components/SideImage";
 import axios from "axios";
@@ -274,17 +277,20 @@ const PassportsLandingPage = () => {
         title="Represent membership without tokens"
         content="Keep your community on-chain without worrying about securities regulations, airdrops, or inaccessible token prices. NFT Passports avoid these issues entirely by giving members a simple way to represent membership while leaving you the flexibility to use tokens for governance, incentives, or other purposes."
         featureImage={memWoTokensImg}
+        FeatureSvg={MemWoTokensSvg}
       />
       <SideImage
         title="Control content and access"
         content="Easily onboard and classify new and existing members. Whether your community is open to anyone, or you want to keep some parts private, NFT Passports give you the flexibility to create NFTs for public, gated, and even paid memberships."
         featureImage={controlAccessImg}
+        FeatureSvg={ControlAccessSvg}
         reversed
       />
       <SideImage
         title="Mint and manage in one place"
         content="Mint and manage your NFT Passports in one location. Your use of NFT Passports includes a user-friendly stable link for public minting, so you won’t need to worry about building a custom front-end for your contracts. And your management is centralized, too, with a private dashboard where you can create new and see all existing NFTs in one place without having to wade through Etherscan."
         featureImage={mgOnePlaceImg}
+        FeatureSvg={MgOnePlaceSvg}
       />
       <Features />
       <FinalCta openModal={openModal} />

@@ -6,7 +6,8 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import ButtonLink from "../../components/ButtonLink";
 import HeroPattern from "../../components/HeroPattern";
-import guestsOutdoor from "../../public/guestsOutdoors.jpg";
+import { useEffect, useRef, useState } from "react";
+import PassportsSvg from "../../public/products/passports/thumbnail.svg";
 
 const Container = styled("section", {
   pt: "$12",
@@ -54,7 +55,7 @@ type ProductData = {
 const PRODUCTS: ProductData[] = [
   {
     name: "NFT Passports",
-    description: "Create and mint NFTs for membership—without the tech stuff",
+    description: "With NFT Passports, we're changing what's possible for on-chain membership, giving you one place to easily create, mint, and manage your membership NFTs—no fancy tech stuff required.",
     path: "passports",
   },
 ];
@@ -74,7 +75,23 @@ const ProductImageContainer = styled("div", {
   minWidth: "50%",
 });
 
+const ProductThumbnail = styled(Image, {
+  borderRadius: '48px',
+})
+
 const ProductInfo = (props: ProductData) => {
+  const [isSvg, setIsSvg] = useState(false);
+  const isSvgRef = useRef(false);
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && (e.key === "r" || e.code === "KeyR")) {
+        setIsSvg(!isSvgRef.current);
+        isSvgRef.current = !isSvgRef.current;
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    });
+  }, [setIsSvg, isSvgRef]);
   return (
     <ProductInfoContainer>
       <Wrapper>
@@ -89,12 +106,16 @@ const ProductInfo = (props: ProductData) => {
             </Link>
           </div>
           <ProductImageContainer>
-            <Image
-              src={guestsOutdoor}
-              alt={`Image for ${props.name}`}
-              width={"100%"}
-              height={"100%"}
-            />
+            {isSvg ? (
+              <PassportsSvg />
+            ) : (
+              <ProductThumbnail
+                src={`/products/${props.path}/thumbnail.png`}
+                alt={`Image for ${props.name}`}
+                width={488}
+                height={364}
+              />
+            )}
           </ProductImageContainer>
         </ProductInfoInnerContainer>
       </Wrapper>

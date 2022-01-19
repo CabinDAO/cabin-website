@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { styled } from "../stitches.config";
 import { Wrapper } from "@cabindao/topo";
+import { useEffect, useRef, useState } from "react";
 
-type ImageSrc = Parameters<typeof Image>[0]['src'];
+type ImageSrc = Parameters<typeof Image>[0]["src"];
 
 const SideImage = ({
   title,
@@ -12,15 +13,29 @@ const SideImage = ({
   featureImage,
   featureImageAlt = "No Image Found",
   reversed = false,
+  FeatureSvg,
 }: {
   title: React.ReactNode;
   content: React.ReactNode;
   bgImage?: ImageSrc;
   bgImageAlt?: string;
   featureImage: ImageSrc;
+  FeatureSvg?: any;
   featureImageAlt?: string;
   reversed?: boolean;
 }) => {
+  const [isSvg, setIsSvg] = useState(false);
+  const isSvgRef = useRef(false);
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && (e.key === "r" || e.code === "KeyR")) {
+        setIsSvg(!isSvgRef.current);
+        isSvgRef.current = !isSvgRef.current;
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    });
+  }, [setIsSvg, isSvgRef]);
   return (
     <Container reversed={reversed}>
       {bgImage && (
@@ -39,13 +54,17 @@ const SideImage = ({
             <p>{content}</p>
           </Text>
           <Frame>
-            <Image
-              src={featureImage}
-              alt={featureImageAlt}
-              layout="responsive"
-              width={492}
-              height={327}
-            />
+            {isSvg ? (
+              <FeatureSvg />
+            ) : (
+              <Image
+                src={featureImage}
+                alt={featureImageAlt}
+                layout="responsive"
+                width={492}
+                height={327}
+              />
+            )}
           </Frame>
         </Content>
       </Wrapper>
