@@ -1,6 +1,6 @@
 import Layout from "../../../components/Layout";
 import { Button, Wrapper, Modal, Input } from "@cabindao/topo";
-import { ArrowLeftIcon, CheckCircledIcon } from "@radix-ui/react-icons";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { styled } from "../../../stitches.config";
 import HeroPattern from "../../../components/HeroPattern";
 import { useCallback, useState } from "react";

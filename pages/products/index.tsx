@@ -6,7 +6,6 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import ButtonLink from "../../components/ButtonLink";
 import HeroPattern from "../../components/HeroPattern";
-import { useEffect, useRef, useState } from "react";
 
 const Container = styled("section", {
   pt: "$12",
