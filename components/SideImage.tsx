@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { styled } from "../stitches.config";
 import { Wrapper } from "@cabindao/topo";
+import { useEffect, useRef, useState } from "react";
 
-type ImageSrc = Parameters<typeof Image>[0]['src'];
+type ImageSrc = Parameters<typeof Image>[0]["src"];
 
 const SideImage = ({
   title,
