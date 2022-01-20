@@ -150,6 +150,7 @@ const Text = styled("div", {
     lineHeight: "32px",
     margin: 0,
     marginBottom: "8px",
+    fontFamily: "$mono",
   },
 });
 
