@@ -10,20 +10,20 @@ export default function Header() {
 
   const nav = (
     <Nav>
-      <Link href="/#about">
-        <a>About</a>
+      <Link href="/vision">
+        <a>Vision</a>
       </Link>
+      <Link href="/contribute">
+        <a>Contribute</a>
+      </Link>
+      <Link href="/visit">
+        <a>Visit</a>
+      </Link>
+      <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
+        Media
+      </a>
       <Link href="/products">
         <a>Products</a>
-      </Link>
-      <Link href="/#community">
-        <a>Community</a>
-      </Link>
-      <Link href="/#initiatives">
-        <a>Initiatives</a>
-      </Link>
-      <Link href="/#passports">
-        <a>Passports</a>
       </Link>
     </Nav>
   );
