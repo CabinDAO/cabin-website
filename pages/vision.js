@@ -181,7 +181,7 @@ const VisionPage = () => {
             <Frame>
               <Image
                 src={visionImage}
-                alt="Sime trees backlit by a sunrise"
+                alt="Some trees backlit by a sunrise"
                 layout="responsive"
                 width={984}
                 height={340}
@@ -209,7 +209,7 @@ const VisionPage = () => {
           <Frame>
             <Image
               src={visionStepImage}
-              alt="Sime trees backlit by a sunrise"
+              alt="People sitting around a table solving problems"
               layout="responsive"
               width={984}
               height={340}
