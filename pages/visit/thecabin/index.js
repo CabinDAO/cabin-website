@@ -11,7 +11,7 @@ export default function TheCabin() {
   const { amenities, gallery, ...others } = theCabin;
   return (
     <Layout>
-      <BackLink label="Texas Hill Country" href="/cabins" />
+      <BackLink label="Texas Hill Country" href="/visit" />
       <CabinIntro { ...others } />
       <Gallery images={ gallery } />
       <Amenities list={amenities} />

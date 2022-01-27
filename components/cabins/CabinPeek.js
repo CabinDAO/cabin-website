@@ -20,7 +20,7 @@ export default function CabinPeek({ name, slug, summary, image, imageAlt }) {
         </div>
         <div>
           <p>{summary}</p>
-          <ArrowLink href={`/cabins/${slug}`} color="forest" label="Learn more" />
+          <ArrowLink href={`/visit/${slug}`} color="forest" label="Learn more" />
         </div>
       </CabinContent>
     </Cabin>
