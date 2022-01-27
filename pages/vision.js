@@ -192,7 +192,7 @@ const VisionPage = () => {
             <div>
               <h2>What defines a city?</h2>
               <p>
-                When you think of cities, you may think of the boulevards of Paris or the skyscrapers of New York. But that's just the stage. Today, creativity and social interactions have increasingly shifted online—breaking geographic boundaries once held by traditional cities. Now, it&apos;s not the place that matters so much, but the density of creative ideas and interesting people residing in that space that define a city.
+                When you think of cities, you may think of the boulevards of Paris or the skyscrapers of New York. But that&apos;s just the stage. Today, creativity and social interactions have increasingly shifted online—breaking geographic boundaries once held by traditional cities. Now, it&apos;s not the place that matters so much, but the density of creative ideas and interesting people residing in that space that define a city.
               </p>
             </div>
           </Followup>
