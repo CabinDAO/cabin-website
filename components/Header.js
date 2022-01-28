@@ -23,10 +23,10 @@ export default function Header() {
         <a>Products</a>
       </Link>
       <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
-        Media &#8599;
+        Media<span>&nbsp;&#8599;</span>
       </a>
       <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1-loaFmQpTbSwz8Ki-u5gsfXjTS_VEQlU20IOVysxK_M/">
-        FAQ &#8599;
+        FAQ<span>&nbsp;&#8599;</span>
       </a>
     </Nav>
   );
@@ -151,6 +151,9 @@ const Nav = styled('div', {
     justifyContent: 'center',
     '&:hover': { 
       textDecoration: 'underline',
+    },
+    span: {
+      fontFamily: '$sans',
     },
   },
   '@md': {
