@@ -1,76 +1,76 @@
 import Logo from "./Logo";
-import Link from 'next/link'
+import Link from "next/link";
 import { Wrapper, Button, Input } from "@cabindao/topo";
-import { styled } from '../stitches.config.ts';
+import { styled } from "../stitches.config.ts";
 import { useState } from "react";
 import axios from "axios";
 
-const Container = styled('footer', {
-  bc: '$forest',
-  color: '$sand',
-  pt: '$12',
-  pb: '$8',
-  '@md': {
-    pb: '$20',
+const Container = styled("footer", {
+  bc: "$forest",
+  color: "$sand",
+  pt: "$12",
+  pb: "$8",
+  "@md": {
+    pb: "$20",
   },
 });
 
-const Content = styled('div', {
-  display: 'flex',
-  flexDirection: 'column-reverse',
-  width: '100%',
-  mt: '$4',
-  '@md': {
-    flexDirection: 'row',
-    pb: '$20',
+const Content = styled("div", {
+  display: "flex",
+  flexDirection: "column-reverse",
+  width: "100%",
+  mt: "$4",
+  "@md": {
+    flexDirection: "row",
+    pb: "$20",
   },
 });
 
-const Nav = styled('div', {
-  display: 'flex',
-  width: '100%',
-  flexWrap: 'wrap',
-  '@md': {
-    flexDirection: 'row',
-    flexWrap: 'nowrap',
+const Nav = styled("div", {
+  display: "flex",
+  width: "100%",
+  flexWrap: "wrap",
+  "@md": {
+    flexDirection: "row",
+    flexWrap: "nowrap",
   },
 });
 
-const News = styled('div', {
+const News = styled("div", {
   flex: 2,
-  display: 'flex',
-  flexDirection: 'column',
-  mb: '$8',
+  display: "flex",
+  flexDirection: "column",
+  mb: "$8",
   h3: {
-    fontSize: '$base',
-    mb: '$2',
-    fontFamily: '$mono',
-    textTransform: 'uppercase',
+    fontSize: "$base",
+    mb: "$2",
+    fontFamily: "$mono",
+    textTransform: "uppercase",
   },
-  '& p': {
-    fontSize: '$sm',
-    my: '$2',
+  "& p": {
+    fontSize: "$sm",
+    my: "$2",
   },
 });
 
 const SignupRow = styled("div", {
-  width: '100%',
+  width: "100%",
   mt: 12,
   display: "flex",
   alignItems: "flex-end",
 });
 
-const SignupInput = styled('input', {
+const SignupInput = styled("input", {
   fontFamily: "$sans",
   display: "flex",
   flex: 1,
   borderStyle: "solid",
   borderWidth: "1px",
   borderColor: "$wheat",
-  height: '$10',
+  height: "$10",
   py: 0,
-  px: '$3',
-  mr: '$2',
+  px: "$3",
+  mr: "$2",
   fontSize: "$base",
   color: "$sand",
   outline: "none",
@@ -91,31 +91,31 @@ const Message = styled("p", {
   fontSize: "$xs",
 });
 
-const Links = styled('div', {
+const Links = styled("div", {
   flex: 1,
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  fontFamily: '$mono',
-  textTransform: 'uppercase',
-  mb: '$4',
-  minWidth: '50%',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  fontFamily: "$mono",
+  textTransform: "uppercase",
+  mb: "$4",
+  minWidth: "50%",
   h3: {
-    fontSize: '$base',
-    mb: '$2',
+    fontSize: "$base",
+    mb: "$2",
   },
   a: {
-    display: 'inline-block',
-    fontSize: '$sm',
-    opacity: '80%',
-    my: '$2',
-    '&:hover': {
-      opacity: '100%',
-      textDecoration: 'underline',
+    display: "inline-block",
+    fontSize: "$sm",
+    opacity: "80%",
+    my: "$2",
+    "&:hover": {
+      opacity: "100%",
+      textDecoration: "underline",
     },
   },
-  '@md': {
-    minWidth: '0',
+  "@md": {
+    minWidth: "0",
   },
 });
 
@@ -141,7 +141,7 @@ export default function Footer() {
 
   const cabin = (
     <>
-      <Link href="/vision"> 
+      <Link href="/vision">
         <a>Vision</a>
       </Link>
       <Link href="/contribute">
@@ -154,49 +154,61 @@ export default function Footer() {
         Media
       </a>
     </>
-  ); 
+  );
 
   const products = (
     <>
       <Link href="/products/passports">
         <a>NFT Passports</a>
-      </Link> 
+      </Link>
       <Link href="/products/daocamp">
         <a>DAO Camp</a>
-      </Link> 
+      </Link>
     </>
-  ); 
+  );
 
   const resources = (
     <>
-      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/cabin"> 
+      <a target="_blank" rel="noreferrer" href="https://app.clarity.so/cabin">
         Wiki
       </a>
       <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
         Mirror
       </a>
-      <a target="_blank" rel="noreferrer" href="https://snapshot.org/#/cabindao.eth">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://snapshot.org/#/cabindao.eth"
+      >
         Snapshot
       </a>
       <a target="_blank" rel="noreferrer" href="https://github.com/CabinDAO">
         Github
       </a>
     </>
-  ); 
+  );
 
   const social = (
     <>
-      <a target="_blank" rel="noreferrer" href="https://discord.gg/N6hVmFygjR">
+      <a target="_blank" rel="noreferrer" href="https://discord.gg/pnTXBbAF53">
         Discord
       </a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com/creatorcabins">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://twitter.com/creatorcabins"
+      >
         Twitter
-      </a>  
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/creatorcabins/">
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.instagram.com/creatorcabins/"
+      >
         Instagram
-      </a>  
+      </a>
     </>
-  ); 
+  );
 
   return (
     <Container>
@@ -228,7 +240,7 @@ export default function Footer() {
               <SignupInput
                 placeholder="Email"
                 value={email}
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <Button tone={"wheat"} type="primary" onClick={onSubmit}>
                 Submit

@@ -134,7 +134,7 @@ const ProductCTA = () => {
           <ButtonLink
             external
             label="Join the community"
-            href="https://discord.gg/N6hVmFygjR"
+            href="https://discord.gg/pnTXBbAF53"
             target="_blank"
           />
         </ProductCTAInnerContainer>

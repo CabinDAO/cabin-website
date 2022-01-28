@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import { styled } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
-import ArrowLink from '../ArrowLink';
-import find from '../../public/find.svg';
-import harmonize from '../../public/harmonize.svg';
-import shape from '../../public/shape.svg';
+import Image from "next/image";
+import { styled } from "../../stitches.config.ts";
+import Wrapper from "../Wrapper";
+import ArrowLink from "../ArrowLink";
+import find from "../../public/find.svg";
+import harmonize from "../../public/harmonize.svg";
+import shape from "../../public/shape.svg";
 
 export default function Join() {
   return (
@@ -27,9 +27,15 @@ export default function Join() {
               <div>
                 <h3>Find</h3>
                 <p>
-                  Explore our wiki to learn about our community, people, model, and processes.
+                  Explore our wiki to learn about our community, people, model,
+                  and processes.
                 </p>
-                <ArrowLink external target="_blank" href="https://app.clarity.so/cabin" label="View the wiki" />
+                <ArrowLink
+                  external
+                  target="_blank"
+                  href="https://app.clarity.so/cabin"
+                  label="View the wiki"
+                />
               </div>
             </Action>
             <Action>
@@ -44,9 +50,15 @@ export default function Join() {
               <div>
                 <h3>Harmonize</h3>
                 <p>
-                  Tune into our community on discord to discover our mindset, culture and language.
+                  Tune into our community on discord to discover our mindset,
+                  culture and language.
                 </p>
-                <ArrowLink external target="_blank" href="https://discord.gg/N6hVmFygjR" label="Join Discord" />
+                <ArrowLink
+                  external
+                  target="_blank"
+                  href="https://discord.gg/pnTXBbAF53"
+                  label="Join Discord"
+                />
               </div>
             </Action>
             <Action>
@@ -60,10 +72,16 @@ export default function Join() {
               />
               <div>
                 <h3>Shape</h3>
-                <p> 
-                  Bring your own perspective and knowledge to the community by holding Cabin token.
+                <p>
+                  Bring your own perspective and knowledge to the community by
+                  holding Cabin token.
                 </p>
-                <ArrowLink external target="_blank" href="https://snapshot.org/#/cabindao.eth" label="View proposals" />
+                <ArrowLink
+                  external
+                  target="_blank"
+                  href="https://snapshot.org/#/cabindao.eth"
+                  label="View proposals"
+                />
               </div>
             </Action>
           </Actions>
@@ -73,70 +91,70 @@ export default function Join() {
   );
 }
 
-const Container = styled('section', {
-  position: 'relative',
-  bc: '$sand',
-  py: '$20',
-  '@md': {
-    py: '$32',
+const Container = styled("section", {
+  position: "relative",
+  bc: "$sand",
+  py: "$20",
+  "@md": {
+    py: "$32",
   },
 });
 
-const Content = styled('div', {
-  position: 'relative',
-  color: '$forest',
+const Content = styled("div", {
+  position: "relative",
+  color: "$forest",
 });
 
-const Intro = styled('div', {
-  textAlign: 'center',
+const Intro = styled("div", {
+  textAlign: "center",
   h2: {
     m: 0,
-    fontSize: '$xxl',
-    fontFamily: '$mono',
-    fontWeight: '$600',
-    lineHeight: '1.4',
+    fontSize: "$xxl",
+    fontFamily: "$mono",
+    fontWeight: "$600",
+    lineHeight: "1.4",
   },
-  '@md': {
+  "@md": {
     h2: {
-      fontSize: '$xxxl',
+      fontSize: "$xxxl",
     },
   },
 });
 
-const Actions = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  '@md': {
-    flexDirection: 'row',
+const Actions = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  "@md": {
+    flexDirection: "row",
   },
 });
 
-const Action = styled('div', {
-  mt: '$10',
+const Action = styled("div", {
+  mt: "$10",
   div: {
-    ml: '$10',
-    mt: '-$12',
-    position: 'relative',
-    zIndex: '1',
-    bc: '$sand', 
-    pl: '$4',
-    pt: '$4',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
+    ml: "$10",
+    mt: "-$12",
+    position: "relative",
+    zIndex: "1",
+    bc: "$sand",
+    pl: "$4",
+    pt: "$4",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
   },
   h3: {
-    mt: '0',
-    fontSize: '$xl',
-    fontFamily: '$mono',
-    fontWeight: '$600',
+    mt: "0",
+    fontSize: "$xl",
+    fontFamily: "$mono",
+    fontWeight: "$600",
   },
-  '@md': {
-    mr: '$20',
+  "@md": {
+    mr: "$20",
     h3: {
-      fontSize: '$xxl',
+      fontSize: "$xxl",
     },
-    '&:last-of-type': {
+    "&:last-of-type": {
       mr: 0,
     },
   },
