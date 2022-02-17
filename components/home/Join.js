@@ -56,7 +56,7 @@ export default function Join() {
                 <ArrowLink
                   external
                   target="_blank"
-                  href="https://discord.gg/pnTXBbAF53"
+                  href="https://discord.gg/ttgRU7QKVE"
                   label="Join Discord"
                 />
               </div>

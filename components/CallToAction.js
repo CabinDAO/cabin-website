@@ -12,7 +12,7 @@ export default function CallToAction() {
           <ButtonLink
             external
             target="_blank"
-            href="https://discord.gg/pnTXBbAF53"
+            href="https://discord.gg/ttgRU7QKVE"
             label="Join the community"
           />
         </Actions>
