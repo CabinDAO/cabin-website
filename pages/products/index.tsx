@@ -134,7 +134,7 @@ const ProductCTA = () => {
           <ButtonLink
             external
             label="Join the community"
-            href="https://discord.gg/pnTXBbAF53"
+            href="https://discord.gg/ttgRU7QKVE"
             target="_blank"
           />
         </ProductCTAInnerContainer>
@@ -142,6 +142,8 @@ const ProductCTA = () => {
     </ProductCTAContainer>
   );
 };
+
+
 
 const PassportsLandingPage = () => {
   return (

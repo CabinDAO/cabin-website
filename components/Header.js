@@ -39,7 +39,7 @@ export default function Header() {
     <ButtonLink
       external
       label="Join the community"
-      href="https://discord.gg/pnTXBbAF53"
+      href="https://discord.gg/ttgRU7QKVE"
       target="_blank"
     />
   );

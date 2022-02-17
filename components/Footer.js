@@ -190,7 +190,7 @@ export default function Footer() {
 
   const social = (
     <>
-      <a target="_blank" rel="noreferrer" href="https://discord.gg/pnTXBbAF53">
+      <a target="_blank" rel="noreferrer" href="https://discord.gg/ttgRU7QKVE">
         Discord
       </a>
       <a
