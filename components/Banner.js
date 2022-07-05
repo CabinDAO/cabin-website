@@ -67,7 +67,7 @@ const Banner = () => (
           rel="noopener noreferrer"
         >
           {
-            "Cabin & Montaia Basecamp Present: Summer in the Sierras. Learn more and book now."
+            "Join us  IRL in the Sierra Nevada Mountains this August. Learn more here."
           }
           <ArrowRightIcon />
         </Text>
@@ -115,4 +115,6 @@ export default Banner;
  *    </a>
  *  </Link>
  *</Box>
+      </Link>
+      </Link>
  */
