@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import { styled } from '../stitches.config.ts';
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { styled } from "../stitches.config.ts";
+import Banner from "./Banner";
 
 export default function Layout({
   children,
-  title = 'Cabin',
-  description = 'A decentralized city built by creators, for creators',
+  title = "Cabin",
+  description = "A decentralized city built by creators, for creators",
 }) {
   return (
     <>
@@ -16,38 +17,48 @@ export default function Layout({
 
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" href="./favicon.ico" />  
+        <link rel="icon" href="./favicon.ico" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="creatorcabins" key="twhandle" />
 
-        <meta property="og:url" content="https://www.creatorcabins.com/" key="ogurl" />
-        <meta property="og:image" content="https://creatorcabins.com/socialShare.jpg" key="ogimage" />
+        <meta
+          property="og:url"
+          content="https://www.creatorcabins.com/"
+          key="ogurl"
+        />
+        <meta
+          property="og:image"
+          content="https://creatorcabins.com/socialShare.jpg"
+          key="ogimage"
+        />
         <meta property="og:site_name" content="Cabin" key="ogsitename" />
         <meta property="og:title" content={title} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
       </Head>
 
       <Container>
+        <Banner
+          title={"Hello World"}
+          content={"Elit culpa nemo saepe quod ipsam dignissimos reiciendis"}
+        />
         <Header />
-        <Main>
-          {children}
-        </Main>
+        <Main>{children}</Main>
         <Footer />
       </Container>
     </>
-  )
+  );
 }
 
-const Container = styled('div', {
-  fontFamily: '$sans',
-  color: '$forest',
-  backgroundColor: '$sand',
-  flexDirection: 'column',
-  display: 'flex',
-  minHeight: '100%',
+const Container = styled("div", {
+  fontFamily: "$sans",
+  color: "$forest",
+  backgroundColor: "$sand",
+  flexDirection: "column",
+  display: "flex",
+  minHeight: "100%",
 });
 
-const Main = styled('main', {
-  flexGrow: 1
+const Main = styled("main", {
+  flexGrow: 1,
 });
