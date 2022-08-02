@@ -1,16 +1,38 @@
-import { globalCss } from '../stitches.config.ts';
+import { globalCss } from "../stitches.config.ts";
+import Script from "next/script";
 
 const globalStyles = globalCss({
-  'body': {
-    backgroundColor: '$sand',
+  body: {
+    backgroundColor: "$sand",
   },
 });
 
 function MyApp({ Component, pageProps }) {
   globalStyles();
   return (
-    <Component {...pageProps} />
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-EY99DH9D9N`}
+      />
+
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EY99DH9D9N', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+      <Component {...pageProps} />
+    </>
   );
 }
 
-export default MyApp
+export default MyApp;

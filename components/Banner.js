@@ -1,45 +1,11 @@
-import { styled, keyframes } from "../stitches.config.ts";
-import { Heading, Text } from "@cabindao/topo";
+import { styled } from "../stitches.config.ts";
+import { Text } from "@cabindao/topo";
 import Link from "next/link";
 import Wrapper from "./Wrapper";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const Box = styled("div", {
   position: "relative",
-});
-const IconContainer = styled("span", {
-  svg: {
-    height: "$5",
-    width: "$5",
-    color: "$sand",
-  },
-});
-const marquee = keyframes({
-  "0%": { transform: "translate3d(0, 0, 0)" },
-  "100%": { transform: "translate3d(-50%, 0, 0)" },
-});
-const Marquee = styled("div", {
-  overflow: "hidden",
-  width: "100%",
-  color: "$sand",
-  fontSize: "$lg",
-  fontFamily: "$mono",
-  fontWeight: "$600",
-  top: "50%",
-  position: "absolute",
-  transform: "translate3d(0, -50%, 0)",
-  zIndex: "$1",
-  div: {
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-    display: "inline-block",
-    animation: `${marquee} 30s linear infinite`,
-  },
-  span: {
-    display: "inline-block",
-    py: "$3",
-    mt: "$1",
-  },
 });
 
 const Banner = () => (
@@ -51,7 +17,7 @@ const Banner = () => (
     <Wrapper>
       <Link
         passHref
-        href="https://creators.mirror.xyz/kzkUikiC1GT2PrzH3ymzto5uiiI775kOzfysZ8LSeSE"
+        href="https://creatorcabins.typeform.com/puertorico?utm_source=banner"
       >
         <Text
           mono
@@ -66,9 +32,7 @@ const Banner = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          {
-            "Join us  IRL in the Sierra Nevada Mountains this August. Learn more here."
-          }
+          {"Build with us IRL in Puerto Rico this September. Learn more here."}
           <ArrowRightIcon />
         </Text>
       </Link>
