@@ -17,7 +17,7 @@ const Banner = () => (
     <Wrapper>
       <Link
         passHref
-        href="https://creatorcabins.typeform.com/puertorico?utm_source=banner"
+        href="https://creators.mirror.xyz/4d6m6O62xH8nYT8XjyC99P0yMrXqwO78JR2r5yvafc0?utm_source=banner"
       >
         <Text
           mono
@@ -32,7 +32,7 @@ const Banner = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          {"Build with us IRL in Puerto Rico this September. Learn more here."}
+          {"Come live at Neighborhood 0. Full-time coliving starting Oct"}
           <ArrowRightIcon />
         </Text>
       </Link>
