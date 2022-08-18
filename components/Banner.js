@@ -32,7 +32,7 @@ const Banner = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          {"Come live at Neighborhood 0. Full-time coliving starting Oct"}
+          {"Come live at Neighborhood 0 in the Texas Hill Country. Full-time coliving starts Oct 1"}
           <ArrowRightIcon />
         </Text>
       </Link>
