@@ -2,7 +2,7 @@ import { styled } from '../../stitches.config.ts';
 import Wrapper from '../Wrapper';
 import ArrowLink from '../ArrowLink';
 
-export default function Past() {
+export default function Media() {
   return (
     <Container id="initiatives">
       <Wrapper>
@@ -13,16 +13,16 @@ export default function Past() {
           </Intro>
           <Features>
             <Feature>
-              <h3>Crowdfunded 3 one-month residencies</h3>
-              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/eS6lYIBycHEZmtGpRGwA9lCb3Y_8G4pddHWSKtmWP_I" label="Read more" />
+              <h3>Your Squad Buys Property (w/ Help from Cabin)</h3>
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/SkkwTuVDk9p_P_0XAxWus5ffaJp1nOjB-MBYzoTGh00" label="Read more" />
             </Feature>
             <Feature>
-              <h3>First living creature as an NFT</h3>
-              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/OmwhMeOpeK8MJTBhHV0RpQmqh1mYMMpcJir97pTZyEQ" label="Read more" />
+              <h3>Join Us for a Magical Coliving Experience at Neighborhood Zero</h3>
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/4d6m6O62xH8nYT8XjyC99P0yMrXqwO78JR2r5yvafc0" label="Read more" />
             </Feature>
             <Feature>
-              <h3>Buried treasure chest with an ETH wallet</h3>
-              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/5heGuW5JIkDp67D4j4DtRpAi4ToiJzCeNFunU4cjkBw" label="Read more" />
+              <h3>Wanna Go Camping on a Greek Island?</h3>
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/iRHsY7BHIkBwo_2eAVaEtb5mW17WkBTUF0EQHjtzOBE" label="Read more" />
             </Feature>
           </Features>
         </Content>

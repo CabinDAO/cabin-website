@@ -4,7 +4,7 @@ import Vision from "../components/Vision";
 import Reality from "../components/home/Reality";
 import Spark from "../components/home/Spark";
 import Contribute from "../components/home/Contribute";
-import Past from "../components/home/Past";
+import Media from "../components/home/Media";
 import Join from "../components/home/Join";
 import Collaborate from "../components/home/Collaborate";
 import Node from "../components/home/Node";
@@ -26,7 +26,7 @@ export default function Home() {
       <Join />
       <Collaborate />
       <Node />
-      <Past />
+      <Media />
     </Layout>
   );
 }
