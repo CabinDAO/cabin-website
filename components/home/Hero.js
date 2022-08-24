@@ -1,6 +1,6 @@
 import { styled } from "../../stitches.config.ts";
 import Wrapper from "../Wrapper";
-import heroImage from "../../public/heroImage.jpg";
+import heroImage from "../../public/hero.jpg";
 import HeroFrame from "../../components/HeroFrame";
 
 export default function Hero() {
@@ -8,8 +8,9 @@ export default function Hero() {
     <Container>
       <Wrapper>
         <Content>
-          <h1>A decentralized city built by creators, for creators</h1>
           <HeroFrame src={heroImage} alt="A real view of a cabin" />
+          <h1>A network city for <br />
+            online creators</h1>
         </Content>
       </Wrapper>
     </Container>
@@ -27,15 +28,14 @@ const Content = styled("div", {
     fontWeight: 600,
     lineHeight: 1.6,
     maxWidth: "24rem",
-    mt: "0",
-    mb: "$12",
+    mb: "$6",
   },
   "@md": {
     h1: {
       fontSize: "$xxxl",
       maxWidth: "32rem",
-      mt: "$4",
-      mb: "$24",
+      mt: "$8",
+      mb: "$12",
     },
   },
 });

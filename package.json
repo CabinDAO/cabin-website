@@ -11,6 +11,7 @@
   "dependencies": {
     "@cabindao/topo": "^0.2.2",
     "@cabindao/topo-theme": "0.0.6",
+    "@radix-ui/react-aspect-ratio": "^1.0.0",
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^1.2.5",
     "axios": "^0.24.0",
