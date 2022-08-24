@@ -4,7 +4,7 @@ import Image from 'next/image'
 import node from '../../public/node.jpg';
 import ArrowLink from '../ArrowLink';
 
-export default function Node() {
+export default function FeaturedNode() {
   return (
     <Container>
       <Wrapper>
@@ -19,8 +19,8 @@ export default function Node() {
         </Frame>
         <Content>
           <div>
-            <h2>Node 1</h2>
-            <h3>Creator cabins in Texas Hill Country</h3>
+            <h2>Neighborhood 0</h2>
+            <h3>Cabin in the Texas Hill Country</h3>
             <ArrowLink href="/visit" label="Explore the cabins" />
           </div>
           <div>

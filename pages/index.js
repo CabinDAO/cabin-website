@@ -7,7 +7,7 @@ import Contribute from "../components/home/Contribute";
 import Media from "../components/home/Media";
 import Join from "../components/home/Join";
 import Collaborate from "../components/home/Collaborate";
-import Node from "../components/home/Node";
+import FeaturedNode from "../components/home/FeaturedNode";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <Spark />
       <Join />
       <Collaborate />
-      <Node />
+      <FeaturedNode />
       <Media />
     </Layout>
   );
