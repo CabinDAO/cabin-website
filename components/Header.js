@@ -13,32 +13,19 @@ export default function Header() {
       <Link href="/vision">
         <a>Vision</a>
       </Link>
-      {/* <Link href="/contribute">
-        <a>Contribute</a>
-      </Link> */}
       <Link href="/visit">
-        <a>Visit</a>
+        <a>Live at Cabin</a>
       </Link>
       <Link href="/products">
-        <a>Products</a>
+        <a>Become a Neighborhood</a>
       </Link>
-      <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
-        Media<span>&nbsp;&#8599;</span>
-      </a>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://docs.google.com/document/d/1-loaFmQpTbSwz8Ki-u5gsfXjTS_VEQlU20IOVysxK_M/"
-      >
-        FAQ<span>&nbsp;&#8599;</span>
-      </a>
     </Nav>
   );
 
   const joinButton = (
     <ButtonLink
       external
-      label="Join the community"
+      label="Apply to Colive"
       href="https://discord.gg/ttgRU7QKVE"
       target="_blank"
     />
