@@ -1,16 +1,21 @@
 import { styled } from '@cabindao/topo';
-import ButtonLink from '../ButtonLink';
-import ArrowLink from '../ArrowLink';
-import Wrapper from "../Wrapper";
-import bgImage from '../../public/stars.jpg';
+import ButtonLink from '../../components/ButtonLink.js';
+import ArrowLink from '../../components/ArrowLink';
+import Wrapper from "@components/Wrapper";
 import Image from 'next/image'
 
-export default function Collaborate() {
+export default function CallToAction({
+  title,
+  description,
+  cta,
+  bgImage = "/stars.jpg",
+  bgImageAlt = "A stary night sky in the Texas Hill Country"
+}) {
   return (
     <Container id="passports">
       <Image
         src={bgImage}
-        alt="A stary night sky in Texas hill country"
+        alt={bgImageAlt}
         layout="fill"
         objectFit="cover"
         objectPosition="50% 100%"
@@ -18,12 +23,10 @@ export default function Collaborate() {
       />
       <Wrapper>
         <Content>
-          <h2>Colive with Cabin</h2> 
-          <p>
-            We believe in the power of bringing people together IRL, especially for decentralized and distributed teams. While the vast majority of a DAO&apos;s work should be accomplished via asynchronous, remote, distributed work, there is tremendous leverage in getting together face-to-face for strategic thinking, team bonding, and deep collaboration. Cabin is the DAO to help other DAOs accelerate their work by getting together IRL.
-          </p>
+          <h2>{title}</h2> 
+          <p>{description}</p>
           <Actions>
-            <ButtonLink external target="_blank" href="/coliving-pass" label="Apply for Coliving Pass" />
+            <ButtonLink external target="_blank" href={cta.href} label={ cta.label } />
           </Actions>
         </Content>
       </Wrapper>
