@@ -1,8 +1,7 @@
 import { styled } from '@cabindao/topo';
-import Wrapper from '../Wrapper';
-import ArrowLink from '../ArrowLink';
+import { Wrapper, ArrowLink } from "@components"
 
-export default function Media() {
+export default function MediaCallout() {
   return (
     <Container id="initiatives">
       <Wrapper>

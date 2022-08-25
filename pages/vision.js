@@ -1,5 +1,5 @@
 import Wrapper from "../src/components/Wrapper"
-//import CallToAction from "../src/components/CallToAction"
+import { PrimaryHero } from "@templates"
 
 import Image from 'next/image'
 import { styled } from "@cabindao/topo";
@@ -11,32 +11,6 @@ const Intro = styled("section", {
   "@md": {
     pt: "$12",
     pb: "$32",
-  },
-});
-
-const IntroContent = styled("div", {
-  h1: {
-    fontFamily: "$mono",
-    fontSize: "$xxl",
-    fontWeight: 600,
-    lineHeight: 1.6,
-    maxWidth: "24rem",
-    mt: "0",
-  },
-  '& p': {
-    lineHeight: 1.6,
-    mb: "$12",
-  },
-  "@md": {
-    h1: {
-      fontSize: "$xxxl",
-      maxWidth: "40rem",
-      mt: "$4",
-    },
-    '& p': {
-      maxWidth: "48rem",
-      mb: "$24",
-    },
   },
 });
 
@@ -171,21 +145,11 @@ const VisionPage = () => {
     <>
       <Intro>
         <Wrapper>
-          <IntroContent>
-            <h1>Our vision is to build a decentralized city for creators.</h1>
-            <p>
-              Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure.            
-            </p>
-            <Frame>
-              <Image
-                src={"/visionImage.jpg"}
-                alt="Some trees backlit by a sunrise"
-                layout="responsive"
-                width={984}
-                height={340}
-              />
-            </Frame>
-          </IntroContent>
+          <PrimaryHero
+            title="Our vision is to build a decentralized city for creators."
+            subtitle = "Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+          />
+
           <Followup>
             <div>
               <h2>What defines a city?</h2>

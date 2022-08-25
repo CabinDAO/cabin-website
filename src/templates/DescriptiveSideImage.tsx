@@ -1,6 +1,7 @@
 // TODO: add optional CTA
 import Image from "next/image";
-import { styled, Wrapper } from "@cabindao/topo";
+import Link from "next/link"
+import { styled, Wrapper, Button, Heading, Text } from "@cabindao/topo";
 
 type ImageSrc = Parameters<typeof Image>[0]["src"];
 
@@ -11,6 +12,7 @@ const DescriptiveSideImage = ({
   bgImageAlt = "No Image Found",
   featureImage,
   featureImageAlt = "No Image Found",
+  cta,
   reversed = false,
 }: {
   title: React.ReactNode;
@@ -20,6 +22,7 @@ const DescriptiveSideImage = ({
   featureImage: ImageSrc;
   featureImageAlt?: string;
   reversed?: boolean;
+  cta?: { href: string, label: string };
 }) => {
   return (
     <Container reversed={reversed}>
@@ -34,10 +37,15 @@ const DescriptiveSideImage = ({
       )}
       <Wrapper>
         <Content reversed={reversed}>
-          <Text reversed={reversed}>
-            <h2>{title}</h2>
-            <p>{content}</p>
-          </Text>
+          <ContentText reversed={reversed}>
+            <Heading as="h2">{title}</Heading>
+            <Text weight="light" css={{ mb: "$8" }}>{content}</Text>
+            {cta && (
+              <Link href={cta?.href} passHref>
+                <Button as="a" tone="wheat">{cta?.label}</Button>
+              </Link>
+            )}
+          </ContentText>
           <Frame>
             <Image
               src={featureImage}
@@ -94,7 +102,6 @@ const Content = styled("div", {
   },
   p: {
     lineHeight: 1.6,
-    mb: 0,
   },
   "@md": {
     py: "$32",
@@ -118,7 +125,7 @@ const Content = styled("div", {
   },
 });
 
-const Text = styled("div", {
+const ContentText = styled("div", {
   mt: "$12",
   textAlign: "center",
   "@md": {

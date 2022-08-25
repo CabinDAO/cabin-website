@@ -2,7 +2,7 @@ import { styled } from '@cabindao/topo';
 import { Wrapper, ArrowLink } from "@components"
 import Image from 'next/image'
 
-export default function FeaturedNode({
+export default function FeaturedNeighborhood({
   neighborhood,
   encroach = false
 }) {

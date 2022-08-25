@@ -1,12 +1,11 @@
 import Image from "next/image";
+import { Wrapper, ArrowLink } from "@components"
 import { styled } from "@cabindao/topo";
-import Wrapper from "../Wrapper";
-import ArrowLink from "../ArrowLink";
 import find from "../../public/find.svg";
 import harmonize from "../../public/harmonize.svg";
 import shape from "../../public/shape.svg";
 
-export default function Join() {
+export default function ThreeColumnItems() {
   return (
     <Container id="community">
       <Wrapper>

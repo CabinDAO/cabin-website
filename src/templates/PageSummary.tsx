@@ -1,31 +1,46 @@
-import { styled, Wrapper } from "@cabindao/topo";
+import Link from "next/link"
+import { styled, Wrapper, Heading, Text, Box, Button } from "@cabindao/topo";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import ArrowLink from "../../components/ArrowLink";
 
 const PageSummary = ({
   title,
   description,
   readMoreLink,
+  theme = "light"
 }: {
   title: string;
   description: string;
   readMoreLink?: string;
+  theme?: "light" | "dark";
 }) => {
   return (
-    <Container>
+    <Container
+      css={{
+        background: theme === "dark" ? "$forest" : ""
+      }}
+    >
       <Wrapper>
         <Content>
-          <h2>{title}</h2>
-          <div>
-            <p>{description}</p>
+          <Heading
+            css={{
+              color: theme === "dark" ? "$sand" : ""
+            }}
+          >{title}</Heading>
+          <Box>
+            <Text
+              css={{
+                color: theme === "dark" ? "$sand" : ""
+              }}
+            >{description}</Text>
             {readMoreLink && (
-              <ArrowLink
-                external
-                target="_blank"
-                href={readMoreLink}
-                label="Read more"
-              />
+              <Link href={readMoreLink} passHref>
+                <Button as="a" rightIcon={<ArrowRightIcon />} tone={theme === "dark" ? "wheat" : ""} type="link">
+                  Read More
+                </Button>
+              </Link>
             )}
-          </div>
+          </Box>
         </Content>
       </Wrapper>
     </Container>
@@ -48,12 +63,10 @@ const Content = styled("div", {
   py: "$8",
   border: "1px solid $sprout",
   br: "$2",
-  h2: {
+  [`& ${Heading}`]: {
     mt: "$1",
     mb: "$0",
     fontFamily: "$mono",
-    fontSize: "$xl",
-    fontWeight: 600,
     lineHeight: 1.6,
     maxWidth: "28rem",
     flex: "1",

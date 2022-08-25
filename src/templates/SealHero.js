@@ -1,9 +1,8 @@
 import { styled } from "@cabindao/topo";
-import Wrapper from "../Wrapper";
+import { Wrapper, HeroFrame } from "@components"
 import heroImage from "../../public/hero.jpg";
-import HeroFrame from "../../components/HeroFrame";
 
-export default function Hero() {
+export default function SealHero() {
   return (
     <Container>
       <Wrapper>
