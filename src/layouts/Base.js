@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { styled } from "@cabindao/topo";
-import Banner from "./Banner";
+import { Header, Footer, Banner } from "@components"
 
-export default function Layout({
+export default function BaseLayout({
   children,
   title = "Cabin",
   description = "A decentralized city built by creators, for creators",
@@ -43,7 +41,9 @@ export default function Layout({
           content={"Elit culpa nemo saepe quod ipsam dignissimos reiciendis"}
         />
         <Header />
-        <Main>{children}</Main>
+        <Main>
+            {children}
+        </Main>
         <Footer />
       </Container>
     </>

@@ -1,6 +1,6 @@
-import { globalStyles } from "@cabindao/topo";
-
 import Script from "next/script";
+import { globalStyles } from "@cabindao/topo";
+import BaseLayout from "../src/layouts/Base.js"
 
 function MyApp({ Component, pageProps }) {
   globalStyles();
@@ -25,7 +25,9 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <BaseLayout>
+        <Component {...pageProps} />
+      </BaseLayout>
     </>
   );
 }

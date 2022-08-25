@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Wrapper from "../src/components/Wrapper"
 //import CallToAction from "../src/components/CallToAction"
 
@@ -169,7 +168,7 @@ const MeaningItem = styled("div", {
 
 const VisionPage = () => {
   return (
-    <Layout>
+    <>
       <Intro>
         <Wrapper>
           <IntroContent>
@@ -250,7 +249,7 @@ const VisionPage = () => {
 *<CallToAction />
 */
     }
-    </Layout>
+    </>
   );
 };
 

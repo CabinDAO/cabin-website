@@ -156,17 +156,6 @@ export default function Footer() {
     </>
   );
 
-  const products = (
-    <>
-      <Link href="/products/passports">
-        <a>NFT Passports</a>
-      </Link>
-      <Link href="/products/daocamp">
-        <a>DAO Camp</a>
-      </Link>
-    </>
-  );
-
   const resources = (
     <>
       <a target="_blank" rel="noreferrer" href="https://app.clarity.so/cabin">
@@ -219,10 +208,6 @@ export default function Footer() {
             <Links>
               <h3>Cabin</h3>
               {cabin}
-            </Links>
-            <Links>
-              <h3>Products</h3>
-              {products}
             </Links>
             <Links>
               <h3>Resources</h3>

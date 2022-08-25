@@ -8,6 +8,7 @@ import HeroPattern from "./HeroPattern"
 import Logo from "./Logo"
 import Wrapper from "./Wrapper"
 import Seal from "./Seal"
+import Banner from "./Banner"
 
 export {
   Wrapper,
@@ -20,4 +21,5 @@ export {
   HeroPattern,
   Logo,
   Seal,
+  Banner,
 }

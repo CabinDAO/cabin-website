@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Hero from "../components/home/Hero";
 import Media from "../components/home/Media";
 import Join from "../components/home/Join";
@@ -8,7 +7,7 @@ import { FeaturedNeighborhood, CallToAction, DescriptiveSideImage, PageSummary, 
 export default function Home() {
 
   return (
-    <Layout>
+    <>
       <Hero />
 
       {/*
@@ -77,7 +76,7 @@ export default function Home() {
       />
 
       <Media />
-    </Layout>
+    </>
   );
 }
 
