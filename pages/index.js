@@ -3,7 +3,7 @@ import Hero from "../components/home/Hero";
 import Media from "../components/home/Media";
 import Join from "../components/home/Join";
 import FeaturedNode from "../components/home/FeaturedNode";
-import { CallToAction, DescriptiveSideImage, PageSummary, Marquee } from "@sections"
+import { FeaturedNeighborhood, CallToAction, DescriptiveSideImage, PageSummary, Marquee } from "@sections"
 
 export default function Home() {
 
@@ -62,7 +62,20 @@ export default function Home() {
       {/*
         * Featured Neighborhood
         */}
-      <FeaturedNode />
+      <FeaturedNeighborhood
+        neighborhood={{
+          image: "/node.jpg",
+          title: "Neighborhood 0",
+          subtitle: "Cabin in the Texas Hill Country",
+          description: "28-acres of private land in the Texas Hill Country about 45 minutes outside of Austin. We are located minutes away from Pedernales Falls State Park and have a seasonal creek, wildlife, and amazing stargazing on site.",
+          cta: {
+            href: "/visit",
+            label: "Explore the cabins"
+          }
+        }}
+        encroach
+      />
+
       <Media />
     </Layout>
   );
