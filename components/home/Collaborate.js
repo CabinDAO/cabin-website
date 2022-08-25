@@ -23,7 +23,7 @@ export default function Collaborate() {
             We believe in the power of bringing people together IRL, especially for decentralized and distributed teams. While the vast majority of a DAO&apos;s work should be accomplished via asynchronous, remote, distributed work, there is tremendous leverage in getting together face-to-face for strategic thinking, team bonding, and deep collaboration. Cabin is the DAO to help other DAOs accelerate their work by getting together IRL.
           </p>
           <Actions>
-            <ButtonLink external target="_blank" href="https://discord.gg/ttgRU7QKVE" label="Apply for Coliving Pass" />
+            <ButtonLink external target="_blank" href="/coliving-pass" label="Apply for Coliving Pass" />
           </Actions>
         </Content>
       </Wrapper>
