@@ -11,7 +11,7 @@ const PageSummary = ({
   readMoreLink?: string;
 }) => {
   return (
-    <Container id="about">
+    <Container>
       <Wrapper>
         <Content>
           <h2>{title}</h2>
