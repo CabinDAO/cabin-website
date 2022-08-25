@@ -3,7 +3,7 @@ import Wrapper from "../components/Wrapper";
 import ButtonLink from "./ButtonLink";
 import ArrowLink from "./ArrowLink";
 
-export default function CallToAction() {
+export default function PageSummary() {
   return (
     <Wrapper>
       <Container>

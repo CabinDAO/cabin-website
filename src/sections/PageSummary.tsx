@@ -1,8 +1,8 @@
-import { styled } from "../stitches.config";
+import { styled } from "../../stitches.config";
 import { Wrapper } from "@cabindao/topo";
-import ArrowLink from "./ArrowLink";
+import ArrowLink from "../../components/ArrowLink";
 
-const Vision = ({
+const PageSummary = ({
   title,
   description,
   readMoreLink,
@@ -75,4 +75,4 @@ const Content = styled("div", {
   },
 });
 
-export default Vision;
+export default PageSummary;
