@@ -2,7 +2,7 @@ import { styled } from "@cabindao/topo";
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 import { Box } from "@cabindao/topo"
 import Image from "next/image";
-import Seal from "./Seal"
+import { Seal } from "@components"
 
 const HeroFrame = ({
   alt = "Image failed to load",

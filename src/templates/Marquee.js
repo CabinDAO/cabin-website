@@ -2,7 +2,7 @@ import Image from 'next/image'
 import fireImage from '../../public/campfire.jpg';
 import sparkImage from '../../public/spark.svg';
 import { styled, keyframes } from '@cabindao/topo';
-import Wrapper from '@components/Wrapper';
+import { Wrapper } from '@components';
 
 export default function Marquee({ text }) {
   return (

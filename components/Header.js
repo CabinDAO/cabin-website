@@ -13,10 +13,10 @@ export default function Header() {
       <Link href="/vision">
         <a>Vision</a>
       </Link>
-      <Link href="/visit">
+      <Link href="/live-at-cabin">
         <a>Live at Cabin</a>
       </Link>
-      <Link href="/products">
+      <Link href="/neighborhoods/become-a-neighborhood">
         <a>Become a Neighborhood</a>
       </Link>
     </Nav>

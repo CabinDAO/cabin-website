@@ -1,7 +1,5 @@
 import { styled } from '@cabindao/topo';
-import ButtonLink from '../../components/ButtonLink.js';
-import ArrowLink from '../../components/ArrowLink';
-import Wrapper from "@components/Wrapper";
+import { Wrapper, ArrowLink, ButtonLink } from "@components"
 import Image from 'next/image'
 
 export default function CallToAction({

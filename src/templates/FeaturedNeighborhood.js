@@ -1,7 +1,6 @@
 import { styled } from '@cabindao/topo';
-import Wrapper from '@components/Wrapper';
+import { Wrapper, ArrowLink } from "@components"
 import Image from 'next/image'
-import ArrowLink from '../../components/ArrowLink';
 
 export default function FeaturedNode({
   neighborhood,

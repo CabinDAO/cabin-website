@@ -1,11 +1,10 @@
 import { Heading } from "@cabindao/topo"
 
-export default function ColivingPass() {
+export default function NeighborhoodDetail() {
   return (
     <Heading>
-      ColivingPass
+      NeighborhoodDetail
     </Heading>
   )
 }
-
 

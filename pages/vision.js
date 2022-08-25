@@ -1,8 +1,7 @@
 import Layout from "../components/Layout";
-import Wrapper from "../components/Wrapper";
-import CallToAction from '../components/CallToAction';
-import visionImage from "../public/visionImage.jpg";
-import visionStepImage from "../public/visionStepImage.jpg";
+import Wrapper from "../src/components/Wrapper"
+//import CallToAction from "../src/components/CallToAction"
+
 import Image from 'next/image'
 import { styled } from "@cabindao/topo";
 import { HomeIcon, Share1Icon, RocketIcon } from '@radix-ui/react-icons'
@@ -180,7 +179,7 @@ const VisionPage = () => {
             </p>
             <Frame>
               <Image
-                src={visionImage}
+                src={"/visionImage.jpg"}
                 alt="Some trees backlit by a sunrise"
                 layout="responsive"
                 width={984}
@@ -208,7 +207,7 @@ const VisionPage = () => {
           </Step>
           <Frame>
             <Image
-              src={visionStepImage}
+              src={"/visionStepImage.jpg"}
               alt="People sitting around a table solving problems"
               layout="responsive"
               width={984}
@@ -246,7 +245,11 @@ const VisionPage = () => {
           </Meaning>
         </Wrapper>
       </FirstStep>
-      <CallToAction />
+      {
+      /*
+*<CallToAction />
+*/
+    }
     </Layout>
   );
 };
