@@ -1,10 +1,11 @@
+// TODO: add optional CTA
 import Image from "next/image";
-import { styled } from "../stitches.config";
+import { styled } from "../../stitches.config";
 import { Wrapper } from "@cabindao/topo";
 
 type ImageSrc = Parameters<typeof Image>[0]["src"];
 
-const SideImage = ({
+const DescriptiveSideImage = ({
   title,
   content,
   bgImage,
@@ -149,4 +150,4 @@ const Frame = styled("div", {
   },
 });
 
-export default SideImage;
+export default DescriptiveSideImage;

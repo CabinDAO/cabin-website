@@ -2,9 +2,9 @@ import Image from 'next/image'
 import fireImage from '../../public/campfire.jpg';
 import sparkImage from '../../public/spark.svg';
 import { styled, keyframes } from '../../stitches.config.ts';
-import Wrapper from '../Wrapper';
+import Wrapper from '@components/Wrapper';
 
-export default function SideImage() {
+export default function Marquee({ text }) {
   return (
     <Container>
       <Wrapper>
@@ -27,16 +27,16 @@ export default function SideImage() {
           </Frame>
         </Content>
       </Wrapper>
-      <Marquee>
+      <MarqueeText>
         <div>
           <span>
-            Get creative work done with internet friends. Get creative work done with internet friends. Get creative work done with internet friends.&nbsp;
+            {text} {text} {text} &nbsp;
           </span>
           <span>
-            Get creative work done with internet friends. Get creative work done with internet friends. Get creative work done with internet friends.&nbsp;
+            {text} {text} {text} &nbsp;
           </span>
         </div>
-      </Marquee>
+      </MarqueeText>
     </Container>
   )
 }
@@ -96,7 +96,7 @@ const marquee = keyframes({
   '100%': { transform: 'translate3d(-50%, 0, 0)' },
 });
 
-const Marquee = styled('div', {
+const MarqueeText = styled('div', {
   overflow: 'hidden',
   width: '100%',
   color: '$sand',
