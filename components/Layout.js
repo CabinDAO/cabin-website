@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { styled } from "../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import Banner from "./Banner";
 
 export default function Layout({

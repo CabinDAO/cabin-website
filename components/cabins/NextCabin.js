@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 import Wrapper from '../Wrapper';
 import CabinPeek from './CabinPeek';
 

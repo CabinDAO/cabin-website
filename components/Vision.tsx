@@ -1,4 +1,4 @@
-import { styled } from "../stitches.config";
+import { styled } from "@cabindao/topo";
 import { Wrapper } from "@cabindao/topo";
 import ArrowLink from "./ArrowLink";
 

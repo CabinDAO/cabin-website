@@ -1,4 +1,4 @@
-import { styled } from "../stitches.config"
+import { styled } from "@cabindao/topo"
 
 export default function Seal({ css }) {
   const SVG = styled("svg", {})

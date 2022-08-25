@@ -1,7 +1,6 @@
 // TODO: add optional CTA
 import Image from "next/image";
-import { styled } from "../../stitches.config";
-import { Wrapper } from "@cabindao/topo";
+import { styled, Wrapper } from "@cabindao/topo";
 
 type ImageSrc = Parameters<typeof Image>[0]["src"];
 

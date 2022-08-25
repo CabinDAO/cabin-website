@@ -1,5 +1,4 @@
-import { styled } from "../../stitches.config";
-import { Wrapper } from "@cabindao/topo";
+import { styled, Wrapper } from "@cabindao/topo";
 import ArrowLink from "../../components/ArrowLink";
 
 const PageSummary = ({

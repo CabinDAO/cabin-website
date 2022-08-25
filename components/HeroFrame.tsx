@@ -1,4 +1,4 @@
-import { styled } from "../stitches.config";
+import { styled } from "@cabindao/topo";
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 import { Box } from "@cabindao/topo"
 import Image from "next/image";

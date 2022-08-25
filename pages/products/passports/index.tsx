@@ -1,7 +1,7 @@
 import Layout from "../../../components/Layout";
 import { Button, Wrapper, Modal, Input } from "@cabindao/topo";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
-import { styled } from "../../../stitches.config";
+import { styled } from "@cabindao/topo";
 import HeroPattern from "../../../components/HeroPattern";
 import { useCallback, useState } from "react";
 import { useRouter } from "next/dist/client/router";

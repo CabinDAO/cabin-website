@@ -1,4 +1,4 @@
-import { styled } from "../../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import Wrapper from "../Wrapper";
 import heroImage from "../../public/hero.jpg";
 import HeroFrame from "../../components/HeroFrame";

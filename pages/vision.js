@@ -4,7 +4,7 @@ import CallToAction from '../components/CallToAction';
 import visionImage from "../public/visionImage.jpg";
 import visionStepImage from "../public/visionStepImage.jpg";
 import Image from 'next/image'
-import { styled } from "../stitches.config";
+import { styled } from "@cabindao/topo";
 import { HomeIcon, Share1Icon, RocketIcon } from '@radix-ui/react-icons'
 
 const Intro = styled("section", {

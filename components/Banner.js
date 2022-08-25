@@ -1,4 +1,4 @@
-import { styled } from "../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import { Text } from "@cabindao/topo";
 import Link from "next/link";
 import Wrapper from "./Wrapper";

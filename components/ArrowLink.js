@@ -1,4 +1,4 @@
-import { styled } from '../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 

@@ -1,4 +1,4 @@
-import { styled } from '../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 
 export default function Wrapper({ children }) {
   return (

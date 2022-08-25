@@ -1,7 +1,7 @@
 import Wrapper from "../components/Wrapper";
 import HeroFrame from "../components/HeroFrame";
 import constructionImage from "../public/constructionImage.jpg";
-import { styled } from "../stitches.config";
+import { styled } from "@cabindao/topo";
 
 export default function UnderConstruction() {
   return (

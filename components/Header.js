@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import { styled } from "../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import ButtonLink from "./ButtonLink";
 import Wrapper from "./Wrapper";

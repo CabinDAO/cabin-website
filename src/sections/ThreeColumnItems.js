@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { styled } from "../../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import Wrapper from "../Wrapper";
 import ArrowLink from "../ArrowLink";
 import find from "../../public/find.svg";

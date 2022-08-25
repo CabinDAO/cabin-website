@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { getCssText } from '../stitches.config.ts';
+import { getCssText } from '@cabindao/topo';
 
 const globalStyles = `
   html, body, #__next {

@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 import Image from 'next/image'
 import ArrowLink from '../ArrowLink';
 

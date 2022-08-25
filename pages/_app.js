@@ -1,11 +1,6 @@
-import { globalCss } from "../stitches.config.ts";
-import Script from "next/script";
+import { globalStyles } from "@cabindao/topo";
 
-const globalStyles = globalCss({
-  body: {
-    backgroundColor: "$sand",
-  },
-});
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   globalStyles();

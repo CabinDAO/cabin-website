@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 import ButtonLink from '../ButtonLink';
 import ArrowLink from '../ArrowLink';
 import Wrapper from "../Wrapper";

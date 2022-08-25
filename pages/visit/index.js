@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config.ts';
+import { styled } from '@cabindao/topo';
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper';
 import CallToAction from '../../components/CallToAction';

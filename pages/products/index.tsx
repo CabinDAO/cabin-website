@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import { Wrapper } from "@cabindao/topo";
-import { styled } from "../../stitches.config";
+import { styled } from "@cabindao/topo";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";

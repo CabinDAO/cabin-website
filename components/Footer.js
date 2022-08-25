@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import Link from "next/link";
 import { Wrapper, Button, Input } from "@cabindao/topo";
-import { styled } from "../stitches.config.ts";
+import { styled } from "@cabindao/topo";
 import { useState } from "react";
 import axios from "axios";
 
