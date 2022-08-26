@@ -1,6 +1,7 @@
-import { styled } from '@cabindao/topo';
+import { styled, Heading, Text } from '@cabindao/topo';
 import { Wrapper, ArrowLink, ButtonLink } from "@components"
 import Image from 'next/image'
+import { slugify } from "../../lib/slugify"
 
 export default function CallToAction({
   title,
@@ -10,7 +11,7 @@ export default function CallToAction({
   bgImageAlt = "A stary night sky in the Texas Hill Country"
 }) {
   return (
-    <Container id="passports">
+    <Container id={slugify(title)}>
       <Image
         src={bgImage}
         alt={bgImageAlt}
@@ -21,8 +22,8 @@ export default function CallToAction({
       />
       <Wrapper>
         <Content>
-          <h2>{title}</h2> 
-          <p>{description}</p>
+          <Heading css={{ fontSize: "$xxxl"}}>{title}</Heading>
+          <Text>{description}</Text>
           <Actions>
             <ButtonLink external target="_blank" href={cta.href} label={ cta.label } />
           </Actions>

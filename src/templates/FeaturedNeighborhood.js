@@ -1,6 +1,7 @@
-import { styled } from '@cabindao/topo';
+import { styled, Heading, Text, Box } from '@cabindao/topo';
 import { Wrapper, ArrowLink } from "@components"
 import Image from 'next/image'
+import { slugify } from "../../lib/slugify"
 
 export default function FeaturedNeighborhood({
   neighborhood,
@@ -12,7 +13,9 @@ export default function FeaturedNeighborhood({
       '@md': {
         pt: encroach ? 0 : "$24",
       },
-    }}>
+    }}
+    id={slugify(neighborhood.title)}
+    >
       <Wrapper>
         <Frame css={{
           mt: encroach ? "-$24" : 0,
@@ -29,14 +32,14 @@ export default function FeaturedNeighborhood({
           />
         </Frame>
         <Content>
-          <div>
-            <h2>{neighborhood.title}</h2>
-            <h3>{neighborhood.subtitle}</h3>
+          <Box>
+            <Heading mono uppercase css={{fontSize: "$sm"}}>{neighborhood.title}</Heading>
+            <Heading as="h3">{neighborhood.subtitle}</Heading>
             <ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
-          </div>
-          <div>
-            <p>{neighborhood.description}</p> 
-          </div>
+          </Box>
+          <Box>
+            <Text>{neighborhood.description}</Text> 
+          </Box>
         </Content>
       </Wrapper>
     </Container>

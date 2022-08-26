@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { styled, Heading, Wrapper } from "@cabindao/topo"
+import { styled, Wrapper } from "@cabindao/topo"
 
 const IntroContent = styled("div", {
   margin: "$12 0",

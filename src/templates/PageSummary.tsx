@@ -2,6 +2,7 @@ import Link from "next/link"
 import { styled, Wrapper, Heading, Text, Box, Button } from "@cabindao/topo";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import ArrowLink from "../../components/ArrowLink";
+import { slugify } from "../../lib/slugify"
 
 const PageSummary = ({
   title,
@@ -19,6 +20,7 @@ const PageSummary = ({
       css={{
         background: theme === "dark" ? "$forest" : ""
       }}
+      id={slugify(title)}
     >
       <Wrapper>
         <Content>

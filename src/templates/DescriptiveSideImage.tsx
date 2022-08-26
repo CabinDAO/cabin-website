@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link"
 import { styled, Wrapper, Button, Heading, Text } from "@cabindao/topo";
+import { slugify } from "../../lib/slugify"
 
 type ImageSrc = Parameters<typeof Image>[0]["src"];
 
@@ -25,7 +26,7 @@ const DescriptiveSideImage = ({
   cta?: { href: string, label: string };
 }) => {
   return (
-    <Container reversed={reversed}>
+    <Container reversed={reversed} id={slugify(title)}>
       {bgImage && (
         <Image
           src={bgImage}

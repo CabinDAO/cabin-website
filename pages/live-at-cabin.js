@@ -13,7 +13,7 @@ export default function LiveAtCabin() {
       <InnerPageNav
         ctas={[
           {
-            href: "/live-at-cabin#coliving-pass",
+            href: "/live-at-cabin#colive-with-cabin",
             text: "Coliving Pass"
           },
           {
@@ -37,7 +37,6 @@ export default function LiveAtCabin() {
           href: "/neighborhoods/become-a-neighborhood",
           label: "Start a Neighborhood"
         }}
-        reversed
       />
 
       <CabinVision theme="dark" />

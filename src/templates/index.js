@@ -7,6 +7,7 @@ import SealHero from "./SealHero"
 import ThreeColumnItems from "./ThreeColumnItems"
 import PrimaryHero from "./PrimaryHero.js"
 import InnerPageNav from "./InnerPageNav.js"
+import NeighborhoodHighlight from "./NeighborhoodHighlight.js"
 
 export {
   CallToAction,
@@ -17,5 +18,6 @@ export {
   SealHero,
   ThreeColumnItems,
   PrimaryHero,
-  InnerPageNav
+  InnerPageNav,
+  NeighborhoodHighlight
 }
