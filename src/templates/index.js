@@ -8,6 +8,7 @@ import ThreeColumnItems from "./ThreeColumnItems"
 import PrimaryHero from "./PrimaryHero.js"
 import InnerPageNav from "./InnerPageNav.js"
 import NeighborhoodHighlight from "./NeighborhoodHighlight.js"
+import ProductHero from "./ProductHero.js"
 
 export {
   CallToAction,
@@ -19,5 +20,6 @@ export {
   ThreeColumnItems,
   PrimaryHero,
   InnerPageNav,
-  NeighborhoodHighlight
+  NeighborhoodHighlight,
+  ProductHero,
 }
