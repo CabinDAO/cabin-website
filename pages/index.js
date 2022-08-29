@@ -25,6 +25,10 @@ export default function Home() {
         bgImageAlt={ 'People hanging out on a porch'}
         featureImage={"/guestsGroup.jpg"}
         featureImageAlt={ 'People sitting around a campfire'}
+        cta={{
+          href: "/coliving-pass",
+          label: "Apply to Colive"
+        }}
       />
 
       {/*
@@ -37,6 +41,10 @@ export default function Home() {
         bgImageAlt={"People talking around a table"}
         featureImage={"/guestsTable.jpg"}
         featureImageAlt={"Texas hill country scenery"}
+        cta={{
+          href: "/neighborhoods/become-a-neighborhood",
+          label: "Start a Neighborhood"
+        }}
         reversed
       />
 

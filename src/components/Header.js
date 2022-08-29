@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import { styled } from "@cabindao/topo";
+import { styled, Button } from "@cabindao/topo";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import ButtonLink from "./ButtonLink";
 import Wrapper from "./Wrapper";
@@ -23,12 +23,9 @@ export default function Header() {
   );
 
   const joinButton = (
-    <ButtonLink
-      external
-      label="Apply to Colive"
-      href="https://discord.gg/ttgRU7QKVE"
-      target="_blank"
-    />
+    <Link href="/coliving-pass" passHref>
+      <Button as="a" tone="wheat">Apply to Colive</Button>
+    </Link>
   );
 
   const toggle = (

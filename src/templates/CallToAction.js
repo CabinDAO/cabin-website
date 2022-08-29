@@ -1,4 +1,5 @@
-import { styled, Heading, Text } from '@cabindao/topo';
+import Link from "next/link"
+import { styled, Heading, Text, Button } from '@cabindao/topo';
 import { Wrapper, ButtonLink } from "@components"
 import Image from 'next/image'
 import { slugify } from "../../lib/slugify"
@@ -25,7 +26,11 @@ export default function CallToAction({
           <Heading css={{ fontSize: "$xxxl"}}>{title}</Heading>
           <Text>{description}</Text>
           <Actions>
-            <ButtonLink external target="_blank" href={cta.href} label={ cta.label } />
+            {cta && (
+              <Link href={cta?.href} passHref>
+                <Button as="a" tone="wheat">{cta?.label}</Button>
+              </Link>
+            )}
           </Actions>
         </Content>
       </Wrapper>
