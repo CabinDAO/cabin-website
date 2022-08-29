@@ -1,5 +1,5 @@
 import { styled, Heading, Text } from '@cabindao/topo';
-import { Wrapper, ArrowLink, ButtonLink } from "@components"
+import { Wrapper, ButtonLink } from "@components"
 import Image from 'next/image'
 import { slugify } from "../../lib/slugify"
 

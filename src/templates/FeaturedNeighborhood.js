@@ -1,5 +1,5 @@
 import { styled, Heading, Text, Box } from '@cabindao/topo';
-import { Wrapper, ArrowLink } from "@components"
+import { Wrapper, } from "@components"
 import Image from 'next/image'
 import { slugify } from "../../lib/slugify"
 
@@ -35,7 +35,9 @@ export default function FeaturedNeighborhood({
           <Box>
             <Heading mono uppercase css={{fontSize: "$sm"}}>{neighborhood.title}</Heading>
             <Heading as="h3">{neighborhood.subtitle}</Heading>
-            <ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
+            {
+            //<ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
+          }
           </Box>
           <Box>
             <Text>{neighborhood.description}</Text> 

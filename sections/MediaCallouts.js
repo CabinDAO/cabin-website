@@ -1,5 +1,6 @@
 import { styled } from '@cabindao/topo';
-import { Wrapper, ArrowLink } from "@components"
+import { Wrapper, } from "@components"
+import ArrowLink from "../components/ArrowLink"
 
 export default function MediaCallout() {
   return (
