@@ -9,6 +9,8 @@ import Logo from "./Logo"
 import Wrapper from "./Wrapper"
 import Seal from "./Seal"
 import Banner from "./Banner"
+import Gallery from "./Gallery"
+import Modal from "./Modal"
 
 export {
   Wrapper,
@@ -22,4 +24,6 @@ export {
   Logo,
   Seal,
   Banner,
+  Gallery,
+  Modal,
 }

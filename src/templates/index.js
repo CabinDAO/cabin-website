@@ -9,6 +9,7 @@ import PrimaryHero from "./PrimaryHero.js"
 import InnerPageNav from "./InnerPageNav.js"
 import NeighborhoodHighlight from "./NeighborhoodHighlight.js"
 import ProductHero from "./ProductHero.js"
+import NeighborhoodPreview from "./NeighborhoodPreview.js"
 
 export {
   CallToAction,
@@ -22,4 +23,5 @@ export {
   InnerPageNav,
   NeighborhoodHighlight,
   ProductHero,
+  NeighborhoodPreview,
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from "next/link"
 import { styled, Wrapper, Box, Heading, Text, Button, Flex } from "@cabindao/topo"
+import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 
 const IntroContent = styled("div", {
   margin: "$12 0",
@@ -39,19 +40,20 @@ export default function ProductHero({
     <Wrapper>
       <IntroContent>
         <Flex>
-          <Box>
+          <Box css={{ flex: 1 }}>
             <Heading as="h1">{title}</Heading>
             <Text>{content}</Text>
             <Link href={cta.href} passHref>
               <Button tone="wheat">{cta.label}</Button>
             </Link>
           </Box>
-          <Box>
 
+          <Box css={{ position: "relative", flex: 1, maxWidth: 200 }}>
+            <AspectRatio.Root ratio={9/16}/>
             <Image
               src={"/passport.png"}
               alt={"Picture of Cabin's Passport card"}
-              layout="responsive"
+              layout="fill"
               width="300"
               height="300"
             />
