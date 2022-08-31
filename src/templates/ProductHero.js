@@ -40,7 +40,16 @@ export default function ProductHero({
     <Box as="section">
       <Wrapper>
         <IntroContent>
-          <Flex content="space-between">
+          <Box css={{
+            display: "flex",
+            flexDirection: "column-reverse",
+            justifyContent: "center",
+            alignItems: "center",
+            "@md": {
+              flexDirection: "row",
+              justifyContent: "space-between"
+            }
+          }}>
             <Box css={{ maxWidth: 500 }}>
               <Heading as="h1">{title}</Heading>
               <Text>{content}</Text>
@@ -49,7 +58,15 @@ export default function ProductHero({
               </Link>
             </Box>
 
-            <Box css={{ padding: "$12"}}>
+            <Box css={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "$6 0",
+              "@md": {
+                padding: "$6 $12",
+              }
+            }}>
               <Image
                 src={"/passport.png"}
                 alt={"Picture of Cabin's Passport card"}
@@ -58,7 +75,7 @@ export default function ProductHero({
                 height={232}
                 />
             </Box>
-          </Flex>
+          </Box>
         </IntroContent>
       </Wrapper>
     </Box>

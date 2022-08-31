@@ -215,7 +215,14 @@ export default function NeighborhoodPreview() {
             <PreviewGallery images={galleryImages} />
           </Box>
           <Box>
-            <Box css={{width: "50%", float: "right", ml: "$6"}}>
+            <Box css={{
+              mb: "$12",
+              "@md": {
+                width: "50%",
+                float: "right",
+                ml: "$6"
+              }
+            }}>
               <DetailBox />
             </Box>
             <Heading as="h5" mono uppercase css={{m:0}}>Neighborhood Zero</Heading>
@@ -234,7 +241,16 @@ export default function NeighborhoodPreview() {
       </Box>
       <Box as="section" css={{pb: "$20"}}>
         <Wrapper>
-          <Box css={{display: "grid", gridTemplateColumns: "repeat(2, 1fr)", columnGap: "$8"}}>
+          <Box css={{
+            display: "grid",
+            gridTemplateRows: "repeat(2, 1fr)",
+            rowGap: "$8",
+            "@md": {
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gridTemplateRows: "unset",
+              columnGap: "$8"
+            }
+          }}>
             <ImageCard {...galleryImages[0]} ratio={16 / 9}/>
             <ImageCard {...galleryImages[1]} ratio={16 / 9}/>
           </Box>

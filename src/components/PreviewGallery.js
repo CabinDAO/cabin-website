@@ -21,40 +21,53 @@ const PreviewImage = function({src, alt, ratio}) {
   )
 }
 
+const OutlinedBox = styled(Box, {
+  border: "1px solid $sprout"
+})
+
 export default function PreviewGallery({ images }) {
   let borderVal = "1px solid $sprout"
 
   return (
-    <Flex css={{
-      border: borderVal,
+    <OutlinedBox css={{
+      display: "grid",
+      gridTemplateRows: "repeat(4, 1fr)",
+      gridTemplateColumns: "repeat(4, 1fr)",
       borderRadius: 20,
       overflow: "hidden",
-      minHeight: 350,
-      marginTop: "-$20"
+      marginTop: "-$20",
+      "@lg": {
+        gridTemplateRows: "repeat(2, 1fr)"
+      },
+      [`& ${Box}:first-of-type`]: {
+        gridColumn: "1 / span 4",
+        gridRow: "1 / span 3",
+        "@md": {
+          gridColumn: "1 / span 3",
+          gridRow: "1 / span 4"
+        },
+        "@lg": {
+          gridColumn: "1 / span 2",
+          gridRow: "1 / span 2"
+        }
+      }
     }}
     >
-      <Box css={{flex: 1, borderRight: borderVal}}>
-          <PreviewImage {...images[0]} />
-      </Box>
-      <Box css={{
-        width: "40%",
-        display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
-        gridTemplateRows: "repeat(2, 1fr)",
-      }}>
-        <Box css={{ borderRight: borderVal, borderBottom: borderVal}}>
+        <OutlinedBox css={{}}>
+            <PreviewImage {...images[0]} />
+        </OutlinedBox>
+        <OutlinedBox css={{}}>
           <PreviewImage {...images[1]} ratio={4/3} />
-        </Box>
-        <Box>
+        </OutlinedBox>
+        <OutlinedBox>
           <PreviewImage {...images[2]} ratio={4/3} />
-        </Box>
-        <Box>
+        </OutlinedBox>
+        <OutlinedBox>
           <PreviewImage {...images[3]} ratio={4/3} />
-        </Box>
-        <Box css={{ borderTop: borderVal, borderLeft: borderVal}}>
+        </OutlinedBox>
+        <OutlinedBox css={{}}>
           <PreviewImage {...images[4]} ratio={4/3} />
-        </Box>
-      </Box>
-    </Flex>
+        </OutlinedBox>
+    </OutlinedBox>
   )
 }
