@@ -12,7 +12,7 @@ export default function CallToAction() {
           <ButtonLink
             external
             target="_blank"
-            href="https://discord.gg/ttgRU7QKVE"
+            href="https://creatorcabins.typeform.com/to/fzxsf58P?typeform-source=website"
             label="Join the community"
           />
         </Actions>
