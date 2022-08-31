@@ -11,8 +11,6 @@ export default function ColivingPass() {
         cta={{ href: "", label: "Apply to Colive" }}
       />
 
-      <NeighborhoodHighlight />
-
       {/*
         * Colive with Cabin
         */}

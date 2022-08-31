@@ -11,24 +11,34 @@ const ModalBackdrop = styled("div", {
 });
 
 const ModalRoot = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   position: "fixed",
   zIndex: 1300,
   inset: 0,
 });
 
 const ModalContainer = styled("div", {
-  height: "100vh",
-  width: "100vw",
+  position: "relative",
+  height: "95vh",
+  width: "95vw",
   backgroundColor: "$sand",
   overflowY: "scroll",
-  //display: "flex",
-  //justifyContent: "center",
-  //alignItems: "center",
 });
 
+const CloseButton = styled(Button, {
+  position: "absolute",
+  top: 0,
+  right: 0
+})
+
 export default function Modal({ isOpen, setIsOpen, children }) {
-  const close = useCallback(() => setIsOpen(false), [setIsOpen]);
-    const onContainerKeyDown = useCallback(
+  const close = useCallback(() => {
+    console.log("close");
+    setIsOpen(false)
+  }, [setIsOpen] );
+  const onContainerKeyDown = useCallback(
     (e) => {
       if (e.key === "Escape") {
         close();
@@ -40,7 +50,9 @@ export default function Modal({ isOpen, setIsOpen, children }) {
   return isOpen ? (
     <Portal>
       <ModalRoot>
+        <ModalBackdrop />
         <ModalContainer onKeyDown={onContainerKeyDown} tabIndex={-1}>
+          <CloseButton tone="wheat" rightIcon={<Cross1Icon />} onClick={close}/>
           <Container size="tight" css={{ backgroundColor: "$sand", padding: "$8 $10"}}>
             {children}
           </Container>

@@ -58,15 +58,29 @@ export default function Gallery({ images }) {
       </Box>
 
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-        {images.map(( image, i) => (
+        <Box css={{width: "100%"}}>
           <Image
-            key={i}
-            src={image.src}
-            alt={image.alt}
-            layout="fill"
-            objectFit
+            src={images[0].src}
+            alt={images[0].alt}
+            layout="responsive"
+            width={800}
+            height={532}
           />
-        ))}
+        </Box>
+
+        {
+        /*
+*{images.map(( image, i) => (
+*  <Image
+*    key={i}
+*    src={image.src}
+*    alt={image.alt}
+*    layout="fill"
+*    objectFit
+*  />
+*))}
+*/
+      }
       </Modal>
     </Flex>
   )
