@@ -15,6 +15,7 @@ const DescriptiveSideImage = ({
   featureImageAlt = "No Image Found",
   cta,
   reversed = false,
+  bleedable = false,
 }: {
   title: React.ReactNode;
   content: React.ReactNode;
@@ -26,7 +27,7 @@ const DescriptiveSideImage = ({
   cta?: { href: string, label: string };
 }) => {
   return (
-    <Container reversed={reversed} id={slugify(title)}>
+    <Container reversed={reversed} id={slugify(title)} css={{ pb: bleedable ? "$20" : "" }}>
       {bgImage && (
         <Image
           src={bgImage}

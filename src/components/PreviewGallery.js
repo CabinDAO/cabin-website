@@ -3,6 +3,7 @@ import Image from "next/image"
 import { styled, Box, Flex, Grid } from "@cabindao/topo"
 import { Modal } from "@components"
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
+import Gallery from "react-photo-gallery";
 
 const PreviewImage = function({src, alt, ratio}) {
   return (
@@ -20,8 +21,7 @@ const PreviewImage = function({src, alt, ratio}) {
   )
 }
 
-export default function Gallery({ images }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function PreviewGallery({ images }) {
   let borderVal = "1px solid $sprout"
 
   return (
@@ -30,9 +30,8 @@ export default function Gallery({ images }) {
       borderRadius: 20,
       overflow: "hidden",
       minHeight: 350,
-      cursor: "pointer",
+      marginTop: "-$20"
     }}
-      onClick={setIsOpen}
     >
       <Box css={{flex: 1, borderRight: borderVal}}>
           <PreviewImage {...images[0]} />
@@ -56,32 +55,6 @@ export default function Gallery({ images }) {
           <PreviewImage {...images[4]} ratio={4/3} />
         </Box>
       </Box>
-
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-        <Box css={{width: "100%"}}>
-          <Image
-            src={images[0].src}
-            alt={images[0].alt}
-            layout="responsive"
-            width={800}
-            height={532}
-          />
-        </Box>
-
-        {
-        /*
-*{images.map(( image, i) => (
-*  <Image
-*    key={i}
-*    src={image.src}
-*    alt={image.alt}
-*    layout="fill"
-*    objectFit
-*  />
-*))}
-*/
-      }
-      </Modal>
     </Flex>
   )
 }

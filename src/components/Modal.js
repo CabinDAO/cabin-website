@@ -3,6 +3,7 @@ import { Cross1Icon } from "@radix-ui/react-icons";
 import { styled, Button, Box, Container } from "@cabindao/topo"
 import { Portal } from "react-portal";
 
+
 const ModalBackdrop = styled("div", {
   position: "fixed",
   backgroundColor: "#32484180",
@@ -38,6 +39,7 @@ export default function Modal({ isOpen, setIsOpen, children }) {
     console.log("close");
     setIsOpen(false)
   }, [setIsOpen] );
+
   const onContainerKeyDown = useCallback(
     (e) => {
       if (e.key === "Escape") {

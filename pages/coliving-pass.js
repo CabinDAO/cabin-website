@@ -30,9 +30,12 @@ export default function ColivingPass() {
           label:"Apply to Colive"
         }}
         reversed
+        bleedable
       />
 
       <NeighborhoodPreview />
+
+      <ColiveWithCabinCTA />
 
     </>
   )
