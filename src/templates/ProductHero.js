@@ -37,29 +37,30 @@ export default function ProductHero({
   src
 }) {
   return (
-    <Wrapper>
-      <IntroContent>
-        <Flex>
-          <Box css={{ flex: 1 }}>
-            <Heading as="h1">{title}</Heading>
-            <Text>{content}</Text>
-            <Link href={cta.href} passHref>
-              <Button tone="wheat">{cta.label}</Button>
-            </Link>
-          </Box>
+    <Box as="section">
+      <Wrapper>
+        <IntroContent>
+          <Flex content="space-between">
+            <Box css={{ maxWidth: 500 }}>
+              <Heading as="h1">{title}</Heading>
+              <Text>{content}</Text>
+              <Link href={cta.href} passHref>
+                <Button tone="wheat">{cta.label}</Button>
+              </Link>
+            </Box>
 
-          <Box css={{ position: "relative", flex: 1, maxWidth: 200 }}>
-            <AspectRatio.Root ratio={9/16}/>
-            <Image
-              src={"/passport.png"}
-              alt={"Picture of Cabin's Passport card"}
-              layout="fill"
-              width="300"
-              height="300"
-            />
-          </Box>
-        </Flex>
-      </IntroContent>
-    </Wrapper>
+            <Box css={{ padding: "$12"}}>
+              <Image
+                src={"/passport.png"}
+                alt={"Picture of Cabin's Passport card"}
+                layout="intrinsic"
+                width={147}
+                height={232}
+                />
+            </Box>
+          </Flex>
+        </IntroContent>
+      </Wrapper>
+    </Box>
   )
 }
