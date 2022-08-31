@@ -134,7 +134,7 @@ const ProductCTA = () => {
           <ButtonLink
             external
             label="Join the community"
-            href="https://discord.gg/ttgRU7QKVE"
+            href="https://creatorcabins.typeform.com/to/fzxsf58P?typeform-source=website"
             target="_blank"
           />
         </ProductCTAInnerContainer>
