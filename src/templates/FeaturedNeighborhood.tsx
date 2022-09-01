@@ -6,6 +6,18 @@ import { slugify } from "../../lib/slugify"
 export default function FeaturedNeighborhood({
   neighborhood,
   encroach = false
+}: {
+  encroach?: boolean;
+  neighborhood: {
+    image: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    cta?: {
+      href: string;
+      label: string;
+    }
+  }
 }) {
   return (
     <Container css={{
@@ -14,7 +26,7 @@ export default function FeaturedNeighborhood({
         pt: encroach ? 0 : "$24",
       },
     }}
-    id={slugify(neighborhood.title)}
+      id={slugify(neighborhood.title)}
     >
       <Wrapper>
         <Frame css={{
@@ -33,14 +45,14 @@ export default function FeaturedNeighborhood({
         </Frame>
         <Content>
           <Box>
-            <Heading mono uppercase css={{fontSize: "$sm"}}>{neighborhood.title}</Heading>
+            <Heading mono uppercase css={{ fontSize: "$sm" }}>{neighborhood.title}</Heading>
             <Heading as="h3">{neighborhood.subtitle}</Heading>
             {
-            //<ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
-          }
+              //<ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
+            }
           </Box>
           <Box>
-            <Text>{neighborhood.description}</Text> 
+            <Text>{neighborhood.description}</Text>
           </Box>
         </Content>
       </Wrapper>

@@ -43,23 +43,25 @@ const Frame = styled('div', {
 export default function PrimaryHero({
   title,
   subtitle,
-  imageUrl = "/visionImage.jpg",
-  imageAlt = "Some trees backlit by a sunrise"
+  imageUrl,
+  imageAlt
 }) {
   return (
     <Wrapper>
       <IntroContent>
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <Frame>
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            layout="responsive"
-            width={984}
-            height={340}
-            />
-        </Frame>
+        {imageUrl && (
+          <Frame>
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              layout="responsive"
+              width={984}
+              height={340}
+              />
+          </Frame>
+        )}
       </IntroContent>
     </Wrapper>
   )

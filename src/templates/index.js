@@ -13,6 +13,7 @@ import NeighborhoodPreview from "./NeighborhoodPreview"
 import AnnouncementHero from "./AnnouncementHero"
 import SimpleCallToAction from "./SimpleCallToAction"
 import Features from "./Features"
+import NeighborhoodDetail from "./NeighborhoodDetail"
 
 export {
   CallToAction,
@@ -30,4 +31,5 @@ export {
   AnnouncementHero,
   SimpleCallToAction,
   Features,
+  NeighborhoodDetail,
 }
