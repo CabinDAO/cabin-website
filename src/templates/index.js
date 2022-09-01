@@ -5,11 +5,14 @@ import Marquee from "./Marquee"
 import PageSummary from "./PageSummary"
 import SealHero from "./SealHero"
 import ThreeColumnItems from "./ThreeColumnItems"
-import PrimaryHero from "./PrimaryHero.js"
-import InnerPageNav from "./InnerPageNav.js"
-import NeighborhoodHighlight from "./NeighborhoodHighlight.js"
-import ProductHero from "./ProductHero.js"
-import NeighborhoodPreview from "./NeighborhoodPreview.js"
+import PrimaryHero from "./PrimaryHero"
+import InnerPageNav from "./InnerPageNav"
+import NeighborhoodHighlight from "./NeighborhoodHighlight"
+import ProductHero from "./ProductHero"
+import NeighborhoodPreview from "./NeighborhoodPreview"
+import AnnouncementHero from "./AnnouncementHero"
+import SimpleCallToAction from "./SimpleCallToAction"
+import Features from "./Features"
 
 export {
   CallToAction,
@@ -24,4 +27,7 @@ export {
   NeighborhoodHighlight,
   ProductHero,
   NeighborhoodPreview,
+  AnnouncementHero,
+  SimpleCallToAction,
+  Features,
 }
