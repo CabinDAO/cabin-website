@@ -1,5 +1,5 @@
 import { Heading } from "@cabindao/topo"
-import { PrimaryHero, SimpleCallToAction, NeighborhoodDetail } from "@templates"
+import { PrimaryHero, SimpleCallToAction } from "@templates"
 
 export default function NeighborhoodDetail() {
   return (
