@@ -3,7 +3,6 @@ import Image from "next/image"
 import { styled, Box, Flex, Grid } from "@cabindao/topo"
 import { Modal } from "@components"
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
-import Gallery from "react-photo-gallery";
 
 const PreviewImage = function({src, alt, ratio}) {
   return (
@@ -25,7 +24,7 @@ const OutlinedBox = styled(Box, {
   border: "1px solid $sprout"
 })
 
-export default function PreviewGallery({ images }) {
+export default function PreviewGallery({ images, encroach }) {
   let borderVal = "1px solid $sprout"
 
   return (
@@ -35,7 +34,7 @@ export default function PreviewGallery({ images }) {
       gridTemplateColumns: "repeat(4, 1fr)",
       borderRadius: 20,
       overflow: "hidden",
-      marginTop: "-$20",
+      marginTop: encroach ? "-$20" : "",
       "@lg": {
         gridTemplateRows: "repeat(2, 1fr)"
       },

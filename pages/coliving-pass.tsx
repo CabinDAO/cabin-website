@@ -18,22 +18,22 @@ export default function ColivingPass() {
         title={"Colive with Cabin"}
         content={"Come spend some time in the Texas Hill Country at a beautiful, 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin"}
         featureImage={"/guestsGroup.jpg"}
-        featureImageAlt={ 'People sitting around a campfire'}
+        featureImageAlt={'People sitting around a campfire'}
       />
       <DescriptiveSideImage
         title={"Colive with Cabin"}
         content={"Come spend some time in the Texas Hill Country at a beautiful, 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin"}
         featureImage={"/guestsGroup.jpg"}
-        featureImageAlt={ 'People sitting around a campfire'}
+        featureImageAlt={'People sitting around a campfire'}
         cta={{
-          href:"/coliving-pass",
-          label:"Apply to Colive"
+          href: "/coliving-pass",
+          label: "Apply to Colive"
         }}
         reversed
         bleedable
       />
 
-      <NeighborhoodPreview />
+      <NeighborhoodPreview encroach={true} />
 
       <ColiveWithCabinCTA />
 
