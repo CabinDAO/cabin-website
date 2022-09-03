@@ -1,7 +1,10 @@
-import { styled, Heading, Text, Box } from '@cabindao/topo';
+import Link from "next/link"
+import { styled, Heading, Text, Box, Button } from '@cabindao/topo';
 import { Wrapper, } from "@components"
 import Image from 'next/image'
 import { slugify } from "../../lib/slugify"
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+
 
 export default function FeaturedNeighborhood({
   neighborhood,
@@ -47,9 +50,11 @@ export default function FeaturedNeighborhood({
           <Box>
             <Heading mono uppercase css={{ fontSize: "$sm" }}>{neighborhood.title}</Heading>
             <Heading as="h3">{neighborhood.subtitle}</Heading>
-            {
-              //<ArrowLink href={neighborhood.cta.href} label={neighborhood.cta.label}/>
-            }
+            <Box css={{ mt: "$12" }}>
+              <Link href={neighborhood.cta?.href} passHref>
+                <Button leftIcon={<ArrowRightIcon />} type="link">{neighborhood.cta?.label}</Button>
+              </Link>
+            </Box>
           </Box>
           <Box>
             <Text>{neighborhood.description}</Text>
