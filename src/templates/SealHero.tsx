@@ -1,5 +1,5 @@
 import { styled } from "@cabindao/topo";
-import { Wrapper, HeroFrame } from "@components"
+import { Seal, Wrapper, HeroFrame } from "@components"
 import heroImage from "../../public/hero.jpg";
 
 export default function SealHero() {
@@ -7,7 +7,16 @@ export default function SealHero() {
     <Container>
       <Wrapper>
         <Content>
-          <HeroFrame src={heroImage} alt="A real view of a cabin" />
+          <HeroFrame src={heroImage} alt="A real view of a cabin">
+            <Seal
+              css={{
+                transform: "scale(0.35)",
+                "@md": {
+                  transform: "scale(0.3)"
+                },
+              }}
+            />
+          </HeroFrame>
           <h1>A network city for <br />
             online creators</h1>
         </Content>

@@ -1,11 +1,10 @@
-import { styled } from "@cabindao/topo";
+import { styled, Box } from "@cabindao/topo";
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
-import { Box } from "@cabindao/topo"
 import Image from "next/image";
-import { Seal } from "@components"
 
 const HeroFrame = ({
   alt = "Image failed to load",
+  children,
   ...props
 }: Parameters<typeof Image>[0]) => {
   return (
@@ -14,19 +13,12 @@ const HeroFrame = ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundImage: "url('hero.jpg')",
+        backgroundImage: `url('${props.src}')`,
         backgroundPosition: "center center",
         backgroundSize: "cover"
       }}
     >
-      <Seal
-        css={{
-          transform: "scale(0.35)",
-          "@md": {
-            transform: "scale(0.3)"
-          },
-        }}
-      />
+      {children}
     </Frame>
   );
 };
