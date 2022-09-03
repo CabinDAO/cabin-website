@@ -43,23 +43,31 @@ const Frame = styled('div', {
 export default function PrimaryHero({
   title,
   subtitle,
-  imageUrl,
-  imageAlt
+  image,
+}: {
+  title: string;
+  subtitle: string;
+  image?: {
+      src: string;
+      alt: string;
+      height: number;
+      width: number;
+    }
 }) {
   return (
     <Wrapper>
       <IntroContent>
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        {imageUrl && (
+        {image && (
           <Frame>
             <Image
-              src={imageUrl}
-              alt={imageAlt}
+              src={image.src}
+              alt={image.alt}
               layout="responsive"
-              width={984}
-              height={340}
-              />
+              height={image.height}
+              width={image.width}
+            />
           </Frame>
         )}
       </IntroContent>

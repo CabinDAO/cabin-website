@@ -1,14 +1,22 @@
-import { Heading, Wrapper} from "@cabindao/topo"
+import { Heading, Wrapper } from "@cabindao/topo"
 import { PrimaryHero, InnerPageNav, DescriptiveSideImage } from "@templates"
 import { ColiveWithCabinCTA, NeighborhoodZeroFeature, CabinVision, MediaCallout } from "@sections"
+
+const image = {
+  src: "/neighborhood-zero-gallery/01.jpg",
+  alt: "",
+  width: 800,
+  height: 532,
+}
 
 export default function LiveAtCabin() {
   return (
     <>
       <PrimaryHero
         title="Our vision is to build a decentralized city for creators."
-        subtitle = "Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
-        />
+        subtitle="Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+        image={image}
+      />
 
       <InnerPageNav
         ctas={[
@@ -21,7 +29,7 @@ export default function LiveAtCabin() {
             text: "Start a Neighborhood"
           },
         ]}
-        />
+      />
 
       <ColiveWithCabinCTA />
       <NeighborhoodZeroFeature />
