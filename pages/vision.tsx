@@ -1,8 +1,7 @@
-import Wrapper from "../src/components/Wrapper"
 import { PrimaryHero, SimpleCallToAction } from "@templates"
 
 import Image from 'next/image'
-import { styled } from "@cabindao/topo";
+import { styled, Wrapper } from "@cabindao/topo";
 import { HomeIcon, SunIcon, LightningBoltIcon } from '@radix-ui/react-icons'
 
 const Intro = styled("section", {

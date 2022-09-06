@@ -24,6 +24,7 @@ const DescriptiveSideImage = ({
   featureImage: ImageSrc;
   featureImageAlt?: string;
   reversed?: boolean;
+  bleedable?: boolean
   cta?: { href: string, label: string };
 }) => {
   return (

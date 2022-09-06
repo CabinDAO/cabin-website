@@ -1,7 +1,6 @@
-import { styled } from '@cabindao/topo';
+import { styled, Wrapper } from '@cabindao/topo';
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
-import Wrapper from './Wrapper';
 
 export default function BackLink({ 
   label, 

@@ -1,7 +1,6 @@
-import Wrapper from "../components/Wrapper";
 import { HeroFrame } from "@components"
 import Image from "next/image";
-import { styled } from "@cabindao/topo";
+import { styled, Wrapper } from "@cabindao/topo";
 
 export default function UnderConstruction({
   title,

@@ -10,6 +10,15 @@ export default function CallToAction({
   cta,
   bgImage = "/stars.jpg",
   bgImageAlt = "A stary night sky in the Texas Hill Country"
+}: {
+  title: string;
+  description: string;
+  cta?: {
+    href: string;
+    label: string;
+  },
+  bgImage: string;
+  bgImageAlt: string;
 }) {
   return (
     <Container id={slugify(title)}>
@@ -23,7 +32,7 @@ export default function CallToAction({
       />
       <Wrapper>
         <Content>
-          <Heading css={{ fontSize: "$xxxl"}}>{title}</Heading>
+          <Heading css={{ fontSize: "$xxxl" }}>{title}</Heading>
           <Text>{description}</Text>
           <Actions>
             {cta && (

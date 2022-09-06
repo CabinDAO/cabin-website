@@ -1,7 +1,6 @@
-import { styled } from "@cabindao/topo";
+import { styled, Wrapper } from "@cabindao/topo";
 import { Text } from "@cabindao/topo";
 import Link from "next/link";
-import Wrapper from "./Wrapper";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const Box = styled("div", {

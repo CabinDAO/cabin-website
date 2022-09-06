@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { Wrapper, ArrowLink } from "@components"
 import { styled } from "@cabindao/topo";
-import find from "../../public/find.svg";
-import harmonize from "../../public/harmonize.svg";
-import shape from "../../public/shape.svg";
 
 export default function ThreeColumnItems() {
   return (
@@ -16,7 +13,7 @@ export default function ThreeColumnItems() {
           <Actions>
             <Action>
               <Image
-                src={find}
+                src={"/find.svg"}
                 alt="An abstract find icon"
                 quality={100}
                 layout="fixed"
@@ -39,7 +36,7 @@ export default function ThreeColumnItems() {
             </Action>
             <Action>
               <Image
-                src={harmonize}
+                src={"/harmonize.svg"}
                 alt="An abstract harmonize icon"
                 quality={100}
                 layout="fixed"
@@ -61,7 +58,7 @@ export default function ThreeColumnItems() {
             </Action>
             <Action>
               <Image
-                src={shape}
+                src={"/shape.svg"}
                 alt="An abstract shape icon"
                 quality={100}
                 layout="fixed"

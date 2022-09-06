@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import { Logo } from "@components";
 import Link from "next/link";
 import { Wrapper, Button, Input } from "@cabindao/topo";
 import { styled } from "@cabindao/topo";

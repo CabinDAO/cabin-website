@@ -34,7 +34,13 @@ export default function ProductHero({
   title,
   content,
   cta,
-  src
+}: {
+  title: string;
+  content: string;
+  cta: {
+    href: string;
+    label: string
+  }
 }) {
   return (
     <Box as="section">
@@ -73,7 +79,7 @@ export default function ProductHero({
                 layout="intrinsic"
                 width={147}
                 height={232}
-                />
+              />
             </Box>
           </Box>
         </IntroContent>

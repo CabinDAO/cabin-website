@@ -1,6 +1,4 @@
-import Hero from "../components/home/Hero";
-import Media from "../components/home/Media";
-import Join from "../components/home/Join";
+import {Hero, Media, Join} from '@sections'
 import { FeaturedNeighborhood, DescriptiveSideImage, PageSummary, Marquee } from "@templates"
 import { ColiveWithCabinCTA, NeighborhoodZeroFeature, CabinVision, MediaCallout } from "@sections"
 

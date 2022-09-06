@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import fireImage from '../../public/campfire.jpg';
-import sparkImage from '../../public/spark.svg';
 import { styled, keyframes } from '@cabindao/topo';
 import { Wrapper } from '@components';
 
@@ -11,13 +9,13 @@ export default function Marquee({ text }) {
         <Content>
           <Frame>
             <Image
-              src={fireImage}
+              src={"/campfire.jpg"}
               alt="A campfire"
               quality={50}
             />
             <Spark>
               <Image
-                src={sparkImage}
+                src={"/spark.svg"}
                 alt="An abstract illustration of a spark"
                 layout="responsive"
                 width={480}

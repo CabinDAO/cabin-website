@@ -1,10 +1,6 @@
 import Image from "next/image";
-import { styled } from "@cabindao/topo";
-import Wrapper from "../Wrapper";
-import ArrowLink from "../ArrowLink";
-import find from "../../public/find.svg";
-import harmonize from "../../public/harmonize.svg";
-import shape from "../../public/shape.svg";
+import { styled, Wrapper } from "@cabindao/topo";
+import { ArrowLink } from "@components"
 
 export default function Join() {
   return (
@@ -17,7 +13,7 @@ export default function Join() {
           <Actions>
             <Action>
               <Image
-                src={find}
+                src={"/find.svg"}
                 alt="An abstract find icon"
                 quality={100}
                 layout="fixed"
@@ -40,7 +36,7 @@ export default function Join() {
             </Action>
             <Action>
               <Image
-                src={harmonize}
+                src={"/harmonize.svg"}
                 alt="An abstract harmonize icon"
                 quality={100}
                 layout="fixed"
@@ -62,7 +58,7 @@ export default function Join() {
             </Action>
             <Action>
               <Image
-                src={shape}
+                src={"/shape.svg"}
                 alt="An abstract shape icon"
                 quality={100}
                 layout="fixed"

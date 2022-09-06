@@ -1,13 +1,12 @@
 import { styled } from "@cabindao/topo";
 import { Seal, Wrapper, HeroFrame } from "@components"
-import heroImage from "../../public/hero.jpg";
 
 export default function SealHero() {
   return (
     <Container>
       <Wrapper>
         <Content>
-          <HeroFrame src={heroImage} alt="A real view of a cabin">
+          <HeroFrame src={"/hero.jgp"} alt="A real view of a cabin">
             <Seal
               css={{
                 transform: "scale(0.35)",

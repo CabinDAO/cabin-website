@@ -1,5 +1,5 @@
 import { Container, Box, Heading, Text } from "@cabindao/topo";
-import Wrapper from "components/Wrapper";
+import { Wrapper } from "@components";
 import Gallery from "react-photo-gallery";
 import Image from "next/image"
 

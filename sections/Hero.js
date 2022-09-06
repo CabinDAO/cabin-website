@@ -1,14 +1,12 @@
-import { styled } from "@cabindao/topo";
-import Wrapper from "../Wrapper";
-import heroImage from "../../public/hero.jpg";
-import HeroFrame from "../../components/HeroFrame";
+import { styled, Wrapper } from "@cabindao/topo";
+import { HeroFrame } from "@components"
 
 export default function Hero() {
   return (
     <Container>
       <Wrapper>
         <Content>
-          <HeroFrame src={heroImage} alt="A real view of a cabin" />
+          <HeroFrame src={"/hero.jpg"} alt="A real view of a cabin" />
           <h1>A network city for <br />
             online creators</h1>
         </Content>

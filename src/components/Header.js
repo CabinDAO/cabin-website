@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
-import { styled, Button } from "@cabindao/topo";
+import { styled, Button, Wrapper } from "@cabindao/topo";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
-import ButtonLink from "./ButtonLink";
-import Wrapper from "./Wrapper";
+import { ButtonLink } from "@components"
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
