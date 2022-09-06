@@ -5,16 +5,16 @@ import Outposts from "sections/Outposts"
 
 const images = [
   {
-    src: "/neighborhood-zero-gallery/01.jpg",
+    src: "/neighborhoods/montaia.jpg",
     alt: "",
-    width: 800,
-    height: 532,
+    width: 750,
+    height: 562,
   },
   {
-    src: "/neighborhood-zero-gallery/02.jpg",
+    src: "/neighborhoods/radish.png",
     alt: "",
-    width: 4,
-    height: 3,
+    width: 992,
+    height: 638,
   },
 
 ]
@@ -23,19 +23,20 @@ export default function Neighborhoods() {
   return (
     <>
       <PrimaryHero
-        title="Our vision is to build a decentralized city for creators."
-        subtitle="Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+        title="Cabin is a network of independent neighborhoods in a network city"
+        subtitle="We call the properties in our network Neighborhoods: organizations that own and operate independent properties in the network."
       />
 
       <NeighborhoodZeroFeature />
 
       <Container css={{ mb: "$20" }}>
         <Flex>
-          <Box css={{mr: "$6"}}>
-            <NeighborhoodDetail image={images[0]} title="Montaia" description="This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service." cta={{href:"/", label: "View more details"}} />
+          <Box css={{ mr: "$6" }}>
+            <NeighborhoodDetail image={images[0]} title="Montaia" description=" Montaia Basecamp is a regenerative co-living community nestled remotely in the Eastern           Sierra Mountains  of California. This space offers a unique foundation that allows allows its community members to thrive in their remote work lifestyle while simultaneously diving into processes of personal, cultural, and ecological transformation." />
           </Box>
-          <Box css={{ml: "$6"}}>
-            <NeighborhoodDetail image={images[0]} title="Montaia" description="This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service." cta={{href:"/", label: "View more details"}} />
+          <Box css={{ ml: "$6" }}>
+            <NeighborhoodDetail image={images[1]} title="Radish" description="Radish has been called a retirement home for millenials OR a dinner party masquerading as a
+     colliving community. At its core is what we call the “Obvious Truth” - “We are happiest surrounded by people we love and admire. These people make us the best possible versions of ourselves.” Don’t worry, we are #notacult and we chant this every night." />
           </Box>
         </Flex>
       </Container>

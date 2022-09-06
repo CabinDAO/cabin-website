@@ -6,13 +6,6 @@ export default function BecomeANeighborhood() {
     <>
       <AnnouncementHero />
 
-      <ThreeColumnItems />
-
-      <SimpleCallToAction
-        title="Meet up and collaborate in the Texas Hill Country"
-        cta={{ href: "/", label: "call to action" }}
-      />
-
       <Features
         features= {[
           {
@@ -31,9 +24,11 @@ export default function BecomeANeighborhood() {
       />
 
       <SimpleCallToAction
-        title="Meet up and collaborate in the Texas Hill Country"
-        cta={{ href: "/", label: "call to action" }}
-        theme="dark"
+        title="Buy a place with your friends"
+        cta={{ 
+          href: "https://creatorcabins.typeform.com/to/kvLtc3xG?utm_source=website",
+          label: "Get Started" 
+        }}
       />
     </>
   )

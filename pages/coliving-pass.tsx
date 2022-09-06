@@ -8,7 +8,7 @@ export default function ColivingPass() {
       <ProductHero
         title="The Cabin Coliving Pass"
         content="For the first time, we are opening up Neighborhood Zero for long-term coliving. Come spend some time in the Texas Hill Country on a beautiful 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin."
-        cta={{ href: "", label: "Apply to Colive" }}
+        cta={{ href: "https://creatorcabins.typeform.com/coliveN0?utm_source=website", label: "Apply to Colive" }}
       />
 
       {/*
@@ -20,7 +20,7 @@ export default function ColivingPass() {
         featureImage={"/guestsGroup.jpg"}
         featureImageAlt={'People sitting around a campfire'}
         cta={{
-          href: "/coliving-pass",
+          href: "https://creatorcabins.typeform.com/coliveN0?utm_source=website",
           label: "Apply to Colive"
         }}
       />
@@ -30,7 +30,7 @@ export default function ColivingPass() {
         featureImage={"/guestsGroup.jpg"}
         featureImageAlt={'People sitting around a campfire'}
         cta={{
-          href: "/coliving-pass",
+          href: "https://creatorcabins.typeform.com/coliveN0?utm_source=website",
           label: "Apply to Colive"
         }}
         reversed
@@ -41,7 +41,7 @@ export default function ColivingPass() {
         featureImage={"/guestsGroup.jpg"}
         featureImageAlt={'People sitting around a campfire'}
         cta={{
-          href: "/coliving-pass",
+          href: "https://creatorcabins.typeform.com/coliveN0?utm_source=website",
           label: "Apply to Colive"
         }}
         bleedable

@@ -11,7 +11,7 @@ export default function NeighborhoodDetail() {
 
       {/* Colive micro CTA */}
       <CTARibbon
-        href="/coliving-pass"
+        href="https://creatorcabins.typeform.com/coliveN0?utm_source=website"
         label="Apply to Colive"
       />
 
@@ -20,16 +20,16 @@ export default function NeighborhoodDetail() {
         title="The Lore of Neighborhood 0"
         description="Neighborhood Zero is the first node in Cabin’s decentralized city. It is Cabin’s home away from home — the place we go back to for retreats, residencies, and build weeks. For the first time, we are opening it up to the wider Cabin network and establishing the first long-term coliving neighborhood in our community."
         images={galleryImages}
-        />
+      />
       {/* Amenities List */}
-      <ItemList 
+      <ItemList
         title="Amenities"
         items={amenities}
-        />
+      />
       {/* Dark themed call to action section */}
       <SimpleCallToAction
         title="Join us at Neighborhood 0 and become part of the lore"
-        cta={{ href: "/neighborhoods/become-a-neighborhood", label: "Apply to Colive" }}
+        cta={{ href: "https://creatorcabins.typeform.com/coliveN0?utm_source=website", label: "Apply to Colive" }}
         theme="dark"
       />
     </>

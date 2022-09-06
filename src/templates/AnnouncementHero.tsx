@@ -1,4 +1,5 @@
 import { styled, Wrapper, Button } from "@cabindao/topo"
+import Link from "next/link"
 import { HeroPattern } from "@components"
 
 const HeroContainer = styled("div", {
@@ -64,9 +65,9 @@ export default function AnnouncementHero() {
           <Title>Friends LLC</Title>
           <HeaderBackground>
             <Header>Buy a place with your friends Become a Caretaker at Cabin</Header>
-            <Button tone={"wheat"} type="primary">
-              Request Beta Access
-            </Button>
+            <Link href="https://creatorcabins.typeform.com/to/kvLtc3xG?utm_source=website" passHref>
+              <Button as="a" tone={"wheat"} type="primary">Get Started</Button>
+            </Link>
           </HeaderBackground>
         </ProductHeading>
       </HeroContainer>

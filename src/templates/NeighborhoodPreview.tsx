@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { styled, Box, Flex, Heading, Text, Wrapper, Button } from "@cabindao/topo"
 // Gallery
 import { PreviewGallery, ImageCard } from "@components"
@@ -80,7 +81,9 @@ function DetailBox() {
       </Flex>
       <Heading css={{ display: "block", fontSize: "$xxl", mt: "$2" }}>No. of Bedrooms: 8</Heading>
       <Box css={{ display: "block", mb: "$8", mt: "$12" }}>
-        <Button tone="wheat" css={{ width: "100%" }}>Apply</Button>
+        <Link href="https://creatorcabins.typeform.com/coliveN0?utm_source=website" passHref>
+          <Button as="a" tone="wheat" css={{ width: "100%" }}>Apply</Button>
+        </Link>
       </Box>
       <Box>
         <Flex content="space-between">
