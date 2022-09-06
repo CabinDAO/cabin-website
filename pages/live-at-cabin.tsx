@@ -13,8 +13,8 @@ export default function LiveAtCabin() {
   return (
     <>
       <PrimaryHero
-        title="Our vision is to build a decentralized city for creators."
-        subtitle="Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+        title="Help us build a network city for online creators"
+        subtitle="Join the Cabin experiment by becoming a resident of starting a neighborhood. Learn more about either option below."
         image={image}
       />
 
@@ -22,7 +22,7 @@ export default function LiveAtCabin() {
         ctas={[
           {
             href: "/live-at-cabin#colive-with-cabin",
-            text: "Coliving Pass"
+            text: "Become a Resident"
           },
           {
             href: "/live-at-cabin#start-a-neighborhood",
@@ -31,7 +31,18 @@ export default function LiveAtCabin() {
         ]}
       />
 
-      <ColiveWithCabinCTA />
+      <DescriptiveSideImage
+        title={"Colive with Cabin"}
+        content={"Come spend some time in the Texas Hill Country at a beautiful, 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin"}
+        bgImage={"/guestsOutdoors.jpg"}
+        bgImageAlt={'People hanging out on a porch'}
+        featureImage={"/guestsGroup.jpg"}
+        featureImageAlt={'People sitting around a campfire'}
+        cta={{
+          href: "/coliving-pass",
+          label: "Apply to Colive"
+        }}
+      />
       <NeighborhoodZeroFeature />
 
       <DescriptiveSideImage
