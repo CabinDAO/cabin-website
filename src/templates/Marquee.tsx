@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { styled, keyframes } from '@cabindao/topo';
 import { Wrapper } from '@components';
 
-export default function Marquee({ text }) {
+export default function Marquee({ text }: { text: string; }) {
   return (
     <Container>
       <Wrapper>

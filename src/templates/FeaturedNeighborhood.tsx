@@ -50,11 +50,14 @@ export default function FeaturedNeighborhood({
           <Box>
             <Heading mono uppercase css={{ fontSize: "$sm" }}>{neighborhood.title}</Heading>
             <Heading as="h3">{neighborhood.subtitle}</Heading>
-            <Box css={{ mt: "$12" }}>
-              <Link href={neighborhood.cta?.href} passHref>
-                <Button leftIcon={<ArrowRightIcon />} type="link">{neighborhood.cta?.label}</Button>
-              </Link>
-            </Box>
+            {neighborhood.cta && (
+              <Box css={{ mt: "$12" }}>
+                <Link href={neighborhood.cta?.href} passHref>
+                  <Button leftIcon={<ArrowRightIcon />} type="link">{neighborhood.cta?.label}</Button>
+                </Link>
+              </Box>
+            )
+            }
           </Box>
           <Box>
             <Text>{neighborhood.description}</Text>

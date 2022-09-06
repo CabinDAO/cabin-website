@@ -36,11 +36,6 @@ export default function NeighborhoodPreview({ encroach }: {
             <Text css={{ fontSize: "$lg" }}>
               The property sits on 28 rolling acres in the Texas Hill Country — secluded enough to see every star in the night sky, but still only 45 minutes from downtown Austin.
             </Text>
-            {/*
-              *<Button leftIcon={<ArrowRightIcon />} type="link">
-              *  <Text weight="bold">Show More</Text>
-              *</Button>
-              */}
           </Box>
         </Wrapper>
       </Box>
@@ -81,9 +76,16 @@ function DetailBox() {
         </Box>
       </Flex>
       <Heading css={{ display: "block", fontSize: "$xxl", mt: "$2" }}>No. of Bedrooms: 8</Heading>
-      <Box css={{ display: "block", mb: "$8", mt: "$12" }}>
+      <Box css={{
+        display: "block",
+        mb: "$8",
+        mt: "$12",
+        "a": {
+          width: "100%"
+        }
+      }}>
         <Link href="https://creatorcabins.typeform.com/coliveN0?utm_source=website" passHref>
-          <Button as="a" tone="wheat" css={{ width: "100%" }}>Apply</Button>
+          <Button as="a" tone="wheat">Apply</Button>
         </Link>
       </Box>
       <Box>

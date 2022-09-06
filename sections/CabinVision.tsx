@@ -1,6 +1,8 @@
 import { PageSummary } from "@templates"
+import type { iComponentTheme } from "src/templates/PageSummary"
 
-export default function CabinVision({ theme = "light" }) {
+
+export default function CabinVision({ theme = "light" }: iComponentTheme) {
   return (
     <PageSummary
       title={"The Vision"}

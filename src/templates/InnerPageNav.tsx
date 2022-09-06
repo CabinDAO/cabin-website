@@ -1,9 +1,13 @@
 import { styled, Flex, Button } from "@cabindao/topo"
 import Link from "next/link"
 
-export default function InnerPageNav({ ctas }) {
+export default function InnerPageNav({
+  ctas
+}: {
+  ctas: Array<{ label: string; href: string; }>
+}) {
   return (
-    <Flex 
+    <Flex
       content="center"
       items="center"
       css={{
@@ -12,8 +16,14 @@ export default function InnerPageNav({ ctas }) {
         margin: "0"
       }}
     >
-      {ctas.map(( cta, i) => (
-        <Link href={cta.href} key={i} passHref><Button as="a" tone="wheat" type="link" css={{ mx: "$8" }}>{ cta.text }</Button></Link>
+      {ctas.map((cta, i) => (
+        <Link
+          key={i}
+          href={cta.href}
+          passHref
+        >
+          <Button as="a" tone="wheat" type="link">{cta.label}</Button>
+        </Link>
       ))}
     </Flex>
   )

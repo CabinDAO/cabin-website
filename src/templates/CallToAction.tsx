@@ -17,8 +17,8 @@ export default function CallToAction({
     href: string;
     label: string;
   },
-  bgImage: string;
-  bgImageAlt: string;
+  bgImage?: string;
+  bgImageAlt?: string;
 }) {
   return (
     <Container id={slugify(title)}>

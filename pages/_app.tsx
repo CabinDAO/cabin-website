@@ -1,8 +1,9 @@
 import Script from "next/script";
 import { globalStyles } from "@cabindao/topo";
 import BaseLayout from "../src/layouts/Base.js"
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
   return (
     <>

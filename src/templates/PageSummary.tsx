@@ -3,21 +3,27 @@ import { styled, Wrapper, Heading, Text, Box, Button } from "@cabindao/topo";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { slugify } from "../../lib/slugify"
 
+export interface iPageSummary {
+  title: string;
+  description: string;
+  readMoreLink?: string;
+  theme?: "light" | "dark";
+}
+
+export interface iComponentTheme {
+  theme?: "light" | "dark";
+}
+
 const PageSummary = ({
   title,
   description,
   readMoreLink,
   theme = "light"
-}: {
-  title: string;
-  description: string;
-  readMoreLink?: string;
-  theme?: "light" | "dark";
-}) => {
+}: iPageSummary) => {
   return (
     <Container
       css={{
-        background: theme === "dark" ? "$forest" : ""
+        background: theme === "dark" ? "$forest" : "$sand"
       }}
       id={slugify(title)}
     >
@@ -36,7 +42,7 @@ const PageSummary = ({
             >{description}</Text>
             {readMoreLink && (
               <Link href={readMoreLink} passHref>
-                <Button as="a" rightIcon={<ArrowRightIcon />} tone={theme === "dark" ? "wheat" : ""} type="link">
+                <Button as="a" rightIcon={<ArrowRightIcon />} tone={theme === "dark" ? "wheat" : "forest"} type="link">
                   Read More
                 </Button>
               </Link>

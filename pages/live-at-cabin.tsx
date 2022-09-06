@@ -22,11 +22,11 @@ export default function LiveAtCabin() {
         ctas={[
           {
             href: "/live-at-cabin#colive-with-cabin",
-            text: "Become a Resident"
+            label: "Become a Resident"
           },
           {
             href: "/live-at-cabin#start-a-neighborhood",
-            text: "Start a Neighborhood"
+            label: "Start a Neighborhood"
           },
         ]}
       />
