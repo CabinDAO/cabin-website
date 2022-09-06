@@ -25,8 +25,8 @@ export default function Header() {
   const joinButton = (
     <ButtonLink
       external
-      label="Apply to Colive"
-      href="https://discord.gg/ttgRU7QKVE"
+      label="Join the community"
+      href="https://creatorcabins.typeform.com/to/fzxsf58P?typeform-source=website"
       target="_blank"
     />
   );

@@ -50,14 +50,13 @@ export default function Join() {
               <div>
                 <h3>Harmonize</h3>
                 <p>
-                  Tune into our community on discord to discover our mindset,
-                  culture and language.
+                  Tune into our community to discover our mindset, culture and language.
                 </p>
                 <ArrowLink
                   external
                   target="_blank"
-                  href="https://discord.gg/ttgRU7QKVE"
-                  label="Join Discord"
+                  href="https://creatorcabins.typeform.com/to/fzxsf58P?typeform-source=website"
+                  label="Join Cabin"
                 />
               </div>
             </Action>
