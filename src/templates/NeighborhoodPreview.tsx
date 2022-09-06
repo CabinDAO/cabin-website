@@ -50,6 +50,7 @@ export default function NeighborhoodPreview({ encroach }: {
             display: "grid",
             gridTemplateRows: "repeat(2, 1fr)",
             rowGap: "$8",
+            width: "100%",
             "@md": {
               gridTemplateColumns: "repeat(2, 1fr)",
               gridTemplateRows: "unset",

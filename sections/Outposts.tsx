@@ -36,21 +36,33 @@ export default function Outposts() {
             }
           }}
         >
-          <Box css={{ mr: "$4" }}>
+          <Box css={{
+            "@md": {
+              mr: "$4"
+            }
+          }}>
             <NeighborhoodDetail
               image={images[0]}
               title="Mana Retreat Center"
               description="This cabin offers 1250 square feet of indoor living space and an incredible 800 square foot deck with panoramic views. The house is an elevated split level with three bedrooms, two baths, an open floor plan living room, dining room, and kitchen. Rooms are furnished and include high-speed internet, utilities, and cleaning service."
             />
           </Box>
-          <Box css={{ mr: "$4" }}>
+          <Box css={{
+            "@md": {
+              mr: "$4"
+            }
+          }}>
             <NeighborhoodDetail
               image={images[1]}
               title="Web3 Travelers"
               description="A camping retreat on a mysterious Greek island where we will have a chance to deepen our relationships and our knowledge of Web3. Who’s excited already?"
             />
           </Box>
-          <Box css={{ ml: "$4" }}>
+          <Box css={{
+            "@md": {
+              ml: "$4"
+            }
+          }}>
             <NeighborhoodDetail
               image={images[2]}
               title="Red Door TV"

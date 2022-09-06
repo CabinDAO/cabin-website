@@ -1,8 +1,11 @@
 import { styled } from "@cabindao/topo";
 
 const Row = styled("div", {
-  display: "flex",
-  justifyContent: "space-between",
+  display: "none",
+  "@md": {
+    display: "flex",
+    justifyContent: "space-between",
+  }
 });
 
 const HeroElement = styled("div", {

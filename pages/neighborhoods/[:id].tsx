@@ -17,7 +17,7 @@ export default function NeighborhoodDetail() {
 
       {/* Lore section */}
       <ImageWall
-        title="The Lore of Neighborhood 0"
+        title="The Lore of Neighborhood Zero"
         description="Neighborhood Zero is the first node in Cabin’s decentralized city. It is Cabin’s home away from home — the place we go back to for retreats, residencies, and build weeks. For the first time, we are opening it up to the wider Cabin network and establishing the first long-term coliving neighborhood in our community."
         images={galleryImages}
       />

@@ -69,7 +69,7 @@ export default function Features(
   return (
     <Container>
       <Wrapper>
-        <Header>Core Features</Header>
+        <Header>Why Start a Cabin Neighborhood?</Header>
         <FeatureRows>
           {features.map((feature, i) => (
             <FeatureCell key={i} {...feature} />
