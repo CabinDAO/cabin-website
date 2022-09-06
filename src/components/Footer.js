@@ -144,11 +144,11 @@ export default function Footer() {
       <Link href="/vision">
         <a>Vision</a>
       </Link>
-      <Link href="/coliving-pass">
+      <Link href="/live-at-cabin">
         <a>Live at Cabin</a>
       </Link>
-      <Link href="/neighborhoods">
-        <a>Neighborhoods</a>
+      <Link href="/coliving-pass">
+        <a>Coliving Pass</a>
       </Link>
       <Link href="/neighborhoods/become-a-neighborhood">
         <a>Become a Neighborhood</a>

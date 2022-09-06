@@ -13,8 +13,8 @@ export default function Header() {
       <Link href="/vision">
         <a>Vision</a>
       </Link>
-      <Link href="/live-at-cabin">
-        <a>Live at Cabin</a>
+      <Link href="/coliving-pass">
+        <a>Coliving Pass</a>
       </Link>
       <Link href="neighborhoods/become-a-neighborhood">
         <a>Become a Neighborhood</a>
@@ -23,8 +23,8 @@ export default function Header() {
   );
 
   const joinButton = (
-    <Link href="/coliving-pass" passHref>
-      <Button as="a" tone="wheat">Apply to Colive</Button>
+    <Link href="/live-at-cabin" passHref>
+      <Button as="a" tone="wheat">Join Cabin</Button>
     </Link>
   );
 
