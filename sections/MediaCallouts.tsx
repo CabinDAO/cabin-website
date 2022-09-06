@@ -21,8 +21,8 @@ export default function MediaCallout() {
               <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/4d6m6O62xH8nYT8XjyC99P0yMrXqwO78JR2r5yvafc0" label="Read more" />
             </Feature>
             <Feature>
-              <h3>Wanna Go Camping on a Greek Island?</h3>
-              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/iRHsY7BHIkBwo_2eAVaEtb5mW17WkBTUF0EQHjtzOBE" label="Read more" />
+              <h3>Coliving Case Study: A Lifelong City Dweller Reconnects with Himself, His Community & the Wilderness</h3>
+              <ArrowLink color="wheat" external target="_blank" href="https://creators.mirror.xyz/g2aEnUtPqAgul_L5DJJOWgRiT5K9v50x_akbKeY171c" label="Read more" />
             </Feature>
           </Features>
         </Content>

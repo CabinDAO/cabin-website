@@ -1,5 +1,5 @@
 import Wrapper from "../src/components/Wrapper"
-import { PrimaryHero } from "@templates"
+import { PrimaryHero, SimpleCallToAction } from "@templates"
 
 import Image from 'next/image'
 import { styled } from "@cabindao/topo";
@@ -32,7 +32,7 @@ const Followup = styled("div", {
     flexDirection: "column",
     alignItems: "flex-start",
   },
-  h2: { 
+  h2: {
     mt: "$1",
     mb: "$0",
     fontFamily: "$mono",
@@ -58,10 +58,8 @@ const FirstStep = styled("div", {
   bc: "$forest",
   color: "$sand",
   py: "$12",
-  mb: "$24",
   "@md": {
     py: "$32",
-    mb: "$32",
   },
 });
 
@@ -69,7 +67,7 @@ const Step = styled("div", {
   display: "flex",
   flexDirection: "column",
   mb: "$12",
-  h2: { 
+  h2: {
     flex: "1",
     fontFamily: "$mono",
     fontSize: "$xxl",
@@ -93,7 +91,7 @@ const Step = styled("div", {
 
 const Meaning = styled("div", {
   pt: "$12",
-  h3: { 
+  h3: {
     fontFamily: "$mono",
     fontSize: "$xl",
     fontWeight: 600,
@@ -147,7 +145,7 @@ const VisionPage = () => {
         <Wrapper>
           <PrimaryHero
             title="Our vision is to build a decentralized city for creators."
-            subtitle = "Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+            subtitle="Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
           />
 
           <Followup>
@@ -160,6 +158,7 @@ const VisionPage = () => {
           </Followup>
         </Wrapper>
       </Intro>
+
       <FirstStep>
         <Wrapper>
           <Step>
@@ -208,11 +207,14 @@ const VisionPage = () => {
           </Meaning>
         </Wrapper>
       </FirstStep>
-      {
-      /*
-*<CallToAction />
-*/
-    }
+
+      <SimpleCallToAction
+        title="Interested in learning more?"
+        cta={{
+          href: "",
+          label: "Read the Litepaper"
+        }}
+      />
     </>
   );
 };

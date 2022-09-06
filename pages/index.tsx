@@ -2,7 +2,7 @@ import Hero from "../components/home/Hero";
 import Media from "../components/home/Media";
 import Join from "../components/home/Join";
 import { FeaturedNeighborhood, DescriptiveSideImage, PageSummary, Marquee } from "@templates"
-import { ColiveWithCabinCTA, NeighborhoodZeroFeature, CabinVision} from "@sections"
+import { ColiveWithCabinCTA, NeighborhoodZeroFeature, CabinVision, MediaCallout } from "@sections"
 
 export default function Home() {
 
@@ -22,9 +22,9 @@ export default function Home() {
         title={"Colive with Cabin"}
         content={"Come spend some time in the Texas Hill Country at a beautiful, 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin"}
         bgImage={"/guestsOutdoors.jpg"}
-        bgImageAlt={ 'People hanging out on a porch'}
+        bgImageAlt={'People hanging out on a porch'}
         featureImage={"/guestsGroup.jpg"}
-        featureImageAlt={ 'People sitting around a campfire'}
+        featureImageAlt={'People sitting around a campfire'}
         cta={{
           href: "/coliving-pass",
           label: "Apply to Colive"
@@ -58,7 +58,7 @@ export default function Home() {
         */}
       <NeighborhoodZeroFeature />
 
-      <Media />
+      <MediaCallout />
     </>
   );
 }

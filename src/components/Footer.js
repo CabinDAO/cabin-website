@@ -147,12 +147,12 @@ export default function Footer() {
       <Link href="/coliving-pass">
         <a>Live at Cabin</a>
       </Link>
+      <Link href="/neighborhoods">
+        <a>Neighborhoods</a>
+      </Link>
       <Link href="/neighborhoods/become-a-neighborhood">
         <a>Become a Neighborhood</a>
       </Link>
-      <a target="_blank" rel="noreferrer" href="https://creators.mirror.xyz/">
-        Media
-      </a>
     </>
   );
 
