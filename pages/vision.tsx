@@ -3,7 +3,7 @@ import { PrimaryHero, SimpleCallToAction } from "@templates"
 
 import Image from 'next/image'
 import { styled } from "@cabindao/topo";
-import { HomeIcon, Share1Icon, RocketIcon } from '@radix-ui/react-icons'
+import { HomeIcon, SunIcon, LightningBoltIcon } from '@radix-ui/react-icons'
 
 const Intro = styled("section", {
   pt: "$8",
@@ -90,6 +90,9 @@ const Step = styled("div", {
 });
 
 const Meaning = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   pt: "$12",
   h3: {
     fontFamily: "$mono",
@@ -114,7 +117,12 @@ const Meaning = styled("div", {
 });
 
 const MeaningItem = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
   pt: "$10",
+  textAlign: "center",
   div: {
     height: "$12",
     width: "$12",
@@ -144,16 +152,14 @@ const VisionPage = () => {
       <Intro>
         <Wrapper>
           <PrimaryHero
-            title="Our vision is to build a decentralized city for creators."
-            subtitle="Cabin is an experiment in the future of cities: decentralized physical nodes tied together by a shared culture, economy, and governance structure."
+            title="Our vision is to build a network city for creators"
+            subtitle="Cabin is an experiment in the future of cities: decentralized, physical nodes tied together by a shared culture, economy, and governance structure."
           />
 
           <Followup>
             <div>
-              <h2>What defines a city?</h2>
-              <p>
-                When you think of cities, you may think of the boulevards of Paris or the skyscrapers of New York. But that&apos;s just the stage. Today, creativity and social interactions have increasingly shifted online—breaking geographic boundaries once held by traditional cities. Now, it&apos;s not the place that matters so much, but the density of creative ideas and interesting people residing in that space that define a city.
-              </p>
+              <h2>Defining our Network City</h2>
+              <p>Cities are places with a high density of shared culture, economy, and governance. Creating this density historically required a city to be located in one place—but cities adapt to new technologies. The cities we live in today are designed around cars. We believe cities of the future will be physically decentralized and organized online.</p>
             </div>
           </Followup>
         </Wrapper>
@@ -162,10 +168,8 @@ const VisionPage = () => {
       <FirstStep>
         <Wrapper>
           <Step>
-            <h2>First step: building bridges and becoming an embassy</h2>
-            <p>
-              DAOs today are somewhat like disparate nations, all working toward goals of decentralization, innovation and new forms of collaboration, but operating in distinct silos. As a first step toward building a global decentralized city, Cabin will build bridges both online and IRL for DAO operators to collaborate and further their individual projects.
-            </p>
+            <h2>Cabin is building a global, network city for online creators</h2>
+            <p>Location-flexible knowledge workers who make a living online. Our city’s community, culture, and economy starts online and then build physical hubs IRL.</p>
           </Step>
           <Frame>
             <Image
@@ -177,31 +181,25 @@ const VisionPage = () => {
             />
           </Frame>
           <Meaning>
-            <h3>What it means to be an embassy for DAOs</h3>
+            <h3>Cabin neighborhoods that typically share three characteristics:</h3>
             <div>
               <MeaningItem>
                 <div>
                   <HomeIcon />
                 </div>
-                <p>
-                  Establishing embassies and ambassadorships to foster DAO to DAO collaboration
-                </p>
+                <p>Strong community</p>
               </MeaningItem>
               <MeaningItem>
                 <div>
-                  <Share1Icon />
+                  <LightningBoltIcon />
                 </div>
-                <p>
-                  Hosting conferences, retreats, and events to bring DAO operators together IRL at Cabin nodes
-                </p>
+                <p>Fast Internet</p>
               </MeaningItem>
               <MeaningItem>
                 <div>
-                  <RocketIcon />
+                  <SunIcon />
                 </div>
-                <p>
-                  Building products and tooling that support the development of the DAO ecosystem
-                </p>
+                <p>Access to Nature</p>
               </MeaningItem>
             </div>
           </Meaning>
@@ -211,7 +209,7 @@ const VisionPage = () => {
       <SimpleCallToAction
         title="Interested in learning more?"
         cta={{
-          href: "",
+          href: "https://docs.google.com/document/d/1VadHFZTnvmIRWLqmKcaDa1HXtr7LxK1WuXbW1HURFWM/edit#",
           label: "Read the Litepaper"
         }}
       />

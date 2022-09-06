@@ -30,7 +30,7 @@ export default function NeighborhoodPreview({ encroach }: {
             <Heading as="h5" mono uppercase css={{ m: 0 }}>Neighborhood Zero</Heading>
             <Heading as="h1" sans css={{ fontSize: "$xxl", mt: "$2", mb: "$8" }}>Cabin in the Texas Hill Country</Heading>
             <Text css={{ fontSize: "$lg" }}>
-              Neighborhood Zero is the first node in Cabin’s decentralized city. It is Cabin’s home away from home — the place we go back to for retreats, residencies, and build weeks. For the first time, we are opening it up to the wider Cabin network and establishing the first long-term coliving neighborhood in our community.
+              Neighborhood Zero is the first neighborhood in Cabin’s network city. It is Cabin’s home away from home — the place we go back to for retreats, residencies, and build weeks. For the first time, we are opening it up to the wider Cabin community and establishing the first long-term coliving neighborhood in our network.
             </Text>
             <Text css={{ fontSize: "$lg" }}>
               The property sits on 28 rolling acres in the Texas Hill Country — secluded enough to see every star in the night sky, but still only 45 minutes from downtown Austin.
