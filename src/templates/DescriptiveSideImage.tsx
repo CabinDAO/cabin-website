@@ -12,7 +12,6 @@ const DescriptiveSideImage = ({
   bgImage,
   bgImageAlt = "No Image Found",
   featureImage,
-  featureImageAlt = "No Image Found",
   cta,
   reversed = false,
   bleedable = false,
@@ -21,10 +20,14 @@ const DescriptiveSideImage = ({
   content: React.ReactNode;
   bgImage?: ImageSrc;
   bgImageAlt?: string;
-  featureImage: ImageSrc;
-  featureImageAlt?: string;
   reversed?: boolean;
   bleedable?: boolean
+  featureImage: {
+    src: string;
+    alt: string;
+    height: number;
+    width: number;
+  }
   cta?: { href: string, label: string };
 }) => {
   return (
@@ -51,11 +54,11 @@ const DescriptiveSideImage = ({
           </ContentText>
           <Frame>
             <Image
-              src={featureImage}
-              alt={featureImageAlt}
+              src={featureImage.src}
+              alt={featureImage.alt}
               layout="responsive"
-              width={492}
-              height={327}
+              width={featureImage.width}
+              height={featureImage.height}
             />
           </Frame>
         </Content>

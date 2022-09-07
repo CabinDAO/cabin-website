@@ -36,8 +36,12 @@ export default function LiveAtCabin() {
         content={"Come spend some time in the Texas Hill Country at a beautiful, 28-acre retreat center with a group of like minded souls, just 45 mins outside of Austin"}
         bgImage={"/guestsOutdoors.jpg"}
         bgImageAlt={'People hanging out on a porch'}
-        featureImage={"/guestsGroup.jpg"}
-        featureImageAlt={'People sitting around a campfire'}
+        featureImage={{
+          src: "/photos/cohort-2.jpg",
+          alt: "Group of people who lived at the cabins",
+          height: 1147,
+          width: 2000
+        }}
         cta={{
           href: "/coliving-pass",
           label: "Apply to Colive"
@@ -50,8 +54,12 @@ export default function LiveAtCabin() {
         content={"It's time for you and your squad to build some Squad Wealth by buying property in the real world, with help from Cabin"}
         bgImage={"/water.jpg"}
         bgImageAlt={"People talking around a table"}
-        featureImage={"/guestsTable.jpg"}
-        featureImageAlt={"Texas hill country scenery"}
+        featureImage={{
+          src: "/photos/guestsTable.jpg",
+          alt: "Group of people who lived at the cabins",
+          height: 680,
+          width: 1024
+        }}
         cta={{
           href: "/neighborhoods/become-a-neighborhood",
           label: "Start a Neighborhood"
