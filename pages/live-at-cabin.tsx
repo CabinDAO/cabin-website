@@ -55,10 +55,10 @@ export default function LiveAtCabin() {
         bgImage={"/water.jpg"}
         bgImageAlt={"People talking around a table"}
         featureImage={{
-          src: "/photos/guestsTable.jpg",
-          alt: "Group of people who lived at the cabins",
-          height: 680,
-          width: 1024
+          src: "/photos/build-week-2.jpg",
+          alt: "Group of Cabin members posing and holding tools ",
+          height: 1536,
+          width: 2049
         }}
         cta={{
           href: "/neighborhoods/become-a-neighborhood",
