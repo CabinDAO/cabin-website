@@ -15,14 +15,14 @@ export default function Header() {
       <Link href="/coliving-pass">
         <a>Coliving Pass</a>
       </Link>
-      <Link href="https://creatorcabins.typeform.com/coliveN0?utm_source=website&typeform-source=www.cabin.city">
+      <Link href="/neighborhoods/become-a-neighborhood">
         <a>Become a Neighborhood</a>
       </Link>
     </Nav>
   );
 
   const joinButton = (
-    <Link href="/live-at-cabin" passHref>
+    <Link href="https://creatorcabins.typeform.com/coliveN0?utm_source=website&typeform-source=www.cabin.city" passHref>
       <Button as="a" tone="wheat">Join Cabin</Button>
     </Link>
   );
