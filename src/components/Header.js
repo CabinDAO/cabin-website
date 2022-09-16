@@ -15,7 +15,7 @@ export default function Header() {
       <Link href="/coliving-pass">
         <a>Coliving Pass</a>
       </Link>
-      <Link href="neighborhoods/become-a-neighborhood">
+      <Link href="https://creatorcabins.typeform.com/coliveN0?utm_source=website&typeform-source=www.cabin.city">
         <a>Become a Neighborhood</a>
       </Link>
     </Nav>
